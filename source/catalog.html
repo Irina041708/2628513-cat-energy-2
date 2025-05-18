@@ -16,8 +16,16 @@
     <div class="main-header__wrapper">
       <a class="logo" href="index.html">
         <span class="visually-hidden">Логотип.</span>
-        <img class="logo__logo-img" src="images/logo-img.svg" width="33" height="38" alt="Логотип компании.">
-        <img class="logo__logo-text" src="images/logo-text.svg" width="101" height="18" alt="Название компании-cat energy.">
+        <picture>
+          <source media="(min-width: 1440px)" width="70" height="59" type="image/png" srcset="images/logo-img-desktop@1x.png 1x, images/logo-img-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" width="60" height="50" type="image/png" srcset="images/logo-img-tablet@1x.png 1x, images/logo-img-tablet@2x.png 2x">
+          <img class="logo__logo-img" src="images/logo-img-mobile@1x.png" srcset="images/logo-img-mobile@2x.png 2x" width="33" height="38" alt="Логотип компании.">
+        </picture>
+        <picture>
+          <source media="(min-width: 1440px)" width="118" height="21" type="image/png" srcset="images/logo-text-desktop@1x.png 1x, images/logo-text-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" width="101" height="18" type="image/png" srcset="images/logo-text-tablet@1x.png, images/logo-text-tablet@2x.png 2x">
+          <img class="logo__logo-text" src="images/logo-text-mobile@1x.png" srcset="images/logo-text-mobile@2x.png 2x" width="101" height="18" alt="Название компании-cat energy.">
+        </picture>
       </a>
     </div>
     <nav class="main-nav">
@@ -47,7 +55,11 @@
         <ul class="catalog__list">
           <li class="catalog__item">
             <a class="catalog__link" href="#">
-              <img src="images/catalog-1.svg" width="68" height="86" alt="Cat energy со вкусом курицы 500 г.">
+              <picture>
+                <source media="(min-width: 1440px)" width="161" height="172" type="image/svg+xml" srcset="images/catalog-desktop-1.svg">
+                <source media="(min-width: 768px)" width="161" height="172" type="image/svg+xml" srcset="images/catalog-tablet-1.svg           ">
+                <img src="images/catalog-mobile-1.svg" width="68" height="86" alt="Cat energy со вкусом курицы 500 г.">
+              </picture>
             </a>
             <div class="catalog__title title-catalog">
               <a class="title-catalog__link" href="#">
@@ -74,7 +86,11 @@
           </li>
           <li class="catalog__item">
             <a class="catalog__link" href="#">
-              <img src="images/catalog-2.svg" width="84" height="100" alt="Cat energy со вкусом курицы 1000 г.">
+              <picture>
+                <source media="(min-width: 1440px)" width="169" height="210" type="image/svg+xml" srcset="images/catalog-desktop-2.svg">
+                <source media="(min-width: 768px)" width="168" height="206" type="image/svg+xml" srcset="images/catalog-tablet-2.svg           ">
+                <img src="images/catalog-mobile-2.svg" width="84" height="100" alt="Cat energy со вкусом курицы 1000 г.">
+              </picture>
             </a>
             <div class="catalog__title title-catalog">
               <a class="title-catalog__link" href="#">
@@ -101,7 +117,11 @@
           </li>
           <li class="catalog__item">
             <a class="catalog__link" href="#">
-              <img src="images/catalog-3.svg" width="68" height="78" alt="Cat energy со вкусом рыбы 500 г.">
+              <picture>
+                <source media="(min-width: 1440px)" width="163" height="174" type="image/svg+xml" srcset="images/catalog-desktop-3.svg">
+                <source media="(min-width: 768px)" width="163" height="174" type="image/svg+xml" srcset="images/catalog-tablet-3.svg           ">
+                <img src="images/catalog-mobile-3.svg" width="68" height="78" alt="Cat energy со вкусом рыбы 500 г.">
+              </picture>
             </a>
             <div class="catalog__title title-catalog">
               <a class="title-catalog__link" href="#">
@@ -128,7 +148,11 @@
           </li>
           <li class="catalog__item">
             <a class="catalog__link" href="#">
-              <img src="images/catalog-4.svg" width="84" height="100" alt="Cat energy со вкусом рыбы 1000 г.">
+              <picture>
+                <source media="(min-width: 1440px)" width="172" height="196" type="image/svg+xml" srcset="images/catalog-desktop-4.svg">
+                <source media="(min-width: 768px)" width="168" height="200" type="image/svg+xml" srcset="images/catalog-tablet-4.svg           ">
+                <img src="images/catalog-mobile-4.svg" width="84" height="100" alt="Cat energy со вкусом рыбы 1000 г.">
+              </picture>
             </a>
             <div class="catalog__title title-catalog">
               <a class="title-catalog__link" href="#">
@@ -155,7 +179,11 @@
           </li>
           <li class="catalog__item">
             <a class="catalog__link" href="#">
-              <img src="images/catalog-5.svg" width="68" height="78" alt="Cat energy со вкусом гречки 500 г.">
+              <picture>
+                <source media="(min-width: 1440px)" width="161" height="171" type="image/svg+xml" srcset="images/catalog-desktop-5.svg">
+                <source media="(min-width: 768px)" width="161" height="171" type="image/svg+xml" srcset="images/catalog-tablet-5.svg           ">
+                <img src="images/catalog-mobile-5.svg" width="68" height="78" alt="Cat energy со вкусом гречки 500 г.">
+              </picture>
             </a>
             <div class="catalog__title title-catalog">
               <a class="title-catalog__link" href="#">
@@ -182,7 +210,11 @@
           </li>
           <li class="catalog__item">
             <a class="catalog__link" href="#">
-              <img src="images/catalog-6.svg" width="84" height="100" alt="Cat energy со вкусом гречки 1000г.">
+              <picture>
+                <source media="(min-width: 1440px)" width="172" height="196" type="image/svg+xml" srcset="images/catalog-desktop-6.svg">
+                <source media="(min-width: 768px)" width="168" height="200" type="image/svg+xml" srcset="images/catalog-tablet-6.svg           ">
+                <img src="images/catalog-mobile-6.svg" width="84" height="100" alt="Cat energy со вкусом гречки 1000 г.">
+              </picture>
             </a>
             <div class="catalog__title title-catalog">
               <a class="title-catalog__link" href="#">
@@ -209,7 +241,11 @@
           </li>
           <li class="catalog__item">
             <a class="catalog__link" href="#">
-              <img src="images/catalog-7.svg" width="72" height="84" alt="Cat energy со вкусом риса 500г.">
+              <picture>
+                <source media="(min-width: 1440px)" width="163" height="174" type="image/svg+xml" srcset="images/catalog-desktop-7.svg">
+                <source media="(min-width: 768px)" width="163" height="174" type="image/svg+xml" srcset="images/catalog-tablet-7.svg           ">
+                <img src="images/catalog-mobile-7.svg" width="72" height="84" alt="Cat energy со вкусом риса 500г.">
+              </picture>
             </a>
             <div class="catalog__title title-catalog">
               <a class="title-catalog__link" href="#">
@@ -309,7 +345,11 @@
           <p class="location__discription discription-location">ул. Большая <br>Конюшенная, д. 19/8</p>
           <p class="location__discription discription-location">Санкт-Петербург</p>
         </div>
-        <img class="location__img-map" src="images/location.svg" width="320" height="362" alt="Карта с местоположением компании.">
+        <picture>
+          <source media="(min-width: 1440px)" width="1440" height="400" type="image/svg+xml" srcset="images/location-desktop.svg">
+          <source media="(min-width: 768px)" width="768" height="400" type="image/svg+xml" srcset="images/location-tablet.svg">
+          <img class="location__img-map" src="images/location.svg" width="320" height="362" alt="Карта с местоположением компании.">
+        </picture>
       </div>
     </section>
   </main>

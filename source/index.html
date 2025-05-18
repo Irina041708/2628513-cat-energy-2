@@ -16,8 +16,16 @@
     <div class="main-header__wrapper">
       <a class="logo" href="index.html">
         <span class="visually-hidden">Логотип.</span>
-        <img class="logo__logo-img" src="images/logo-img.svg" width="33" height="38" alt="Логотип компании.">
-        <img class="logo__logo-text" src="images/logo-text.svg" width="101" height="18" alt="Название компании-cat energy.">
+        <picture>
+          <source media="(min-width: 1440px)" width="70" height="59" type="image/png" srcset="images/logo-img-desktop@1x.png 1x, images/logo-img-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" width="60" height="50" type="image/png" srcset="images/logo-img-tablet@1x.png 1x, images/logo-img-tablet@2x.png 2x">
+          <img class="logo__logo-img" src="images/logo-img-mobile@1x.png" srcset="images/logo-img-mobile@2x.png 2x" width="33" height="38" alt="Логотип компании.">
+        </picture>
+        <picture>
+          <source media="(min-width: 1440px)" width="118" height="21" type="image/png" srcset="images/logo-text-desktop@1x.png 1x, images/logo-text-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" width="101" height="18" type="image/png" srcset="images/logo-text-tablet@1x.png, images/logo-text-tablet@2x.png 2x">
+          <img class="logo__logo-text" src="images/logo-text-mobile@1x.png" srcset="images/logo-text-mobile@2x.png 2x" width="101" height="18" alt="Название компании-cat energy.">
+        </picture>
       </a>
     </div>
     <nav class="main-nav">
@@ -45,7 +53,11 @@
       <div class="nutrition__wrapper">
         <h2 class="nutrition__heading">Функциональное <br>питание для котов</h2>
         <p class="nutrition__paragraph">Занялся собой? Займись котом!</p>
-        <img class="nutrition__img" src="images/nutrition-img.svg" width="280" height="270" alt="Cat energy со вкусом курицы.">
+        <picture>
+          <source media="(min-width: 1440px)" width="552" height="499" type="image/png" srcset="images/nutrition-img-desktop@1x.png 1x, images/nutrition-img-desktop@2x.png 2x">
+          <source media="(min-width: 768px)" width="709" height="609" type="image/png" srcset="images/nutrition-img-tablet@1x.png 1x, images/nutrition-img-tablet@2x.png 2x">
+          <img class="nutrition__img" src="images/nutrition-img-mobile@1x.png" srcset="images/nutrition-img-mobile@2x.png 2x" width="280" height="270" alt="Cat energy со вкусом курицы.">
+        </picture>
         <a class="nutrition-link" href="#">Подобрать программу</a>
       </div>
     </section>
@@ -107,8 +119,16 @@
           </p>
         </div>
         <div class="stats__slider slider-stats">
-          <img class="slider-stats__img-first" src="images/stats-first.svg" width="280" height="256" alt="Толстый кот.">
-          <img class="slider-stats__img-second" src="images/stats-second.svg" width="280" height="256" alt="Тощий кот.">
+          <picture>
+            <source media="(min-width: 1440px)" width="560" height="512" type="image/png" srcset="images/img-first-tablet@1x.png 1x, images/img-first-tablet@2x.png 2x">
+            <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="images/img-first-tablet@1x.png 1x, images/img-first-tablet@2x.png 2x">
+            <img class="slider-stats__img-first" src="images/img-first-mobile@1x.png" srcset="images/img-first-mobile@2x.png 2x" width="280" height="256" alt="Толстый кот.">
+          </picture>
+          <picture>
+            <source media="(min-width: 1440px)" width="560" height="512" type="image/png" srcset="images/img-second-tablet@1x.png 1x, images/img-second-tablet@2x.png 2x">
+            <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="images/img-second-tablet@1x.png 1x, images/img-second-tablet@2x.png 2x">
+            <img class="slider-stats__img-second" src="images/img-second-mobile@1x.png" srcset="images/img-second-mobile@2x.png 2x" width="280" height="256" alt="Тощий кот.">
+          </picture>
         </div>
       </div>
     </section>
@@ -120,7 +140,11 @@
           <p class="location__discription discription-location">ул. Большая <br>Конюшенная, д. 19/8</p>
           <p class="location__discription discription-location">Санкт-Петербург</p>
         </div>
-        <img class="location__img-map" src="images/location.svg" width="320" height="362" alt="Карта с местоположением компании.">
+        <picture>
+          <source media="(min-width: 1440px)" width="1440" height="400" type="image/svg+xml" srcset="images/location-desktop.svg">
+          <source media="(min-width: 768px)" width="768" height="400" type="image/svg+xml" srcset="images/location-tablet.svg">
+          <img class="location__img-map" src="images/location.svg" width="320" height="362" alt="Карта с местоположением компании.">
+        </picture>
       </div>
     </section>
   </main>
