@@ -7,6 +7,8 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link rel="stylesheet" href="styles/styles.css">
   <link rel="icon" href="favicon.ico"><!-- 32*32 -->
+  <link rel="icon" href="favicons/icon.svg" type="image/svg+xml"><!-- svg -->
+  <link rel="apple-touch-icon" href="favicons/180.png" type="image/svg+xml"><!-- 180*180 -->
   <link rel="manifest" href="manifest.webmanifest">
   <script src="scripts/index.js" defer></script>
 </head>
@@ -14,17 +16,15 @@
 <body class="page__body">
   <header class="main-header">
     <div class="main-header__wrapper">
-      <a class="logo" href="index.html">
+      <a class="logotype" href="index.html">
         <span class="visually-hidden">Логотип.</span>
         <picture>
-          <source media="(min-width: 1440px)" width="70" height="59" type="image/png" srcset="images/logo-img-desktop@1x.png 1x, images/logo-img-desktop@2x.png 2x">
-          <source media="(min-width: 768px)" width="60" height="50" type="image/png" srcset="images/logo-img-tablet@1x.png 1x, images/logo-img-tablet@2x.png 2x">
-          <img class="logo__logo-img" src="images/logo-img-mobile@1x.png" srcset="images/logo-img-mobile@2x.png 2x" width="33" height="38" alt="Логотип компании.">
+          <source media="(min-width: 1440px)" width="70" height="59" type="image/svg+xml" srcset="images/logotype/logotype-img-desktop.svg">
+          <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="images/logotype/logotype-img-tablet.svg">
+          <img class="logotype__logotype-img" src="images/logotype/logotype-img-mobile.svg" width="33" height="38" alt="Логотип компании `Cat energy`.">
         </picture>
         <picture>
-          <source media="(min-width: 1440px)" width="118" height="21" type="image/png" srcset="images/logo-text-desktop@1x.png 1x, images/logo-text-desktop@2x.png 2x">
-          <source media="(min-width: 768px)" width="101" height="18" type="image/png" srcset="images/logo-text-tablet@1x.png, images/logo-text-tablet@2x.png 2x">
-          <img class="logo__logo-text" src="images/logo-text-mobile@1x.png" srcset="images/logo-text-mobile@2x.png 2x" width="101" height="18" alt="Название компании-cat energy.">
+          <img class="logotype__logotype-text" src="images/logotype/logotype-text-mobile.svg" width="101" height="20" alt="Название компании-cat energy.">
         </picture>
       </a>
     </div>
@@ -56,7 +56,7 @@
         <picture>
           <source media="(min-width: 1440px)" width="552" height="499" type="image/png" srcset="images/nutrition-img-desktop@1x.png 1x, images/nutrition-img-desktop@2x.png 2x">
           <source media="(min-width: 768px)" width="709" height="609" type="image/png" srcset="images/nutrition-img-tablet@1x.png 1x, images/nutrition-img-tablet@2x.png 2x">
-          <img class="nutrition__img" src="images/nutrition-img-mobile@1x.png" srcset="images/nutrition-img-mobile@2x.png 2x" width="280" height="270" alt="Cat energy со вкусом курицы.">
+          <img class="nutrition__img" src="images/nutrition-img-mobile@1x.png" srcset="images/nutrition-img-mobile@2x.png 2x" width="280" height="270" alt="Оранжевая банка с питанием Cat energy со вкусом курицы.">
         </picture>
         <a class="nutrition-link" href="#">Подобрать программу</a>
       </div>
@@ -120,12 +120,10 @@
         </div>
         <div class="stats__slider slider-stats">
           <picture>
-            <source media="(min-width: 1440px)" width="560" height="512" type="image/png" srcset="images/img-first-tablet@1x.png 1x, images/img-first-tablet@2x.png 2x">
             <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="images/img-first-tablet@1x.png 1x, images/img-first-tablet@2x.png 2x">
             <img class="slider-stats__img-first" src="images/img-first-mobile@1x.png" srcset="images/img-first-mobile@2x.png 2x" width="280" height="256" alt="Толстый кот.">
           </picture>
           <picture>
-            <source media="(min-width: 1440px)" width="560" height="512" type="image/png" srcset="images/img-second-tablet@1x.png 1x, images/img-second-tablet@2x.png 2x">
             <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="images/img-second-tablet@1x.png 1x, images/img-second-tablet@2x.png 2x">
             <img class="slider-stats__img-second" src="images/img-second-mobile@1x.png" srcset="images/img-second-mobile@2x.png 2x" width="280" height="256" alt="Тощий кот.">
           </picture>
