@@ -1,26 +1,38 @@
 /* GLOBAL */
-// @import "./common/mixins.scss";
-// @import "./common/variables.scss";
-// @import "./common/fonts.scss";
-// @import "./common/global.scss";
+@import "./common/mixins.scss";
+@import "./common/variables.scss";
+@import "./common/fonts.scss";
+@import "./common/global.scss";
 
 /* BLOCKS */
-// @import "./blocks/main-header.scss";
-// @import "./blocks/main-nav.scss";
-// @import "./blocks/site-list.scss";
-// @import "./blocks/main-footer.scss";
+//index
+@import "./blocks/main-header.scss";
+@import "./blocks/logo.scss";
+@import "./blocks/main-nav.scss";
+@import "./blocks/site-list.scss";
+@import "./blocks/nutrition.scss";
+@import "./blocks/button.scss";
+@import "./blocks/news.scss";
+@import "./blocks/advantages.scss";
+@import "./blocks/stats.scss";
+@import "./blocks/item-stats.scss";
+@import "./blocks/slider-stats.scss";
+@import "./blocks/location.scss";
+//catalog
+@import "./blocks/main-footer.scss";
+@import "./blocks/social.scss";
+@import "./blocks/logo-company.scss";
 
-
-// $bg: tomato;$bg
+// $bg: tomato;$bg$bg$bg$bg
 
 // body {
-//   background-color: $bg;background-color
+//   background-color: $bg;background-colorbackground-colorbackground-colorbackground-color
 // }
 
 //  родительский селектор & и вложенность
 // Эффективность использования вложенности раскрывается для использования: псевдоэлементов и псевдоклассов, медиавыражений.
 // .button {
-//   color: #ffffff;color
+//   color: #ffffff;colorcolorcolorcolor
 
 //   &:hover {}
 //   &:focus {}
@@ -30,22 +42,22 @@
 // }
 
 
-// $primary-color: #3498db;$primary-color // Основной цвет
+// $primary-color: #3498db;$primary-color$primary-color$primary-color$primary-color // Основной цвет
 
 // .button {
-//   background-color: $primary-color;background-color
-//   color: #ffffff;color
-//   padding: 10px 20px;padding
+//   background-color: $primary-color;background-colorbackground-colorbackground-colorbackground-color
+//   color: #ffffff;colorcolorcolorcolor
+//   padding: 10px 20px;paddingpaddingpaddingpadding
 
 //   &:hover {
-//     background-color: lighten($primary-color, 10%);background-color // Светлее на 10% при наведении
+//     background-color: lighten($primary-color, 10%);background-colorbackground-colorbackground-colorbackground-color // Светлее на 10% при наведении
 //   }
 
 //   &:focus {
-//     background-color: lighten($primary-color, 20%);background-color // Светлее на 20% при фокусе
+//     background-color: lighten($primary-color, 20%);background-colorbackground-colorbackground-colorbackground-color // Светлее на 20% при фокусе
 //   }
 
 //   &:active {
-//     background-color: darken($primary-color, 10%);background-color // Темнее на 10% при активации (нажатии)
+//     background-color: darken($primary-color, 10%);background-colorbackground-colorbackground-colorbackground-color // Темнее на 10% при активации (нажатии)
 //   }
 // }
