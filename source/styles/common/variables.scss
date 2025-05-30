@@ -1,3 +1,10 @@
 /* здесь используйте глобальные переменные */
+/* Переменная для использования названия шрифта */
+// $primary-font: "Oswald";
+$primary-font: "Oswald";
+// $primary-font: "Oswald","Arial", sans-serif;
+$secondary-font: "Lato";
+// $secondary-font: "Lato", "Arial", sans-serif;
+/* Переменная для использования цвета текста в проекте  */
 $color-basis: #000000;
 $color-accent: #ffffff;

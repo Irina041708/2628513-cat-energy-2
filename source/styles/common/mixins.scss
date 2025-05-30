@@ -1,5 +1,5 @@
 // Чаще всего миксины переиспользуются на всём проекте в разных модулях для блоков. Поэтому миксины кладут в папку для глобальных стилей в файл mixins.scss
-@mixin font-face($font-family,$font-weight,$font-style,$font-src) {
+@mixin font-face($font-family, $font-weight, $font-style, $font-src) {
   @font-face {
     font-family: $font-family;
     font-weight: $font-weight;
