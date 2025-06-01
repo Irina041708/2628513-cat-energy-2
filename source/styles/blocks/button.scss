@@ -1,1 +1,19 @@
 // button
+.button {
+  @include fonttitle;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $color-accent;
+  background-color: $bg-button;
+}
+
+.button--action {
+  color: $color-text;
+  background-color: $bg-button--action;
+}
+
+.button--current {
+  font-size: 20px;
+  line-height: 26px;
+}

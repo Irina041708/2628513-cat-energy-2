@@ -1,8 +1,9 @@
-// logo-company
-.logo-company__text {
+//paragraph
+
+.paragraph {
   @include fonttitle;
   font-family: $secondary-font;
-  font-size: 16px;
-  line-height: 20px;
+  font-size: 14px;
+  line-height: 18px;
   color: $color-text;
 }

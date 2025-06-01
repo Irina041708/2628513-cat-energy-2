@@ -1,1 +1,9 @@
 // banner
+.banner__title {
+  @include fonttitle;
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 20px;
+  color: $bg-basis;
+  background-color: rgba(104, 183, 56, 0.85);
+}

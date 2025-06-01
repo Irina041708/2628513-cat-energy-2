@@ -1,1 +1,31 @@
 // nutrition
+
+.nutrition {
+  background: linear-gradient(rgba(104, 183, 56, 0.85) 63%, $bg-basis 37%);
+  // background-image: url("../../images/nutrition-img-mobile2@2x.png");
+  text-align: center;
+  background-repeat: no-repeat;
+}
+
+.nutrition__heading {
+  @include fonttitle;
+  font-size: 36px;
+  line-height: 40px;
+  color: $color-accent;
+}
+
+.nutrition__paragraph {
+  @include fonttitle;
+  font-size: 14px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: $color-accent;
+}
+
+.nutrition__button {
+  @include fonttitle;
+  background-color: $bg-button;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}

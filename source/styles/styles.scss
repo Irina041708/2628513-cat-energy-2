@@ -5,19 +5,28 @@
 @import "./common/global.scss";
 
 /* BLOCKS */
-//index
+@import "./blocks/page.scss";
+
+
+//header
 @import "./blocks/main-header.scss";
 @import "./blocks/logo.scss";
 @import "./blocks/main-nav.scss";
 @import "./blocks/site-list.scss";
+
+//index
+@import "./blocks/main.scss";
 @import "./blocks/nutrition.scss";
 @import "./blocks/button.scss";
-@import "./blocks/news.scss";
+@import "./blocks/programs.scss";
+@import "./blocks/program.scss";
+@import "./blocks/paragraph.scss";
 @import "./blocks/advantages.scss";
 @import "./blocks/stats.scss";
 @import "./blocks/item-stats.scss";
 @import "./blocks/slider-stats.scss";
 @import "./blocks/location.scss";
+
 //catalog
 @import "./blocks/catalog.scss";
 @import "./blocks/card.scss";
@@ -27,6 +36,8 @@
 @import "./blocks/banner.scss";
 @import "./blocks/subscribe.scss";
 @import "./blocks/form-subscribe.scss";
+
+//footer
 @import "./blocks/main-footer.scss";
 @import "./blocks/social.scss";
 @import "./blocks/logo-company.scss";

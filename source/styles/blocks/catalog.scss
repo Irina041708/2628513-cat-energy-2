@@ -1,1 +1,6 @@
 // catalog
+.catalog__heading {
+  @include fonttitle;
+  font-size: 36px;
+  line-height: 36px;
+}

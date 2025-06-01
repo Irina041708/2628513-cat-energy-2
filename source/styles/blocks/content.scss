@@ -1,1 +1,16 @@
 // content
+.content__heading {
+  @include fonttitle;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $color-text-heading;
+}
+
+.content__property {
+  @include fonttitle;
+  font-family: $secondary-font;
+  font-size: 12px;
+  line-height: 16px;
+  color: $color-text;
+}

@@ -1,0 +1,9 @@
+//page
+.page__body {
+  max-width: $view-port-mobile;
+  // min-height: 100%;
+  margin: 0 auto;
+  padding: 0;
+  color: $color-basis;
+  background-color: $bg-basis;
+}

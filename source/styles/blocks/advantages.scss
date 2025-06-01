@@ -1,1 +1,6 @@
 // advantages
+.advantages__heading {
+  @include fonttitle;
+  font-size: 36px;
+  line-height: 40px;
+}

@@ -1,1 +1,22 @@
 // additional
+.additional-products__heading {
+  @include fonttitle;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.additional__title {
+  @include fonttitle;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $color-text-heading;
+}
+
+.additional__list {
+  @include fonttitle;
+  font-family: $secondary-font;
+  font-size: 14px;
+  line-height: 14px;
+  color: $color-text;
+}
