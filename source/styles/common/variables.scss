@@ -1,3 +1,24 @@
 /* здесь используйте глобальные переменные */
+
+/* Переменные для VIEW-PORT-SIZE */
+$view-port-mobile: 320px;
+$view-port-tablet: 768px;
+$view-port-desktop: 1440px;
+
+/* Переменная для использования названия шрифта */
+$primary-font: "Oswald";
+// $primary-font: "Oswald","Arial", sans-serif;
+$secondary-font: "Lato";
+// $secondary-font: "Lato", "Arial", sans-serif;
+
+/* TEXT-COLORS */
 $color-basis: #000000;
 $color-accent: #ffffff;
+$color-text: rgba(68, 68, 68, 1);
+$color-text-heading:rgba(34, 34, 34, 1);
+
+
+/* BACKGROUND-COLORS  */
+$bg-basis: #ffffff;
+$bg-button:rgba(104, 183, 56, 1);
+$bg-button--action: rgba(242, 242, 242, 1);

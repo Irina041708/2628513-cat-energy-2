@@ -1,0 +1,9 @@
+//paragraph
+
+.paragraph {
+  @include fonttitle;
+  font-family: $secondary-font;
+  font-size: 14px;
+  line-height: 18px;
+  color: $color-text;
+}

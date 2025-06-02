@@ -1,0 +1,8 @@
+// logo-company
+.logo-company__text {
+  @include fonttitle;
+  font-family: $secondary-font;
+  font-size: 16px;
+  line-height: 20px;
+  color: $color-text;
+}
