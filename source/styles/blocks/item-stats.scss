@@ -7,9 +7,7 @@
 }
 
 .item-stats__description {
-  @include fonttitle;
-  font-family: $secondary-font;
+  @include font-paragraph;
   font-size: 12px;
   line-height: 12px;
-  color: $color-text;
 }

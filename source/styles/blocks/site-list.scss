@@ -1,8 +1,12 @@
 //site-list
+.site-list__item {
+  @include list;
+}
+
 .site-list__navigation-link {
-  @include fonttitle;
+  @include link;
+  @include fonttitle;//для подстраховки цвет и font-weight
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
-  color: inherit;
 }

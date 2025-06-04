@@ -1,6 +1,10 @@
+/* stylelint-disable rule-empty-line-before */
 // catalog
 .catalog__heading {
   @include fonttitle;
   font-size: 36px;
   line-height: 36px;
+}
+.catalog__item {
+  @include list;
 }

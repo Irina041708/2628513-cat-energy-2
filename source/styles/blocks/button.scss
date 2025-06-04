@@ -1,6 +1,7 @@
 // button
 .button {
   @include fonttitle;
+  @include link;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
@@ -9,11 +10,12 @@
 }
 
 .button--action {
-  color: $color-text;
-  background-color: $bg-button--action;
+  color: $color-paragraph;
+  background-color: $bg;
 }
 
 .button--current {
+  @include button;
   font-size: 20px;
   line-height: 26px;
 }

@@ -1,1 +1,4 @@
 // social
+.social__item {
+  @include list;
+}

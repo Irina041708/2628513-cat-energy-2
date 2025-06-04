@@ -1,9 +1,15 @@
 // banner
+.banner {
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85) 0% 100%), url("../../images/banner-cat-bg-catalog-mobile@2x.png"), linear-gradient(rgba(79, 78, 83, 1) 0% 100%, rgba(69, 68, 73, 1) 0% 100%);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 100% 100%, 279px 289px, 100% 100%;
+  text-align: center;
+}
+
 .banner__title {
-  @include fonttitle;
-  font-family: $secondary-font;
+  @include font-paragraph;
   font-size: 16px;
   line-height: 20px;
   color: $bg-basis;
-  background-color: rgba(104, 183, 56, 0.85);
 }

@@ -1,8 +1,16 @@
 // stats
+.stats {
+  background-color: $bg-dark;
+}
+
 .stats__heading {
   @include fonttitle;
   font-size: 36px;
   line-height: 40px;
+}
+
+.stats__paragraph {
+  @include font-paragraph;
 }
 
 .stats__description {

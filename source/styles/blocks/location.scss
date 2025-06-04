@@ -1,5 +1,9 @@
 // location
-.location__title {
+.location {
+  background-color: $bg;
+}
+
+.location__header {
   @include fonttitle;
   font-size: 16px;
   line-height: 20px;
@@ -7,9 +11,7 @@
 }
 
 .location__description {
-  @include fonttitle;
-  font-family: $secondary-font;
+  @include font-paragraph;
   font-size: 14px;
   line-height: 20px;
-  color: $color-text;
 }
