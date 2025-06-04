@@ -1,1 +1,9 @@
-// additional-products
+.additional-products__heading {
+  @include fonttitle;
+  font-size: 24px;
+  line-height: 24px;
+}
+
+.additional-products__item {
+  @include list;
+}

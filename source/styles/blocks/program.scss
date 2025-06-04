@@ -6,10 +6,14 @@
   text-transform: uppercase;
 }
 
+.program__paragraph {
+  @include font-paragraph;
+}
+
 .program__link {
   @include fonttitle;
+  @include link;
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
-  color: inherit;
 }

@@ -4,3 +4,11 @@
   font-size: 36px;
   line-height: 40px;
 }
+
+.advantages__item {
+  @include list;
+}
+
+.advantages__paragraph {
+  @include font-paragraph;
+}

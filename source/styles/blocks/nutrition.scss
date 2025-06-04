@@ -1,10 +1,11 @@
 // nutrition
 
 .nutrition {
-  background: linear-gradient(rgba(104, 183, 56, 0.85) 63%, $bg-basis 37%);
-  // background-image: url("../../images/nutrition-img-mobile2@2x.png");
-  text-align: center;
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85) 63%, $bg-basis 37%), url("../../images/nutrition-cat-bg-index-mobile.png@2x.png"), linear-gradient(rgba(79, 78, 83, 1) 0% 100%, rgba(69, 68, 73, 1) 0% 100%);
   background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 100% 100%, 320px 302px, 100% 63%;
+  text-align: center;
 }
 
 .nutrition__heading {
@@ -23,9 +24,7 @@
 }
 
 .nutrition__button {
-  @include fonttitle;
-  background-color: $bg-button;
+  @include link;
   font-size: 16px;
   line-height: 20px;
-  text-transform: uppercase;
 }

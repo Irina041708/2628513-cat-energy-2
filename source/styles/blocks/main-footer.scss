@@ -1,4 +1,8 @@
 // footer.scss
-// .main-footer {
-//   background-color: #ff0000;
-// }
+.main-footer {
+  background-color: $bg;
+}
+
+.main-footer__logo-company {
+  @include link;
+}
