@@ -5,7 +5,7 @@
 
 .page__body {
   @include fonttitle;
-  max-width: $view-port-mobile;
+  // max-width: $view-port-mobile;
   min-height: 100%;
   margin: 0 auto;
   color: $color-basis;
