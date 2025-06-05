@@ -1,8 +1,7 @@
 /* здесь используйте глобальные селекторы img, body, html и так далее */
 *,
 *::before,
-*::after,
-*::placeholder {
+*::after {
   box-sizing: border-box;
 }
 
