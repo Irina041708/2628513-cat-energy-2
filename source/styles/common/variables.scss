@@ -12,11 +12,12 @@ $secondary-font: "Lato", "Arial", sans-serif;
 /* TEXT-COLORS */
 $color-basis: #000000;
 $color-accent: #ffffff;
-$color-paragraph: rgba(68, 68, 68, 1);
-$color-text-heading:rgba(34, 34, 34, 1);
+$color-paragraph: #444444;
+$color-text-heading:#222222;
+
 
 /* BACKGROUND-COLORS  */
 $bg-basis: #ffffff;
-$bg-button:rgba(104, 183, 56, 1);
-$bg: rgba(242, 242, 242, 1);
-$bg-dark:rgba(234, 234, 234, 1);
+$bg-button:#68b738;
+$bg: #f2f2f2;
+$bg-dark:#eaeaea;
