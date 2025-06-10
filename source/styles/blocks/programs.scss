@@ -1,3 +1,15 @@
+// .programs__wrapper {
+//   min-width: $view-port-mobile;
+//   margin: 0 auto;
+// }
+
+.programs__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  // width: 280px;
+}
+
 .programs__item {
   @include list;
   background-color: $bg;
