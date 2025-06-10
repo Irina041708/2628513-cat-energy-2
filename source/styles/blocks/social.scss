@@ -19,7 +19,7 @@
     mask-image: url("../../icons/stack.svg#vk");
     mask-size: 28px 22px;
     mask-repeat: no-repeat;
-    background-color: #666666;
+    background-color: $bg-light;
   }
 }
 
@@ -32,7 +32,7 @@
     mask-image: url("../../icons/stack.svg#youtube");
     mask-size: 28px 22px;
     mask-repeat: no-repeat;
-    background-color: #666666;
+    background-color: $bg-light;
   }
 }
 
@@ -45,7 +45,7 @@
     mask-image: url("../../icons/stack.svg#telegram");
     mask-size: 28px 22px;
     mask-repeat: no-repeat;
-    background-color: #666666;
+    background-color: $bg-light;
   }
 }
 
@@ -55,7 +55,7 @@
 .social__social-link--vk:focus::before,
 .social__social-link--youtube:focus::before,
 .social__social-link--telegram:focus::before {
-  background-color: #68b738;
+  background-color: $bg-button;
 }
 
 .social__social-link--vk:active::before,

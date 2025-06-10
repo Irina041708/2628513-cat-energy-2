@@ -1,1 +1,15 @@
-// slider-stats
+.slider-stats {
+  position: relative;
+}
+
+.slider-stats__button {
+  left: 50%;
+  transform: translate(-50%, 0);
+  position: absolute;
+  z-index: 1;
+}
+
+.slider-stats__img {
+  position: absolute;
+  transform: translate(0, -256px);
+}
