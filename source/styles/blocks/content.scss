@@ -1,6 +1,7 @@
-// content
 .content__link {
   @include link;
+  display: block;
+  padding-bottom: 14px;
 }
 
 .content__heading {
@@ -11,8 +12,14 @@
   color: $color-text-heading;
 }
 
+.content__properties {
+  margin: 0;
+}
+
 .content__property {
   @include font-paragraph;
   font-size: 12px;
   line-height: 16px;
+  display: flex;
+  justify-content: space-between;
 }

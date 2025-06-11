@@ -1,12 +1,15 @@
-// logo
-// .logo {
-//   background-color: #111111;
+.logo {
+  display: flex;
+  flex-direction: row;
+  gap: 56px;
+}
+
+// .logo__logo-text:hover {
+//   // fill: #3e3e3e;
+//   fill: red;
 // }
 
-// .logo:hover::after {
-//   background-color: #3e3e3e;
-// }
-
-// .logo:active {
-//   background-color: #6b6b6b;
+// .logo__logo-text:active {
+//   // fill: #6b6b6b;
+//   fill: red;
 // }

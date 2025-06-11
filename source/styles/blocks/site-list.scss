@@ -1,6 +1,25 @@
-//site-list
+.site-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .site-list__item {
   @include list;
+  width: $view-port-mobile;//посмотри
+  display: flex;
+  position: relative;
+}
+
+.site-list__item::before {
+  position: absolute;
+  left: 0;
+  top: 0;
+  content: "";
+  display: block;
+  width: $view-port-mobile;//посмотри
+  border: 1px solid rgba(230, 230, 230, 1);
 }
 
 .site-list__navigation-link {
@@ -9,4 +28,7 @@
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
+  padding: 22px 0 24px;
+  width: $view-port-mobile;//посмотри
+  text-align: center;
 }

@@ -1,19 +1,44 @@
-/* stylelint-disable @stylistic/indentation */
-// card
-.card__link {
-  @include link;
+.card__wrapper {
+  padding-top: 20px;
+  margin-bottom: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.card__link-header {
+.card__content {
+  width: 140px;
+}
+
+.card__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 40px;
+  width: 100%;
+}
+
+.card__header {
   @include fonttitle;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   color: rgba(17, 17, 17, 1);
+  padding-top: 78px;
+  margin-bottom: 8px;
 }
 
 .card__paragraph {
   @include font-paragraph;
   font-size: 12px;
   line-height: 16px;
+  margin-bottom: 21px;
+}
+
+.card--to--all {
+  text-align: center;
+  background-image: url("../../icons/stack.svg#plus");
+  background-repeat: no-repeat;
+  background-size: 30px 30px;
+  background-position: center 25px;
 }

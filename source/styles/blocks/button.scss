@@ -2,6 +2,7 @@
 .button {
   @include fonttitle;
   @include link;
+  padding: 10px 20px;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
@@ -9,9 +10,31 @@
   background-color: $bg-button;
 }
 
+.button__text {
+  white-space: nowrap;
+  padding: 0 100%;//пересмотри решение чт кнопка реагировала и был перенос текста
+}
+
+.button:hover {
+  background-color: #5eaa2f;
+}
+
+.button:active {
+  background-color: #5eaa2f;
+}
+
+.button__text:active {
+  opacity: 0.3;
+}
+
 .button--action {
   color: $color-paragraph;
   background-color: $bg;
+}
+
+.button--action:hover,
+.button--action:active {
+  background-color: #ebebeb;
 }
 
 .button--current {
