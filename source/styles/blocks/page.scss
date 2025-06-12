@@ -2,7 +2,7 @@
   height: 100%;
 }
 
-@media (min-width: $view-port-mobile) and (max-width: ($view-port-tablet - 1)) {
+@media (min-width: $view-port-mobile) {
   .page__body {
     @include fonttitle;
     min-width: $view-port-mobile;

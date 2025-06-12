@@ -1,4 +1,4 @@
-@media (min-width: $view-port-mobile) and (max-width: ($view-port-tablet - 1)) {
+@media (min-width: $view-port-mobile) {
   .programs__wrapper {
     width: $view-port-mobile;
     padding: 0 20px;

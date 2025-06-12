@@ -1,4 +1,4 @@
-@media (min-width: $view-port-mobile) and (max-width: ($view-port-tablet - 1)) {
+@media (min-width: $view-port-mobile) {
   .nutrition {
     background-image: linear-gradient(rgba(104, 183, 56, 0.85) 63%, $bg-basis 37%), url("../../images/nutrition-cat-bg-index-mobile@2x.jpg"), linear-gradient(#4f4f54 0% 100%, #434348 0% 100%);
     background-repeat: no-repeat;

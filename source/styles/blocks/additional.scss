@@ -1,4 +1,4 @@
-@media (min-width: $view-port-mobile) and (max-width: ($view-port-tablet - 1)) {
+@media (min-width: $view-port-mobile) {
   .additional__title {
     @include fonttitle;
     font-size: 16px;

@@ -1,4 +1,4 @@
-@media (min-width: $view-port-mobile) and (max-width: ($view-port-tablet - 1)) {
+@media (min-width: $view-port-mobile) {
   .site-list {
     display: none;
     position: relative;
@@ -60,3 +60,16 @@
     outline: 2px solid $bg-button;
   }
 }
+// @media (min-width: $view-port-tablet) and (max-width: ($view-port-desktop - 1)) {
+//   .site-list {
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: center;
+//     align-items: center;
+//   }
+// }
+
+
+// @media (min-width: $view-port-desktop) {
+
+// }
