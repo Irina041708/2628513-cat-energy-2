@@ -1,34 +1,62 @@
-.site-list {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
+@media (min-width: $view-port-mobile) and (max-width: ($view-port-tablet - 1)) {
+  .site-list {
+    display: none;
+    position: relative;
+    // display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
-.site-list__item {
-  @include list;
-  width: $view-port-mobile;//посмотри
-  display: flex;
-  position: relative;
-}
+  .site-list__item {
+    @include list;
+    display: flex;
+    position: relative;
+  }
 
-.site-list__item::before {
-  position: absolute;
-  left: 0;
-  top: 0;
-  content: "";
-  display: block;
-  width: $view-port-mobile;//посмотри
-  border: 1px solid rgba(230, 230, 230, 1);
-}
+  .site-list__navigation-link::before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: "";
+    display: block;
+    width: $view-port-mobile;//посмотри
+    outline: 1px solid #e6e6e6;
+  }
 
-.site-list__navigation-link {
-  @include link;
-  @include fonttitle;//для подстраховки цвет и font-weight
-  font-size: 20px;
-  line-height: 20px;
-  text-transform: uppercase;
-  padding: 22px 0 24px;
-  width: $view-port-mobile;//посмотри
-  text-align: center;
+  .site-list__navigation-link {
+    @include link;
+    @include fonttitle;//для подстраховки цвет и font-weight
+    font-size: 20px;
+    line-height: 20px;
+    text-transform: uppercase;
+    padding: 22px 0 24px;
+    width: $view-port-mobile;//посмотри
+    text-align: center;
+  }
+
+  .site-list__navigation-link[aria-current="page"]::after,
+  .site-list__navigation-link--current[aria-current="page"]::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 168px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 8px;
+    height: 0;
+  }
+
+  .site-list__navigation-link[aria-current="page"]:hover {
+    opacity: 0.6;
+  }
+
+  .site-list__navigation-link[aria-current="page"]:focus-visible {
+    opacity: 0.3;
+  }
+
+  .site-list__navigation-link[aria-current="page"]:active::after,
+  .site-list__navigation-link--current[aria-current="page"]:active::after {
+    outline: 2px solid $bg-button;
+  }
 }

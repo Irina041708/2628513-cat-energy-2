@@ -1,58 +1,60 @@
-.button-slider {
-  position: relative;
-  display: block;
-  width: 4px;
-  height: 256px;
-  border-radius: 2px;
-  background-color: $bg-light;
-  border: none;
-  padding: 0;
-}
+@media (min-width: $view-port-mobile) and (max-width: ($view-port-tablet - 1)) {
+  .button-slider {
+    position: relative;
+    display: block;
+    width: 4px;
+    height: 256px;
+    border-radius: 2px;
+    background-color: $bg-light;
+    border: none;
+    padding: 0;
+  }
 
-.button-slider::after {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  content: "";
-  display: block;
-  width: 40px;
-  height: 40px;
-  border-radius: 20px;
-  border: 2px solid $bg-light;
-  background-color: $bg-basis;
-}
+  .button-slider::after {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    content: "";
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    border: 2px solid $bg-light;
+    background-color: $bg-basis;
+  }
 
-.button-slider::before {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1;
-  content: "";
-  display: block;
-  width: 24px;
-  height: 18px;
-  mask-image: url("../../icons/stack.svg#button-slider");
-  mask-size: 24px 18px;
-  mask-repeat: no-repeat;
-  background-color: $bg-light;
-}
+  .button-slider::before {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    content: "";
+    display: block;
+    width: 24px;
+    height: 18px;
+    mask-image: url("../../icons/stack.svg#button-slider");
+    mask-size: 24px 18px;
+    mask-repeat: no-repeat;
+    background-color: $bg-light;
+  }
 
-.button-slider:hover,
-.button-slider:hover::before {
-  background-color: $bg-button;
-}
+  .button-slider:hover,
+  .button-slider:hover::before {
+    background-color: $bg-button;
+  }
 
-.button-slider:hover::after {
-  border: 2px solid $bg-button;
-}
+  .button-slider:hover::after {
+    border: 2px solid $bg-button;
+  }
 
-.button-slider:active,
-.button-slider:active::before {
-  opacity: 0.6;
-}
+  .button-slider:active,
+  .button-slider:active::before {
+    opacity: 0.6;
+  }
 
-.button-slider:active::after {
-  opacity: 0.6;
+  .button-slider:active::after {
+    opacity: 0.6;
+  }
 }

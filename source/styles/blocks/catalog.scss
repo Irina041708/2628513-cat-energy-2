@@ -1,20 +1,22 @@
+@media (min-width: $view-port-mobile) and (max-width: ($view-port-tablet - 1)) {
+  .catalog__wrapper {
+    width: $view-port-mobile;
+    padding: 0 20px;
+  }
 
-// .catalog__wrapper {
-//   padding: 0 20px;
-// }
+  .catalog__heading {
+    @include fonttitle;
+    font-size: 36px;
+    line-height: 36px;
+    padding-top: 27px;
+    margin-bottom: 41px;
+  }
 
-.catalog__heading {
-  @include fonttitle;
-  font-size: 36px;
-  line-height: 36px;
-  padding-top: 27px;
-  margin-bottom: 41px;
-}
+  .catalog__list {
+    @include list;
+  }
 
-.catalog__list {
-  @include list;
-}
-
-.catalog__item {
-  margin-bottom: 25px;
+  .catalog__item {
+    margin-bottom: 25px;
+  }
 }

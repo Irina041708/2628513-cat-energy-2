@@ -1,30 +1,37 @@
-// .main-nav__wrapper {
-//   width: $view-port-mobile;
-// }
+@media (min-width: $view-port-mobile) and (max-width: ($view-port-tablet - 1)) {
+  .main-nav__list {
+    @include list;
+  }
 
-.main-nav__list {
-  @include list;
+  .main-nav__toggle--active {
+    @include button;
+    background-color: $bg-basis;
+    position: absolute;
+    right: 21px;
+    top: 20px;
+  }
+
+  .main-nav__toggle--active::before {
+    content: "";
+    display: block;
+    width: 24px;
+    height: 24px;
+    mask-image: url("../../icons/stack.svg#main-nav__toggle");
+    mask-repeat: no-repeat;
+    mask-size: 24px 24px;
+    background-color: $bg-basis-dark;
+  }
 }
 
-.main-nav__toggle {
-  position: absolute;
-  right: 21px;
-  top: 20px;
+@media (min-width: $view-port-tablet) and (max-width: ($view-port-desktop - 1)) {
+  .main-nav__toggle {
+    display: none;
+  }
 }
 
-.main-nav__toggle--active {
-  @include button;
-  background-color: $bg-basis;
-}
 
-.main-nav__toggle--active::before {
-  position: absolute;
-  content: "";
-  display: block;
-  width: 24px;
-  height: 24px;
-  mask-image: url("../../icons/stack.svg#main-nav__toggle");
-  mask-repeat: no-repeat;
-  mask-size: 24px 24px;
-  background-color: $bg-basis-dark;
+@media (min-width: $view-port-desktop) {
+  .main-nav__toggle {
+    display: none;
+  }
 }

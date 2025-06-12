@@ -1,16 +1,20 @@
-// footer.scss
-.main-footer {
-  background-color: $bg;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  gap: 40px;
-}
+@media (min-width: $view-port-mobile) and (max-width: ($view-port-tablet - 1)) {
+  .main-footer {
+    background-color: $bg;
+  }
 
-.main-footer__logo-company {
-  @include link;
+  .main-footer__wrapper {
+    width: $view-port-mobile;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 40px;
+  }
+
+  .main-footer__logo-company {
+    @include link;
+  }
 }

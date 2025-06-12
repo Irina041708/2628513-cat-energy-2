@@ -1,17 +1,16 @@
-// .main-header__wrapper {
-//   width: $view-port-mobile;
-// }
+@media (min-width: $view-port-mobile) and (max-width: ($view-port-tablet - 1)) {
+  .main-header__wrapper {
+    width: $view-port-mobile;
+    padding: 0 20px;
+  }
 
-.main-header {
-  padding-top: 13px;
-  margin: 0 21px 0 20px;
-  position: relative;
+  .main-header {
+    padding-top: 13px;
+    position: relative;//спозиционировали кнопку относительно этого элемента
+  }
+
+  .main-header__logo {
+    margin-bottom: 14px;
+    width: 250px;
+  }
 }
-
-.main-header__logo {
-  margin-bottom: 14px;
-}
-
-// .main-header__main-nav {
-//   margin-bottom: 24px;
-// }

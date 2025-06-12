@@ -1,65 +1,66 @@
-// social
-.social {
-  @include list;
-  display: flex;
-  align-items: center;
-  gap: 24px;
-}
-
-.social__item {
-  @include list;
-}
-
-.social__social-link--vk {
-  &::before {
-    content: "";
-    display: block;
-    width: 28px;
-    height: 22px;
-    mask-image: url("../../icons/stack.svg#vk");
-    mask-size: 28px 22px;
-    mask-repeat: no-repeat;
-    background-color: $bg-light;
+@media (min-width: $view-port-mobile) and (max-width: ($view-port-tablet - 1)) {
+  .social {
+    @include list;
+    display: flex;
+    align-items: center;
+    gap: 24px;
   }
-}
 
-.social__social-link--youtube {
-  &::before {
-    content: "";
-    display: block;
-    width: 28px;
-    height: 22px;
-    mask-image: url("../../icons/stack.svg#youtube");
-    mask-size: 28px 22px;
-    mask-repeat: no-repeat;
-    background-color: $bg-light;
+  .social__item {
+    @include list;
   }
-}
 
-.social__social-link--telegram {
-  &::before {
-    content: "";
-    display: block;
-    width: 28px;
-    height: 22px;
-    mask-image: url("../../icons/stack.svg#telegram");
-    mask-size: 28px 22px;
-    mask-repeat: no-repeat;
-    background-color: $bg-light;
+  .social__social-link--vk {
+    &::before {
+      content: "";
+      display: block;
+      width: 28px;
+      height: 22px;
+      mask-image: url("../../icons/stack.svg#vk");
+      mask-size: 28px 22px;
+      mask-repeat: no-repeat;
+      background-color: $bg-light;
+    }
   }
-}
 
-.social__social-link--vk:hover::before,
-.social__social-link--youtube:hover::before,
-.social__social-link--telegram:hover::before,
-.social__social-link--vk:focus::before,
-.social__social-link--youtube:focus::before,
-.social__social-link--telegram:focus::before {
-  background-color: $bg-button;
-}
+  .social__social-link--youtube {
+    &::before {
+      content: "";
+      display: block;
+      width: 28px;
+      height: 22px;
+      mask-image: url("../../icons/stack.svg#youtube");
+      mask-size: 28px 22px;
+      mask-repeat: no-repeat;
+      background-color: $bg-light;
+    }
+  }
 
-.social__social-link--vk:active::before,
-.social__social-link--youtube:active::before,
-.social__social-link--telegram:active::before {
-  opacity: 0.3;
+  .social__social-link--telegram {
+    &::before {
+      content: "";
+      display: block;
+      width: 28px;
+      height: 22px;
+      mask-image: url("../../icons/stack.svg#telegram");
+      mask-size: 28px 22px;
+      mask-repeat: no-repeat;
+      background-color: $bg-light;
+    }
+  }
+
+  .social__social-link--vk:hover::before,
+  .social__social-link--youtube:hover::before,
+  .social__social-link--telegram:hover::before,
+  .social__social-link--vk:focus::before,
+  .social__social-link--youtube:focus::before,
+  .social__social-link--telegram:focus::before {
+    background-color: $bg-button;
+  }
+
+  .social__social-link--vk:active::before,
+  .social__social-link--youtube:active::before,
+  .social__social-link--telegram:active::before {
+    opacity: 0.3;
+  }
 }

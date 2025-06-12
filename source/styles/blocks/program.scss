@@ -1,83 +1,84 @@
-//program
-.program {
-  padding-top: 30px;
-  padding-bottom: 18px;
-}
+@media (min-width: $view-port-mobile) and (max-width: ($view-port-tablet - 1)) {
+  .program {
+    padding-top: 30px;
+    padding-bottom: 18px;
+  }
 
-.program--first {
-  background-image: url("../../icons/stack.svg#program1");
-  background-size: 50px 53px;
-  background-position: 20px 21px;
-  background-repeat: no-repeat;
-}
+  .program--first {
+    background-image: url("../../icons/stack.svg#program1");
+    background-size: 50px 53px;
+    background-position: 20px 21px;
+    background-repeat: no-repeat;
+  }
 
-.program--second {
-  background-image: url("../../icons/stack.svg#program2");
-  background-size: 67px 50px;
-  background-position: 13px 24px;
-  background-repeat: no-repeat;
-}
+  .program--second {
+    background-image: url("../../icons/stack.svg#program2");
+    background-size: 67px 50px;
+    background-position: 13px 24px;
+    background-repeat: no-repeat;
+  }
 
-.program__heading {
-  @include fonttitle;
-  font-size: 24px;
-  line-height: 37px;
-  text-transform: uppercase;
-  padding-left: 90px;
-  padding-right: 33px;
-  margin-bottom: 29px;
-}
+  .program__heading {
+    @include fonttitle;
+    font-size: 24px;
+    line-height: 37px;
+    text-transform: uppercase;
+    padding-left: 90px;
+    padding-right: 33px;
+    margin-bottom: 29px;
+  }
 
-.program__heading--second {
-  padding-left: 91px;
-}
+  .program__heading--second {
+    padding-left: 91px;
+  }
 
-.program__paragraph {
-  @include font-paragraph;
-  padding-left: 20px;
-  padding-right: 33px;
-  margin-bottom: 15px;
-}
+  .program__paragraph {
+    @include font-paragraph;
+    padding-left: 20px;
+    padding-right: 33px;
+    margin-bottom: 15px;
+  }
 
-.program__paragraph::after {
-  content: "";
-  display: block;
-  width: 240px;
-  border: 1px solid#d9d9d9;
-  margin: 23px auto 15px;
-}
+  .program__paragraph::after {
+    content: "";
+    display: block;
+    width: 240px;
+    border: 1px solid#d9d9d9;
+    margin: 23px auto 15px;
+  }
 
-.program__link {
-  @include fonttitle;
-  @include link;
-  font-size: 16px;
-  line-height: 16px;
-  text-transform: uppercase;
-  padding-left: 20px;
-  padding-right: 33px;
-  margin-bottom: 18px;
-  display: flex;
-  align-items: center;
-}
+  .program__link {
+    @include fonttitle;
+    @include link;
+    font-size: 16px;
+    line-height: 16px;
+    text-transform: uppercase;
+    padding-left: 20px;
+    padding-right: 33px;
+    margin-bottom: 18px;
+    display: flex;
+    align-items: center;
+  }
 
-.program__link::after {
-  content: "";
-  display: block;
-  width: 139px;
-  height: 24px;
-  mask-image: url("../../icons/stack.svg#arrow");
-  mask-size: 24px 12px;
-  mask-repeat: no-repeat;
-  mask-position: 15px 7px;
-  background-color: $bg-basis-dark;
-}
+  .program__link::after {
+    content: "";
+    display: block;
+    width: 139px;
+    height: 24px;
+    mask-image: url("../../icons/stack.svg#arrow");
+    mask-size: 24px 12px;
+    mask-repeat: no-repeat;
+    mask-position: 15px 7px;
+    background-color: $bg-basis-dark;
+  }
 
-.program__link:hover,
-.program__link:hover::after {
-  mask-size: 32px 10px;
-}
+  .program__link:hover,
+  .program__link:hover::after {
+    mask-size: 32px 10px;
+  }
 
-.program__link:active,
-.program__link:active::after {
-  opacity: 0.3;
+  .program__link:active,
+  .program__link:active::after {
+    opacity: 0.3;
+  }
 }

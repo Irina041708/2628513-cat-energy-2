@@ -1,13 +1,35 @@
-//page
 .page {
   height: 100%;
 }
 
-.page__body {
-  @include fonttitle;
-  max-width: $view-port-mobile;
-  min-height: 100%;
-  margin: 0 auto;
-  color: $color-basis;
-  background-color: $bg-basis;
+@media (min-width: $view-port-mobile) and (max-width: ($view-port-tablet - 1)) {
+  .page__body {
+    @include fonttitle;
+    min-width: $view-port-mobile;
+    min-height: 100%;
+    margin: 0 auto;
+    color: $color-basis;
+    background-color: $bg-basis;
+  }
+}
+
+// .container {
+//   width: 280px;
+//   padding: 0 20px;
+// }
+
+
+@media (min-width: $view-port-tablet) and (max-width: ($view-port-desktop - 1)) {
+  .container {
+    width: 708px;
+    padding: 0 30px;
+  }
+}
+
+
+@media (min-width: $view-port-desktop) {
+  .container {
+    width: 1220px;
+    padding: 0 110px;
+  }
 }

@@ -1,35 +1,37 @@
-.nutrition {
-  background-image: linear-gradient(rgba(104, 183, 56, 0.85) 63%, $bg-basis 37%), url("../../images/nutrition-cat-bg-index-mobile@2x.jpg"), linear-gradient(#4f4f54 0% 100%, #434348 0% 100%);
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: 100% 100%, 320px 302px, 100% 63%;
-  text-align: center;
-}
+@media (min-width: $view-port-mobile) and (max-width: ($view-port-tablet - 1)) {
+  .nutrition {
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85) 63%, $bg-basis 37%), url("../../images/nutrition-cat-bg-index-mobile@2x.jpg"), linear-gradient(#4f4f54 0% 100%, #434348 0% 100%);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: 100% 100%, 320px 302px, 100% 63%;
+    text-align: center;
+  }
 
-.nutrition__heading {
-  @include fonttitle;
-  font-size: 36px;
-  line-height: 40px;
-  color: $color-accent;
-  padding-top: 27px;
-  margin-bottom: 25px;
-}
+  .nutrition__heading {
+    @include fonttitle;
+    font-size: 36px;
+    line-height: 40px;
+    color: $color-accent;
+    padding-top: 27px;
+    margin-bottom: 25px;
+  }
 
-.nutrition__paragraph {
-  @include fonttitle;
-  font-size: 14px;
-  line-height: 14px;
-  text-transform: uppercase;
-  color: $color-accent;
-  margin-bottom: 29px;
-}
+  .nutrition__paragraph {
+    @include fonttitle;
+    font-size: 14px;
+    line-height: 14px;
+    text-transform: uppercase;
+    color: $color-accent;
+    margin-bottom: 29px;
+  }
 
-.nutrition__button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 40px;
-  width: 100%;
-  // margin-top: 3px;
-  // margin-bottom: 20px;
+  .nutrition__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 40px;
+    width: 100%;
+    // margin-top: 3px;
+    // margin-bottom: 20px;
+  }
 }

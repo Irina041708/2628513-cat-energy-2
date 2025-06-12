@@ -1,7 +1,26 @@
-.logo {
-  display: flex;
-  flex-direction: row;
-  gap: 56px;
+@media (min-width: $view-port-mobile) and (max-width: ($view-port-tablet - 1)) {
+  .logo {
+    width: 250px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 56px;
+  }
+
+  .logo--modifier {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo__logo-text {
+    width: 101px;
+    height: 18px;
+  }
+
+  .text-logo {
+    width: 128px;
+    height: 24px;
+  }
 }
 
 // .logo__logo-text:hover {
@@ -13,3 +32,25 @@
 //   // fill: #6b6b6b;
 //   fill: red;
 // }
+
+@media (min-width: $view-port-tablet) and (max-width: ($view-port-desktop - 1)) {
+  .logo {
+    width: 174px;
+    height: 50px;
+    gap: 13px;
+  }
+}
+
+
+@media (min-width: $view-port-desktop) {
+  .logo {
+    width: 202px;
+    height: 59px;
+    gap: 14px;
+  }
+
+  .logo__logo-text {
+    width: 118px;
+    height: 21px;
+  }
+}
