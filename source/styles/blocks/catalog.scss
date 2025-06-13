@@ -17,3 +17,15 @@
 .catalog__item {
   margin-bottom: 25px;
 }
+
+@media (min-width: $view-port-tablet) and (max-width: ($view-port-desktop - 1)) {
+  .catalog__wrapper {
+    width: $view-port-tablet;
+  }
+}
+
+@media (min-width: $view-port-desktop) {
+  .catalog__wrapper {
+    width: $view-port-desktop;
+  }
+}

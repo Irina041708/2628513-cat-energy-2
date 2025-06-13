@@ -76,3 +76,15 @@
   margin-bottom: 20px;
   text-align: center;
 }
+
+@media (min-width: $view-port-tablet) and (max-width: ($view-port-desktop - 1)) {
+  .stats__wrapper {
+    width: $view-port-tablet;
+  }
+}
+
+@media (min-width: $view-port-desktop) {
+  .stats__wrapper {
+    width: $view-port-desktop;
+  }
+}

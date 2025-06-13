@@ -56,3 +56,15 @@
   background-size: 60px 60px;
   background-repeat: no-repeat;
 }
+
+@media (min-width: $view-port-tablet) and (max-width: ($view-port-desktop - 1)) {
+  .advantages__wrapper {
+    width: $view-port-tablet;
+  }
+}
+
+@media (min-width: $view-port-desktop) {
+  .advantages__wrapper {
+    width: $view-port-desktop;
+  }
+}

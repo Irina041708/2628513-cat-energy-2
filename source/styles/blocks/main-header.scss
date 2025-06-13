@@ -14,3 +14,15 @@
   width: 240px;
   min-height: 38px;
 }
+
+@media (min-width: $view-port-tablet) and (max-width: ($view-port-desktop - 1)) {
+  .main-header {
+    width: $view-port-tablet;
+  }
+}
+
+@media (min-width: $view-port-desktop) {
+  .main-header {
+    width: $view-port-desktop;
+  }
+}

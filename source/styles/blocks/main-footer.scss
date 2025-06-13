@@ -18,3 +18,15 @@
 .main-footer__logo-company {
   @include link;
 }
+
+@media (min-width: $view-port-tablet) and (max-width: ($view-port-desktop - 1)) {
+  .main-footer {
+    width: $view-port-tablet;
+  }
+}
+
+@media (min-width: $view-port-desktop) {
+  .main-footer {
+    width: $view-port-desktop;
+  }
+}

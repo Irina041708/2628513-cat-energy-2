@@ -15,3 +15,15 @@
   @include list;
   background-color: $bg;
 }
+
+@media (min-width: $view-port-tablet) and (max-width: ($view-port-desktop - 1)) {
+  .programs__wrapper {
+    width: $view-port-tablet;
+  }
+}
+
+@media (min-width: $view-port-desktop) {
+  .programs__wrapper {
+    width: $view-port-desktop;
+  }
+}
