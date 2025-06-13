@@ -1,27 +1,27 @@
-@media (min-width: $view-port-mobile) {
-  .content__link {
-    @include link;
-    display: block;
-    padding-bottom: 14px;
-  }
+.content__link {
+  @include link;
+  display: block;
+  padding-bottom: 14px;
+  width: 76px;
+  min-height: 41px;
+}
 
-  .content__heading {
-    @include fonttitle;
-    font-size: 16px;
-    line-height: 20px;
-    text-transform: uppercase;
-    color: $color-text-heading;
-  }
+.content__heading {
+  @include fonttitle;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: $color-text-heading;
+}
 
-  .content__properties {
-    margin: 0;
-  }
+.content__properties {
+  margin: 0;
+}
 
-  .content__property {
-    @include font-paragraph;
-    font-size: 12px;
-    line-height: 16px;
-    display: flex;
-    justify-content: space-between;
-  }
+.content__property {
+  @include font-paragraph;
+  font-size: 12px;
+  line-height: 16px;
+  display: flex;
+  justify-content: space-between;
 }

@@ -1,32 +1,29 @@
-@media (min-width: $view-port-mobile) {
-  .subscribe__wrapper {
-    width: $view-port-mobile;
-    padding: 0 20px;
-  }
+.subscribe__wrapper {
+  @include wrapper-center;
+}
 
-  .subscribe {
-    padding-top: 40px;
-    padding-bottom: 40px;
-  }
+.subscribe {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
 
-  .subscribe__heading {
-    @include fonttitle;
-    font-size: 24px;
-    line-height: 24px;
-    margin-bottom: 32px;
-  }
+.subscribe__heading {
+  @include fonttitle;
+  font-size: 24px;
+  line-height: 24px;
+  margin-bottom: 32px;
+}
 
-  .subscribe__title {
-    @include fonttitle;
-    font-size: 16px;
-    line-height: 24px;
-    margin-bottom: 24px;
-    text-align: center;
-  }
+.subscribe__title {
+  @include fonttitle;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 24px;
+  text-align: center;
+}
 
-  .form-subscribe {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-  }
+.form-subscribe {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }

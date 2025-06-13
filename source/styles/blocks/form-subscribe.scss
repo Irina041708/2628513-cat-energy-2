@@ -1,9 +1,7 @@
-@media (min-width: $view-port-mobile) {
-  .form-subscribe__field {
-    @include fonttitle;
-    color: $color-paragraph;
-    font-size: 20px;
-    line-height: 100%;
-    text-transform: uppercase;
-  }
+.form-subscribe__field {
+  @include fonttitle;
+  color: $color-paragraph;
+  font-size: 20px;
+  line-height: 100%;
+  text-transform: uppercase;
 }

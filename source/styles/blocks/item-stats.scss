@@ -1,14 +1,12 @@
-@media (min-width: $view-port-mobile) {
-  .item-stats__number {
-    @include fonttitle;
-    font-size: 24px;
-    line-height: 24px;
-    text-transform: uppercase;
-  }
+.item-stats__number {
+  @include fonttitle;
+  font-size: 24px;
+  line-height: 24px;
+  text-transform: uppercase;
+}
 
-  .item-stats__description {
-    @include font-paragraph;
-    font-size: 12px;
-    line-height: 12px;
-  }
+.item-stats__description {
+  @include font-paragraph;
+  font-size: 12px;
+  line-height: 12px;
 }

@@ -1,37 +1,34 @@
-@media (min-width: $view-port-mobile) {
-  .logo {
-    width: 250px;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    gap: 56px;
-  }
-
-  .logo--modifier {
-    justify-content: center;
-    align-items: center;
-  }
-
-  .logo__logo-text {
-    width: 101px;
-    height: 18px;
-  }
-
-  .text-logo {
-    width: 128px;
-    height: 24px;
-  }
+.logo {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
 }
 
-// .logo__logo-text:hover {
-//   // fill: #3e3e3e;
-//   fill: red;
-// }
+.logo--modifier {
+  justify-content: center;
+  align-items: center;
+}
 
-// .logo__logo-text:active {
-//   // fill: #6b6b6b;
-//   fill: red;
-// }
+.logo__logo-img {
+  margin-right: 36px;
+}
+
+.logo__logo-text {
+  width: 101px;
+  height: 18px;
+}
+
+.logo__logo-img:not(:first-child):not(:last-child),
+.logo__logo-text:not(:first-child):not(:last-child) {
+  margin-right: 10px;
+}
+
+.logo__logo-text--modifier {
+  width: 128px;
+  height: 24px;
+}
 
 @media (min-width: $view-port-tablet) and (max-width: ($view-port-desktop - 1)) {
   .logo {

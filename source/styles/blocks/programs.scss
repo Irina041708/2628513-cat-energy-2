@@ -1,20 +1,17 @@
-@media (min-width: $view-port-mobile) {
-  .programs__wrapper {
-    width: $view-port-mobile;
-    padding: 0 20px;
-  }
+.programs__wrapper {
+  @include wrapper-center;
+}
 
-  .programs__list {
-    @include list;
-    display: flex;
-    flex-direction: column;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    gap: 20px;
-  }
+.programs__list {
+  @include list;
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  gap: 20px;
+}
 
-  .programs__item {
-    @include list;
-    background-color: $bg;
-  }
+.programs__item {
+  @include list;
+  background-color: $bg;
 }

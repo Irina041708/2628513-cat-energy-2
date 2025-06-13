@@ -1,29 +1,27 @@
-@media (min-width: $view-port-mobile) {
-  .location {
-    background-color: $bg;
-  }
+.location {
+  background-color: $bg;
+}
 
-  .location__wrapper {
-    padding: 26px 20px;
-    display: flex;
-    justify-content: space-between;
-    background-color: $bg-basis;
-  }
+.location__wrapper {
+  padding: 26px 20px;
+  display: flex;
+  justify-content: space-between;
+  background-color: $bg-basis;
+}
 
-  .location__wrapper--modifier {
-    background-color: $bg;
-  }
+.location__wrapper--modifier {
+  background-color: $bg;
+}
 
-  .location__header {
-    @include fonttitle;
-    font-size: 16px;
-    line-height: 20px;
-    text-transform: uppercase;
-  }
+.location__header {
+  @include fonttitle;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
 
-  .location__description {
-    @include font-paragraph;
-    font-size: 14px;
-    line-height: 20px;
-  }
+.location__description {
+  @include font-paragraph;
+  font-size: 14px;
+  line-height: 20px;
 }

@@ -1,22 +1,19 @@
-@media (min-width: $view-port-mobile) {
-  .catalog__wrapper {
-    width: $view-port-mobile;
-    padding: 0 20px;
-  }
+.catalog__wrapper {
+  @include wrapper-center;
+}
 
-  .catalog__heading {
-    @include fonttitle;
-    font-size: 36px;
-    line-height: 36px;
-    padding-top: 27px;
-    margin-bottom: 41px;
-  }
+.catalog__heading {
+  @include fonttitle;
+  font-size: 36px;
+  line-height: 36px;
+  padding-top: 27px;
+  margin-bottom: 41px;
+}
 
-  .catalog__list {
-    @include list;
-  }
+.catalog__list {
+  @include list;
+}
 
-  .catalog__item {
-    margin-bottom: 25px;
-  }
+.catalog__item {
+  margin-bottom: 25px;
 }

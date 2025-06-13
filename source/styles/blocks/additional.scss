@@ -1,28 +1,26 @@
-@media (min-width: $view-port-mobile) {
-  .additional__title {
-    @include fonttitle;
-    font-size: 16px;
-    line-height: 16px;
-    text-transform: uppercase;
-    color: $color-text-heading;
-    padding-top: 13px;
-    margin-bottom: 13px;
-  }
+.additional__title {
+  @include fonttitle;
+  font-size: 16px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: $color-text-heading;
+  padding-top: 13px;
+  margin-bottom: 13px;
+}
 
-  .additional__list {
-    @include font-paragraph;
-    font-size: 14px;
-    line-height: 14px;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 15px;
-  }
+.additional__list {
+  @include font-paragraph;
+  font-size: 14px;
+  line-height: 14px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
 
-  .additional__button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 40px;
-    width: 100%;
-  }
+.additional__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 40px;
+  width: 100%;
 }

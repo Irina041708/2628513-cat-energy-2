@@ -1,27 +1,35 @@
-@media (min-width: $view-port-mobile) {
-  .main-nav__list {
-    @include list;
-  }
-
-  .main-nav__toggle--active {
-    @include button;
-    background-color: $bg-basis;
-    position: absolute;
-    right: 21px;
-    top: 20px;
-  }
-
-  .main-nav__toggle--active::before {
-    content: "";
-    display: block;
-    width: 24px;
-    height: 24px;
-    mask-image: url("../../icons/stack.svg#main-nav__toggle");
-    mask-repeat: no-repeat;
-    mask-size: 24px 24px;
-    background-color: $bg-basis-dark;
-  }
+.mai-nav {
+  width: $view-port-mobile;
 }
+
+.main-nav__list {
+  @include list;
+}
+
+.main-nav__toggle {
+  @include button;
+  padding: 0;
+}
+
+.main-nav__toggle--active {
+  @include button;
+  background-color: $bg-basis;
+  position: absolute;
+  right: 21px;
+  top: 20px;
+}
+
+.main-nav__toggle--active::before {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  mask-image: url("../../icons/stack.svg#main-nav__toggle");
+  mask-repeat: no-repeat;
+  mask-size: 24px 24px;
+  background-color: $bg-basis-dark;
+}
+
 
 @media (min-width: $view-port-tablet) and (max-width: ($view-port-desktop - 1)) {
   .main-nav__toggle {

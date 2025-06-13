@@ -1,34 +1,32 @@
-@media (min-width: $view-port-mobile) {
-  .logo-company {
-    display: flex;
-    align-items: center;
-    gap: 140px;
-  }
+.logo-company {
+  display: flex;
+  align-items: center;
+  gap: 140px;
+}
 
-  .logo-company::after {
-    content: "";
-    display: block;
-    width: 27px;
-    height: 34px;
-    mask-image: url("../../icons/stack.svg#logo-html__img");
-    mask-size: 27px 34px;
-    mask-repeat: no-repeat;
-    background-color: $bg-light;
-  }
+.logo-company::after {
+  content: "";
+  display: block;
+  width: 27px;
+  height: 34px;
+  mask-image: url("../../icons/stack.svg#logo-html__img");
+  mask-size: 27px 34px;
+  mask-repeat: no-repeat;
+  background-color: $bg-light;
+}
 
-  .logo-company__text {
-    @include font-paragraph;
-    font-size: 16px;
-    line-height: 20px;
-  }
+.logo-company__text {
+  @include font-paragraph;
+  font-size: 16px;
+  line-height: 20px;
+}
 
-  .logo-company:hover::after,
-  .logo-company:focus::after {
-    background-color: #68b738;
-  }
+.logo-company:hover::after,
+.logo-company:focus::after {
+  background-color: #68b738;
+}
 
-  .logo-company:active,
-  .logo-company:active::after {
-    opacity: 0.3;
-  }
+.logo-company:active,
+.logo-company:active::after {
+  opacity: 0.3;
 }
