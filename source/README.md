@@ -312,3 +312,15 @@
 ```
 
 Таким образом, вы можете удобно организовать и внедрить сторонние библиотеки в ваш проект, сохраняя их структуру в папке `source/vendor/`.
+
+
+
+
+
+@media (min-width: $view-port-tablet) and (max-width: ($view-port-desktop - 1)) {
+
+}
+
+@media (min-width: $view-port-desktop) {
+
+}

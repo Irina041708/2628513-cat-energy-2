@@ -35,3 +35,15 @@
   min-height: 40px;
   width: 100%;
 }
+
+@media (min-width: $view-port-tablet) and (max-width: ($view-port-desktop - 1)) {
+  .nutrition__wrapper {
+    width: $view-port-tablet;
+  }
+}
+
+@media (min-width: $view-port-desktop) {
+  .nutrition__wrapper {
+    width: $view-port-desktop;
+  }
+}

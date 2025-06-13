@@ -4,3 +4,19 @@
   width: $view-port-mobile;
   margin: 0 auto;
 }
+
+@media (min-width: $view-port-tablet) and (max-width: ($view-port-desktop - 1)) {
+  .main__nutrition,
+  .main__stats,
+  .main__location {
+    width: $view-port-tablet;
+  }
+}
+
+@media (min-width: $view-port-desktop) {
+  .main__nutrition,
+  .main__stats,
+  .main__location {
+    width: $view-port-desktop;
+  }
+}
