@@ -5,6 +5,13 @@
   box-sizing: border-box;
 }
 
+*:hover,
+*:active,
+*:focus,
+*:focus-within {
+  transition: background-color 0.2s, color 0.2s, border 0.2s, opacity 0.2s;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;

@@ -10,6 +10,7 @@
 }
 
 @mixin fonttitle {
+  margin: 0;//добавила после проверки преподом
   font-family: $primary-font;
   font-weight: 400;
   font-style: normal;
@@ -17,6 +18,7 @@
 }
 
 @mixin font-paragraph {
+  margin: 0;//добавила после проверки преподом
   font-family: $secondary-font;
   font-weight: 400;
   font-style: normal;
@@ -38,4 +40,10 @@
 @mixin button {
   border: none;
   text-decoration: none;
+}
+
+@mixin wrapper-center {
+  width: $view-port-mobile;
+  padding: 0 20px;
+  margin: 0 auto;
 }

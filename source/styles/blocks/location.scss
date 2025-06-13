@@ -1,5 +1,15 @@
-// location
 .location {
+  background-color: $bg;
+}
+
+.location__wrapper {
+  padding: 26px 20px;
+  display: flex;
+  justify-content: space-between;
+  background-color: $bg-basis;
+}
+
+.location__wrapper--modifier {
   background-color: $bg;
 }
 
