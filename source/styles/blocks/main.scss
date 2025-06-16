@@ -6,17 +6,29 @@
 }
 
 @media (min-width: $view-port-tablet) and (max-width: ($view-port-desktop - 1)) {
-  .main__nutrition,
   .main__stats,
   .main__location {
     width: $view-port-tablet;
   }
+
+  .main__nutrition {
+    width: $view-port-tablet;
+    min-height: 837px; /* 609+21+20+40+120+27 */
+  }
 }
 
 @media (min-width: $view-port-desktop) {
-  .main__nutrition,
   .main__stats,
   .main__location {
+    width: $view-port-desktop;
+  }
+
+  .main__nutrition {
+    width: $view-port-desktop;
+    min-height: 694px;
+  }
+
+  .main__stats {
     width: $view-port-desktop;
   }
 }

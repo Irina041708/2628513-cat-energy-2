@@ -11,5 +11,16 @@
 
 .slider-stats__img {
   position: absolute;
-  transform: translate(0, -256px);
+  left: 50%;
+  transform: translate(-50%, -256px);
+}
+
+@media (min-width: $view-port-tablet) and (max-width: ($view-port-desktop - 1)) {
+  // .slider-stats__button {
+  //   transform: translate(-50%, -110px);
+  // }
+
+  .slider-stats__img {
+    transform: translate(-50%, -110px);
+  }
 }

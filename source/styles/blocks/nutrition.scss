@@ -7,7 +7,7 @@
 }
 
 .nutrition__wrapper {
-  @include wrapper-center;
+  @include wrapper-center-mobile;
 }
 
 .nutrition__heading {
@@ -38,12 +38,93 @@
 
 @media (min-width: $view-port-tablet) and (max-width: ($view-port-desktop - 1)) {
   .nutrition__wrapper {
-    width: $view-port-tablet;
+    @include wrapper-center-tablet;
+    display: block;
+    text-align: start;
+  }
+
+  .nutrition {
+    background-image: none;
+  }
+
+  .nutrition__heading {
+    padding-left: 90px;
+    font-size: 60px;
+    line-height: 60px;
+    color: $color-basis;
+    margin-bottom: 40px;
+  }
+
+  .nutrition__paragraph {
+    padding-left: 90px;
+    font-size: 20px;
+    line-height: 20px;
+    color: $color-basis;
+    margin-bottom: 21px;
+  }
+
+  .nutrition__button {
+    position: relative;
+    width: 242px;
+    min-height: 54px;
+    left: 90px;/* ((100*120)/$view-port-tablet)=15.72% */
+    top: -580px; /* 526+54(высота кнопки)= */
+  }
+
+  .nutrition__img {
+    width: 709;
+    min-height: 609px;
   }
 }
 
 @media (min-width: $view-port-desktop) {
   .nutrition__wrapper {
-    width: $view-port-desktop;
+    @include wrapper-center-desktop;
+  }
+
+  .nutrition {
+    display: block;
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85) 100%, $bg-basis 100%), url("../../images/nutrition-cat-bg-index-desktop@2x.jpg"), linear-gradient(#4f4f54 0% 100%, #434348 0% 100%);
+    background-repeat: no-repeat;
+    background-position: right top, right -80% top;
+    background-size: 50% 100%, 1040px 694px, 50% 100%;
+    text-align: left;
+    background-clip: content-box;
+    // background-origin: border-box;
+    // overflow: hidden;
+    // background-position: calc(100% – 20px) center;
+  }
+
+  .nutrition__heading {
+    padding-top: 224px;
+    padding-left: 80px;
+    margin-bottom: 40px;
+    font-size: 60px;
+    line-height: 60px;
+    color: $color-basis;
+  }
+
+  .nutrition__paragraph {
+    padding-left: 80px;
+    // margin-bottom: 52px;
+    font-size: 20px;
+    line-height: 20px;
+    color: $color-basis;
+  }
+
+  .nutrition__button {
+    position: relative;
+    left: 80px;
+    bottom: 184px; //266+96-82=280
+    min-height: 54px;
+    width: 244px;
+  }
+
+  .nutrition__img {
+    position: relative;
+    left: 447px;
+    bottom: 52px;
+    min-width: 552;
+    min-height: 499px;
   }
 }

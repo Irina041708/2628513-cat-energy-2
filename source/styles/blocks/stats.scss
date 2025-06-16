@@ -1,5 +1,5 @@
 .stats__wrapper {
-  @include wrapper-center;
+  @include wrapper-center-mobile;
 }
 
 .stats {
@@ -33,41 +33,6 @@
   height: 70px;
 }
 
-.item-stats {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-}
-
-.item-stats__number {
-  padding-top: 14px;
-  margin-bottom: 17px;
-}
-
-.item-stats__number::before {
-  content: "";
-  display: block;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 124px;
-  height: 56px;
-  outline: 1px solid #cdcdcd;
-  z-index: 1;
-}
-
-.item-stats__description {
-  width: 77px;
-  height: 24px;
-  padding-top: 2px; /* при pixel perfect проверь себя-выставила сама */
-  text-align: center;
-  background-color: $bg-dark;
-  z-index: 2;
-}
-
 .stats__description {
   @include fonttitle;
   font-size: 14px;
@@ -79,12 +44,55 @@
 
 @media (min-width: $view-port-tablet) and (max-width: ($view-port-desktop - 1)) {
   .stats__wrapper {
-    width: $view-port-tablet;
+    @include wrapper-center-tablet;
+    min-height: 1081px;
+  }
+
+  .stats {
+    padding-top: 45px;
+    padding-bottom: 101px;
+    background-image: linear-gradient($bg-basis 50%, $bg-dark 50%);
+    background-repeat: no-repeat;
+    background-position: right top;
+    text-align: left;
+    background-clip: content-box;
+    background-size: 100% 100vh;
+  }
+
+  .stats__heading {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 60px;
+  }
+
+  .stats__paragraph {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 55px;
+    width: 708px;
+  }
+
+  .stats__list {
+    margin-bottom: 0;
+    gap: 43px;
+    justify-content: flex-start;
+  }
+
+  .stats__item {
+    width: 162px;
+    min-height: 77px;
+    gap: 0;
+  }
+
+  .stats__description {
+    width: 174px;
+    font-size: 20px;
+    margin-bottom: 0;
   }
 }
 
 @media (min-width: $view-port-desktop) {
   .stats__wrapper {
-    width: $view-port-desktop;
+    @include wrapper-center-desktop;
   }
 }

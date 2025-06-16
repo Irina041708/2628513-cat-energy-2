@@ -1,5 +1,5 @@
 .advantages__wrapper {
-  @include wrapper-center;
+  @include wrapper-center-mobile;
 }
 
 .advantages {
@@ -15,6 +15,7 @@
 }
 
 .advantages__list {
+  @include list;
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -23,7 +24,6 @@
 }
 
 .advantages__item {
-  @include list;
   min-height: 60px;
   padding-left: 80px;
 }
@@ -59,12 +59,106 @@
 
 @media (min-width: $view-port-tablet) and (max-width: ($view-port-desktop - 1)) {
   .advantages__wrapper {
-    width: $view-port-tablet;
+    @include wrapper-center-tablet;
+  }
+
+  .advantages {
+    padding-top: 45px;
+    padding-bottom: 47px;
+  }
+
+  .advantages__heading {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 72px;
+  }
+
+  .advantages__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 37px 153px;
+  }
+
+  .advantages__item {
+    width: 230px;
+    min-height: 280px;
+    padding: 0;
+  }
+
+  .advantages__paragraph {
+    width: 204px;
+    min-height: 72px;
+    font-size: 16px;
+    line-height: 24px;
+    padding-top: 111px;
+  }
+
+  .advantages__item--first {
+    background-size: 80px 80px;
+  }
+
+  .advantages__item--second {
+    background-size: 80px 80px;
+  }
+
+  .advantages__item--third {
+    background-size: 80px 80px;
+  }
+
+  .advantages__item--fourth {
+    background-size: 80px 80px;
   }
 }
 
 @media (min-width: $view-port-desktop) {
   .advantages__wrapper {
-    width: $view-port-desktop;
+    @include wrapper-center-desktop;
+  }
+
+  .advantages {
+    padding-top: 71px;
+    padding-bottom: 0;
+  }
+
+  .advantages__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 94px;
+  }
+
+  .advantages__item {
+    width: 230px;
+    min-height: 280px;
+    padding: 0;
+  }
+
+  .advantages__heading {
+    font-size: 60px;
+    line-height: 60px;
+    margin-bottom: 72px;
+  }
+
+  .advantages__paragraph {
+    width: 204px;
+    min-height: 72px;
+    font-size: 16px;
+    line-height: 24px;
+    padding-top: 111px;
+  }
+
+  .advantages__item--first {
+    background-size: 80px 80px;
+  }
+
+  .advantages__item--second {
+    background-size: 80px 80px;
+  }
+
+  .advantages__item--third {
+    background-size: 80px 80px;
+  }
+
+  .advantages__item--fourth {
+    background-size: 80px 80px;
   }
 }

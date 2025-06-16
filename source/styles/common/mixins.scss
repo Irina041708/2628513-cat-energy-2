@@ -42,8 +42,20 @@
   text-decoration: none;
 }
 
-@mixin wrapper-center {
+@mixin wrapper-center-mobile {
   width: $view-port-mobile;
-  padding: 0 20px;
+  padding: $padding-mobile;
+  margin: 0 auto;
+}
+
+@mixin wrapper-center-tablet {
+  width: $view-port-tablet;
+  padding: $padding-tablet;
+  margin: 0 auto;
+}
+
+@mixin wrapper-center-desktop {
+  width: $view-port-desktop;
+  padding: $padding-desktop;
   margin: 0 auto;
 }
