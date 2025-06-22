@@ -1,7 +1,9 @@
 .social {
   @include list;
   display: flex;
+  justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   gap: 24px;
 }
 
@@ -62,3 +64,4 @@
 .social__social-link--telegram:active::before {
   opacity: 0.3;
 }
+

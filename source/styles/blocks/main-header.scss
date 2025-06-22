@@ -21,20 +21,28 @@
   }
 
   .main-header__wrapper {
-    padding: $padding-tablet;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 94px;
+    // padding: $padding-tablet;
+    display: grid;
+    grid-template-columns: 1fr 30px 174px 94px 436px 30px 1fr;
+    grid-template-rows: 1fr;
     padding-top: 25px;
     margin-bottom: 38px;
+    align-self: start;
   }
 
   .main-header__logo {
-    width: 174px;
-    min-height: 50px;
+    grid-column: 3 / 4;
+    grid-row: 1fr;
+    // min-height: 50px;
     padding: 0;
     margin: 0;
+  }
+
+  .main-header__main-nav {
+    // padding-top: 14px;
+    grid-column: 5 / 6;
+    grid-row: 1fr;
+    align-self: start;
   }
 }
 
@@ -55,7 +63,7 @@
   }
 
   .main-header__logo {
-    width: 550px;
+    width: 202px;//было 550px
     min-height: 59px;
     padding: 0;
     margin: 0;

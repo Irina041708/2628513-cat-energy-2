@@ -83,14 +83,34 @@
     width: 230px;
     min-height: 280px;
     padding: 0;
+    counter-increment: chapter 1;
+    position: relative;
+  }
+
+  .advantages__item::after {
+    @include fonttitle;
+    position: absolute;
+    width: 112px;
+    height: 280px;
+    font-size: 280px;
+    line-height: 280px;
+    color: $bg;
+    content: counter(chapter);
+    top: -40px;
+    right: 0;
+    z-index: -1;
   }
 
   .advantages__paragraph {
-    width: 204px;
+    width: 246px;
     min-height: 72px;
     font-size: 16px;
     line-height: 24px;
     padding-top: 111px;
+  }
+
+  .advantages__paragraph-nowrap {
+    white-space: nowrap;
   }
 
   .advantages__item--first {
@@ -130,6 +150,22 @@
     width: 230px;
     min-height: 280px;
     padding: 0;
+    counter-increment: chapter 1;
+    position: relative;
+  }
+
+  .advantages__item::after {
+    @include fonttitle;
+    position: absolute;
+    width: 112px;
+    height: 280px;
+    font-size: 280px;
+    line-height: 280px;
+    color: $bg;
+    content: counter(chapter);
+    top: -40px;
+    right: 0;
+    z-index: -1;
   }
 
   .advantages__heading {
@@ -139,11 +175,15 @@
   }
 
   .advantages__paragraph {
-    width: 204px;
+    width: 245px;
     min-height: 72px;
     font-size: 16px;
     line-height: 24px;
     padding-top: 111px;
+  }
+
+  .advantages__paragraph-nowrap {
+    white-space: nowrap;
   }
 
   .advantages__item--first {

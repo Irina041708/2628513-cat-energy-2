@@ -1,6 +1,6 @@
 .logo {
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
   flex-shrink: 0;
@@ -8,8 +8,8 @@
 }
 
 .logo--modifier {
-  justify-content: center;
-  align-items: center;
+  display: block;
+  text-align: center;
 }
 
 .logo__logo-img {

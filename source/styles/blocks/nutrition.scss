@@ -7,7 +7,8 @@
 }
 
 .nutrition__wrapper {
-  @include wrapper-center-mobile;
+  width: $view-port-mobile;
+  padding: $padding-mobile;
 }
 
 .nutrition__heading {

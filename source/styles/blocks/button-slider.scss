@@ -56,3 +56,15 @@
 .button-slider:active::after {
   opacity: 0.6;
 }
+
+@media (min-width: $view-port-tablet) and (max-width: ($view-port-desktop - 1)) {
+  .button-slider {
+    height: 512px;
+  }
+}
+
+@media (min-width: $view-port-desktop) {
+  .button-slider {
+    height: 512px;
+  }
+}

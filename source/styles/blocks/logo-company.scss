@@ -30,3 +30,15 @@
 .logo-company:active::after {
   opacity: 0.3;
 }
+
+@media (min-width: $view-port-tablet) and (max-width: ($view-port-desktop - 1)) {
+  .logo-company {
+    gap: 23px;
+  }
+}
+
+@media (min-width: $view-port-desktop) {
+  .logo-company {
+    gap: 23px;
+  }
+}
