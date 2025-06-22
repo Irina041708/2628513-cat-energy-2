@@ -1,6 +1,6 @@
 .site-list {
   // display: none;
-  position: relative;
+  // position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -10,7 +10,7 @@
 .site-list__item {
   @include list;
   display: flex;
-  position: relative;
+  position: relative;// отсюда спозиционированы гориз линии
 }
 
 .site-list__navigation-link::before {

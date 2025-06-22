@@ -17,17 +17,19 @@
 <body class="page__body">
   <header class="main-header">
     <div class="main-header__wrapper">
-      <a class="main-header__logo logo" href="index.html">
-        <span class="visually-hidden">Логотип `Cat Energy`.</span>
-        <picture>
-          <source media="(min-width: 1440px)" width="70" height="59" type="image/svg+xml" srcset="images/logo/logo-img-desktop.svg">
-          <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="images/logo/logo-img-tablet.svg">
-          <img class="logo__logo-img" src="images/logo/logo-img-mobile.svg" width="33" height="38" alt="Торговый знак компании `Cat Energy`.">
-        </picture>
-        <img class="logo__logo-text" src="images/logo/logo-text.svg" width="101" height="18" alt="Логотип компании `Cat Energy`.">
-      </a>
-      <nav class="main-header__main-nav main-nav main-nav--closed main-nav--nojs">
-        <button class="main-nav__toggle main-nav__toggle--active" type="button">
+      <div class="main-header__wrapper-logo">
+        <a class="main-header__logo logo" href="index.html">
+          <span class="visually-hidden">Логотип `Cat Energy`.</span>
+          <picture>
+            <source media="(min-width: 1440px)" width="70" height="59" type="image/svg+xml" srcset="images/logo/logo-img-desktop.svg">
+            <source media="(min-width: 768px)" width="60" height="50" type="image/svg+xml" srcset="images/logo/logo-img-tablet.svg">
+            <img class="logo__logo-img" src="images/logo/logo-img-mobile.svg" width="33" height="38" alt="Торговый знак компании `Cat Energy`.">
+          </picture>
+          <img class="logo__logo-text" src="images/logo/logo-text.svg" width="101" height="18" alt="Логотип компании `Cat Energy`.">
+        </a>
+      </div>
+      <nav class="main-header__main-nav main-nav main-nav--opened main-nav--closed main-nav--nojs">
+        <button class="main-nav__toggle" type="button">
           <span class="visually-hidden">Открыть меню.</span>
         </button>
         <ul class="main-nav__list site-list">
@@ -197,7 +199,7 @@
       </a>
     </div>
   </footer>
-<script src="script.js"></script>
+  <script src="scripts/modal.js"></script>
 </body>
 
 </html>
