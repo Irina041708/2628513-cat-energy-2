@@ -98,8 +98,6 @@
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 110px 80px 414px 505px 221px 110px 1fr;
-    // grid-template-rows: minmax(120px, auto) minmax(20px, auto) minmax(54px, auto);
-    // grid-auto-rows: minmax(auto, auto);
     grid-template-rows: auto;
     text-align: left;
     align-items: end;
