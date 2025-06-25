@@ -1,12 +1,86 @@
+.item-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  align-items: center;
+  height: 100%;//обязательное условие
+  position: relative;
+}
+
+.item-stats::before {
+  position: absolute;
+  content: "";
+  display: block;
+  outline: 1px solid #cdcdcd;
+  height: 100%;
+  width: 100%;
+  bottom: 14px; //обязательное условие
+}
+
 .item-stats__number {
   @include fonttitle;
   font-size: 24px;
   line-height: 24px;
-  text-transform: uppercase;
+  margin-bottom: 7px;
+  text-align: center;
 }
 
 .item-stats__description {
   @include font-paragraph;
+  width: 77px;
   font-size: 12px;
   line-height: 12px;
+  // padding-top: 2px; /* при pixel perfect проверь себя-выставила сама */
+  text-align: center;
+  background-color: $bg-dark;
+  z-index: 2;
+}
+
+@media (min-width: $view-port-tablet) and (max-width: ($view-port-desktop - 1)) {
+  .item-stats__number {
+    margin-top: 15px;
+    font-size: 30px;
+    line-height: 37px;
+    margin-bottom: 11px;
+  }
+
+  .item-stats::before {
+    height: 92%;
+    top: 0;
+  }
+
+  .item-stats__description {
+    width: 125px;
+    font-size: 14px;
+    line-height: 14px;
+    background-color: $bg-basis;
+  }
+
+  .item-stats__description--modif {
+    width: 154px; /* 129+(125) */
+  }
+}
+
+@media (min-width: $view-port-desktop) {
+  .item-stats__number {
+    // margin-top: 0;
+    padding-top: 7px;//выставила сама
+    font-size: 30px;
+    line-height: 37px;
+    margin-bottom: 11px;
+  }
+
+  .item-stats::before {
+    height: 100%;
+  }
+
+  .item-stats__description {
+    width: 125px;
+    font-size: 14px;
+    line-height: 14px;
+  }
+
+  .item-stats__description--modif {
+    width: 154px;
+  }
 }

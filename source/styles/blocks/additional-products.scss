@@ -1,5 +1,5 @@
 .additional-products__wrapper {
-  @include wrapper-center;
+  @include wrapper-center-mobile;
 }
 
 .additional-products__list {
@@ -19,6 +19,14 @@
   margin-bottom: 19px;
 }
 
-.additional-products__banner {
-  height: 290px;
+@media (min-width: $view-port-tablet) and (max-width: ($view-port-desktop - 1)) {
+  .additional-products__wrapper {
+    @include wrapper-center-tablet;
+  }
+}
+
+@media (min-width: $view-port-desktop) {
+  .additional-products__wrapper {
+    @include wrapper-center-desktop;
+  }
 }

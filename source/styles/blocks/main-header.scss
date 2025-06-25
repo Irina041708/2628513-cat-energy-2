@@ -2,15 +2,100 @@
   margin: 0 auto;
   width: $view-port-mobile;
   position: relative;//спозиционировали кнопку относительно этого элемента
+  padding-top: 13px;
 }
 
 .main-header__wrapper {
-  padding: 0 20px;
+  padding: $padding-mobile;
+}
+
+.main-header__wrapper-logo {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+  min-height: 38px;
+  margin-bottom: 14px;
 }
 
 .main-header__logo {
-  padding-top: 13px;
-  margin-bottom: 14px;
-  width: 240px;
-  min-height: 38px;
+  display: flex;
+  gap: 56px;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 220px;
+}
+
+.main-header__main-nav {
+  margin-top: 1px; // .main-header__wrapper-logo margin-bottom: 15px
+}
+
+@media (min-width: $view-port-tablet) and (max-width: ($view-port-desktop - 1)) {
+  .main-header {
+    width: $view-port-tablet;
+    margin: 0 auto;
+    padding-top: 25px;
+  }
+
+  .main-header__wrapper {
+    padding: $padding-tablet;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 94px;
+    margin-bottom: 38px;//65px 65-38=27 у секции ниже
+  }
+
+  .main-header__wrapper-logo {
+    gap: 20px;
+    margin-bottom: 0;
+  }
+
+  .main-header__logo {
+    gap: 13px;
+    width: 174px;
+    min-height: 50px;
+  }
+
+  .main-header__main-nav {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: $view-port-desktop) {
+  .main-header {
+    width: 100%;
+    min-height: 114px;
+    padding-top: 55px;
+  }
+
+  .main-header__wrapper {
+    margin: 0 auto;
+    width: $view-port-desktop;
+    padding: $padding-desktop;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    column-gap: 270px;
+  }
+
+  .main-header__wrapper-logo {
+    gap: 20px;
+    margin-bottom: 0;
+    width: 475px;
+    min-height: 59px;
+  }
+
+  .main-header__logo {
+    gap: 14px;
+    width: 475px;
+    height: 59px;
+  }
+
+  .main-header__main-nav {
+    margin-top: 0;
+  }
 }

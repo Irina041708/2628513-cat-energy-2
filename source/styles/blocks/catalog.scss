@@ -1,5 +1,5 @@
 .catalog__wrapper {
-  @include wrapper-center;
+  @include wrapper-center-mobile;
 }
 
 .catalog__heading {
@@ -16,4 +16,16 @@
 
 .catalog__item {
   margin-bottom: 25px;
+}
+
+@media (min-width: $view-port-tablet) and (max-width: ($view-port-desktop - 1)) {
+  .catalog__wrapper {
+    @include wrapper-center-tablet;
+  }
+}
+
+@media (min-width: $view-port-desktop) {
+  .catalog__wrapper {
+    @include wrapper-center-desktop;
+  }
 }

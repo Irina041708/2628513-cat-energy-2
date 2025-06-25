@@ -7,7 +7,9 @@
 }
 
 .nutrition__wrapper {
-  @include wrapper-center;
+  width: $view-port-mobile;
+  padding: $padding-mobile;
+  margin: 0 auto;
 }
 
 .nutrition__heading {
@@ -34,4 +36,119 @@
   align-items: center;
   min-height: 40px;
   width: 100%;
+}
+
+@media (min-width: $view-port-tablet) and (max-width: ($view-port-desktop - 1)) {
+  .nutrition__wrapper {
+    @include wrapper-center-tablet;
+    display: block;
+    text-align: start;
+    padding-left: 90px;
+  }
+
+  .nutrition {
+    background-image: none;
+  }
+
+  .nutrition__heading {
+    display: block;
+    font-size: 60px;
+    line-height: 60px;
+    color: $color-basis;
+    width: 414px;
+    margin-bottom: 40px;
+  }
+
+  .nutrition__paragraph-nowrap {
+    white-space: nowrap;
+  }
+
+  .nutrition__paragraph {
+    display: block;
+    font-size: 20px;
+    line-height: 20px;
+    color: $color-basis;
+    width: 414px;//сама сделала ширину,так ка не уменьшается на одну строку
+    margin-bottom: 21px;
+  }
+
+  .nutrition__button {
+    position: relative;
+    width: 242px;
+    min-height: 54px;
+    top: -580px; /* 526+54(высота кнопки)= */
+  }
+
+  .nutrition__img {
+    width: 709;
+    min-height: 609px;
+  }
+}
+
+@media (min-width: $view-port-desktop) {
+  .nutrition {
+    padding-top: 29px;
+    padding-bottom: 52px;
+    background-image: none;
+  }
+
+  .nutrition__wrapper {
+    width: $view-port-desktop; //важно контент будет центрироваться и  не расширятся !
+    padding: 0;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 110px 80px 414px 505px 221px 110px 1fr;
+    // grid-template-rows: minmax(120px, auto) minmax(20px, auto) minmax(54px, auto);
+    // grid-auto-rows: minmax(auto, auto);
+    grid-template-rows: auto;
+    text-align: left;
+    align-items: end;
+  }
+
+  .nutrition__heading {
+    width: 420px;//сама увеличила не соответствие размеров с макетом,так не переносится слово на другю строку
+    margin-top: 81px;
+    margin-bottom: 40px;
+    grid-column: 4 / 5;
+    grid-row: 1 / 2;
+    padding: 0;
+    font-size: 60px;
+    line-height: 60px;
+    color: $color-basis;
+  }
+
+  .nutrition__paragraph {
+    width: 414px;
+
+    grid-column: 4 / 5;
+    grid-row: 2 / 3;
+    margin: 0 0 52px;
+    display: grid;
+    font-size: 20px;
+    line-height: 20px;
+    color: $color-basis;
+  }
+
+  .nutrition__button {
+    grid-column: 4 / 5;
+    grid-row: 3 / 4;
+    margin-bottom: 52px;
+    min-height: 54px;
+    width: 244px;
+  }
+
+  .nutrition__img-wrapper {
+    grid-column: 5 / 6;
+    grid-row: 1 / 5;
+    margin-bottom: 0;
+    height: 499px;
+    align-self: start;
+  }
+
+  .nutrition__img {
+    display: block;
+    transform: translateX(-30px);
+    height: 499px;
+    width: 552px;
+  }
 }

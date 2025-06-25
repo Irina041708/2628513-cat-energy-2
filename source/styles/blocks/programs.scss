@@ -1,5 +1,5 @@
 .programs__wrapper {
-  @include wrapper-center;
+  @include wrapper-center-mobile;
 }
 
 .programs__list {
@@ -14,4 +14,39 @@
 .programs__item {
   @include list;
   background-color: $bg;
+  min-height: 266px;
+}
+
+@media (min-width: $view-port-tablet) and (max-width: ($view-port-desktop - 1)) {
+  .programs__wrapper {
+    @include wrapper-center-tablet;
+  }
+
+  .programs__list {
+    padding-top: 0;
+    padding-bottom: 0;
+    gap: 30px;
+  }
+
+  .programs__item {
+    min-height: 372px;
+  }
+}
+
+@media (min-width: $view-port-desktop) {
+  .programs__wrapper {
+    @include wrapper-center-desktop;
+  }
+
+  .programs__list {
+    display: grid;
+    padding-top: 82px;
+    padding-bottom: 0;
+    gap: 80px;
+    grid-template-columns: repeat(auto-fit, minmax(570px, 1fr));
+  }
+
+  .programs__item {
+    min-height: 374px;
+  }
 }

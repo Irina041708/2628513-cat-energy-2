@@ -1,5 +1,5 @@
 .subscribe__wrapper {
-  @include wrapper-center;
+  @include wrapper-center-mobile;
 }
 
 .subscribe {
@@ -26,4 +26,16 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
+}
+
+@media (min-width: $view-port-tablet) and (max-width: ($view-port-desktop - 1)) {
+  .subscribe__wrapper {
+    @include wrapper-center-tablet;
+  }
+}
+
+@media (min-width: $view-port-desktop) {
+  .subscribe__wrapper {
+    @include wrapper-center-desktop;
+  }
 }
