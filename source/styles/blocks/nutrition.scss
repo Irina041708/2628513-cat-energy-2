@@ -9,6 +9,7 @@
 .nutrition__wrapper {
   width: $view-port-mobile;
   padding: $padding-mobile;
+  margin: 0 auto;
 }
 
 .nutrition__heading {
@@ -42,6 +43,7 @@
     @include wrapper-center-tablet;
     display: block;
     text-align: start;
+    padding-left: 90px;
   }
 
   .nutrition {
@@ -49,18 +51,24 @@
   }
 
   .nutrition__heading {
-    padding-left: 90px;
+    display: block;
     font-size: 60px;
     line-height: 60px;
     color: $color-basis;
+    width: 414px;
     margin-bottom: 40px;
   }
 
+  .nutrition__paragraph-nowrap {
+    white-space: nowrap;
+  }
+
   .nutrition__paragraph {
-    padding-left: 90px;
+    display: block;
     font-size: 20px;
     line-height: 20px;
     color: $color-basis;
+    width: 414px;//сама сделала ширину,так ка не уменьшается на одну строку
     margin-bottom: 21px;
   }
 
@@ -68,7 +76,6 @@
     position: relative;
     width: 242px;
     min-height: 54px;
-    left: 90px;/* ((100*120)/$view-port-tablet)=15.72% */
     top: -580px; /* 526+54(высота кнопки)= */
   }
 
@@ -79,53 +86,69 @@
 }
 
 @media (min-width: $view-port-desktop) {
-  .nutrition__wrapper {
-    @include wrapper-center-desktop;
+  .nutrition {
+    padding-top: 29px;
+    padding-bottom: 52px;
+    background-image: none;
   }
 
-  .nutrition {
-    display: block;
-    background-image: linear-gradient(rgba(104, 183, 56, 0.85) 100%, $bg-basis 100%), url("../../images/nutrition-cat-bg-index-desktop@2x.jpg"), linear-gradient(#4f4f54 0% 100%, #434348 0% 100%);
-    background-repeat: no-repeat;
-    background-position: right top, right -80% top;
-    background-size: 50% 100%, 1040px 694px, 50% 100%;
+  .nutrition__wrapper {
+    width: $view-port-desktop; //важно контент будет центрироваться и  не расширятся !
+    padding: 0;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 110px 80px 414px 505px 221px 110px 1fr;
+    // grid-template-rows: minmax(120px, auto) minmax(20px, auto) minmax(54px, auto);
+    // grid-auto-rows: minmax(auto, auto);
+    grid-template-rows: auto;
     text-align: left;
-    background-clip: content-box;
-    // background-origin: border-box;
-    // overflow: hidden;
-    // background-position: calc(100% – 20px) center;
+    align-items: end;
   }
 
   .nutrition__heading {
-    padding-top: 224px;
-    padding-left: 80px;
+    width: 420px;//сама увеличила не соответствие размеров с макетом,так не переносится слово на другю строку
+    margin-top: 81px;
     margin-bottom: 40px;
+    grid-column: 4 / 5;
+    grid-row: 1 / 2;
+    padding: 0;
     font-size: 60px;
     line-height: 60px;
     color: $color-basis;
   }
 
   .nutrition__paragraph {
-    padding-left: 80px;
-    // margin-bottom: 52px;
+    width: 414px;
+
+    grid-column: 4 / 5;
+    grid-row: 2 / 3;
+    margin: 0 0 52px;
+    display: grid;
     font-size: 20px;
     line-height: 20px;
     color: $color-basis;
   }
 
   .nutrition__button {
-    position: relative;
-    left: 80px;
-    bottom: 184px; //266+96-82=280
+    grid-column: 4 / 5;
+    grid-row: 3 / 4;
+    margin-bottom: 52px;
     min-height: 54px;
     width: 244px;
   }
 
+  .nutrition__img-wrapper {
+    grid-column: 5 / 6;
+    grid-row: 1 / 5;
+    margin-bottom: 0;
+    height: 499px;
+    align-self: start;
+  }
+
   .nutrition__img {
-    position: relative;
-    left: 447px;
-    bottom: 52px;
-    min-width: 552;
-    min-height: 499px;
+    display: block;
+    transform: translateX(-30px);
+    height: 499px;
+    width: 552px;
   }
 }

@@ -2,28 +2,41 @@
   height: 100%;
 }
 
-@media (min-width: $view-port-mobile) {
+@media (min-width: $view-port-desktop) {
   .page__body {
-    @include fonttitle;
-    min-width: $view-port-mobile;
+    position: relative;
     min-height: 100%;
+    background: linear-gradient(#4f4f54 0% 100%, #434348 0% 100%);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: left top;
     margin: 0 auto;
-    color: $color-basis;
-    background-color: $bg-basis;
+  }
+
+  .page__body::after {
+    z-index: -2;
+    position: absolute;
+    content: "";
+    width: 720px;
+    height: 694px;
+    background-image: url("../../images/nutrition-cat-bg-index-desktop@2x.jpg");
+    background-repeat: no-repeat;
+    top: 0;
+    left: 50%;//чтобы кот не стоял всегда справа по центру и не уходил вправо при увеличении ширины
+    transform: translateX(0%);//чотбы контент был в центре и не появлялась горизонтальная полоса
+    background-size: 1040px 694px;
+  }
+
+  .page__body::before {
+    z-index: -1;
+    position: absolute;
+    content: "";
+    background-image: linear-gradient(90deg, $bg-basis 50%, rgba(104, 183, 56, 0.85) 50% 50%, rgba(104, 183, 56, 0.85) 50%);
+    background-position: right top;
+    margin: 0 auto;
+    width: 100%; //важно контент будет центрироваться и  не расширятся !
+    height: 100%;
+    top: 0;
+    right: 0;
   }
 }
-
-// @media (min-width: $view-port-tablet) and (max-width: ($view-port-desktop - 1)) {
-//   .container {
-//     width: 708px;
-//     padding: 0 30px;
-//   }
-// }
-
-
-// @media (min-width: $view-port-desktop) {
-//   .container {
-//     width: 1220px;
-//     padding: 0 110px;
-//   }
-// }

@@ -21,6 +21,8 @@
 @media (min-width: $view-port-tablet) and (max-width: ($view-port-desktop - 1)) {
   .logo__logo-img {
     margin-right: 0;
+    height: 50px;
+    width: 60px;
   }
 
   .logo__logo-img:not(:first-child):not(:last-child),
@@ -31,12 +33,10 @@
 
 
 @media (min-width: $view-port-desktop) {
-  .logo {
-    gap: 14px;
-  }
-
   .logo__logo-img {
     margin-right: 0;
+    height: 59px;
+    width: 70px;
   }
 
   .logo__logo-text {
@@ -47,5 +47,7 @@
   .logo__logo-img:not(:first-child):not(:last-child),
   .logo__logo-text:not(:first-child):not(:last-child) {
     margin-right: 0;
+    width: 70px;
+    height: 59px;
   }
 }

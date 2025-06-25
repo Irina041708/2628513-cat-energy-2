@@ -1,6 +1,4 @@
 .site-list {
-  // display: none;
-  // position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -11,6 +9,7 @@
   @include list;
   display: flex;
   position: relative;// отсюда спозиционированы гориз линии
+  flex-shrink: 0;
 }
 
 .site-list__navigation-link::before {
@@ -39,10 +38,10 @@
   position: absolute;
   content: "";
   display: block;
-  width: 168px;
+  width: 100%;
   left: 50%;
   transform: translateX(-50%);
-  bottom: 8px;
+  bottom: -10px;
   height: 0;
 }
 
@@ -96,6 +95,17 @@
     font-size: 20px;
     line-height: 100%;
     color: $color-accent;
+  }
+
+  .site-list__navigation-link[aria-current="page"]::after,
+  .site-list__navigation-link--current[aria-current="page"]::after {
+    color: $bg-basis;
+    bottom: -8px;
+  }
+
+  .site-list__navigation-link[aria-current="page"]:active::after,
+  .site-list__navigation-link--current[aria-current="page"]:active::after {
+    outline: 2px solid $bg-basis;
   }
 
   .site-list__item {
