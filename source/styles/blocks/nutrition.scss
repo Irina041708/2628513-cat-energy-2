@@ -3,7 +3,6 @@
   background-repeat: no-repeat;
   background-position: center top;
   background-size: 100% 100%, 320px 302px, 100% 63%;
-  // text-align: center;
 }
 
 .nutrition__wrapper {
@@ -15,10 +14,11 @@
 .nutrition__heading {
   @include fonttitle;
   font-size: 36px;
-  line-height: 40px;
+  line-height: 36px;
   color: $color-accent;
   padding-top: 27px;
   margin-bottom: 25px;
+  text-align: center;////!
 }
 
 .nutrition__paragraph {
@@ -28,6 +28,7 @@
   text-transform: uppercase;
   color: $color-accent;
   margin-bottom: 29px;
+  padding-left: 40px;////!
 }
 
 .nutrition__button {
@@ -36,6 +37,17 @@
   align-items: center;
   min-height: 40px;
   width: 100%;
+}
+
+.nutrition__img {
+  width: 280px;
+  height: 270px;
+}
+
+.nutrition__img-wrapper {
+  width: 280px;
+  height: 270px;
+  margin-bottom: 3px;
 }
 
 @media (min-width: $view-port-tablet) and (max-width: ($view-port-desktop - 1)) {
@@ -87,14 +99,15 @@
 
   .nutrition__img {
     display: block;
-    width: 709;
+    width: 709px;
     height: 609px;
   }
 
   .nutrition__img-wrapper {
     transform: translate(-91px, 0);
-    width: 709;
+    width: 709px;
     height: 609px;
+    margin-bottom: 0;
   }
 }
 

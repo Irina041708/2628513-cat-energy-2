@@ -5,9 +5,9 @@
 .main-footer__wrapper {
   @include wrapper-center-mobile;
   padding: 40px 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
   text-align: center;
   gap: 40px;
 }

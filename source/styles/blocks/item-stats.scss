@@ -23,17 +23,19 @@
   line-height: 24px;
   margin-bottom: 7px;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .item-stats__description {
   @include font-paragraph;
-  width: 77px;
+  width: 81px;
   font-size: 12px;
   line-height: 12px;
-  // padding-top: 2px; /* при pixel perfect проверь себя-выставила сама */
+  //padding-top: 2px; /* при pixel perfect проверь себя-выставила сама */
   text-align: center;
   background-color: $bg-dark;
   z-index: 2;
+  transform: translateX(-1px);//сама выставилла
 }
 
 @media (min-width: $view-port-tablet) and (max-width: ($view-port-desktop - 1)) {
