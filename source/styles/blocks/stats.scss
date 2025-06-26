@@ -103,18 +103,17 @@
 @media (min-width: $view-port-desktop) {
   .stats {
     display: grid;
-    grid-template-columns: 1fr 110px 660px 280px 280px 110px 1fr;
+    grid-template-columns: 1fr 110px 436px 224px 560px 110px 1fr;
     grid-template-rows: 1fr;
     justify-content: start;
-    min-height: 669px;
-    // min-width: $view-port-desktop;
-    // margin: 0 auto;
+    min-height: 627px;
+    min-width: $view-port-desktop;
+    margin: 0 auto;
   }
 
   .stats__wrapper {
-    padding: 69px 0 0;
+    padding: 0;
     grid-column: 3 / 4;
-    grid-row: 1fr;
     width: 660px;
   }
 
@@ -128,7 +127,7 @@
   .stats__paragraph {
     font-size: 16px;
     line-height: 24px;
-    margin-bottom: 69px;
+    margin-bottom: 54px;//69-15=4
     max-width: 432px;
   }
 

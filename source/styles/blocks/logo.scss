@@ -29,6 +29,18 @@
   .logo__logo-text:not(:first-child):not(:last-child) {
     margin-right: 0;
   }
+
+  .logo__logo-text {
+    transform: translateY(-1px);
+    width: 123px;//изменила с 101px
+    height: 20px;//изменила с 18xp
+  }
+
+  .logo__logo-text--modifier {
+    transform: translateY(3px);
+    height: 26px;
+    width: 140px;
+  }
 }
 
 
@@ -40,8 +52,15 @@
   }
 
   .logo__logo-text {
-    width: 118px;
-    height: 21px;
+    // transform: translateX(10px);
+    width: 118px;//изменила с 101px
+    height: 24px;//изменила с 18xp
+  }
+
+  .logo__logo-text--modifier {
+    transform: translateX(-11px);
+    height: 24px;
+    width: 128px;
   }
 
   .logo__logo-img:not(:first-child):not(:last-child),

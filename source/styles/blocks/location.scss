@@ -46,7 +46,7 @@
     padding: 60px 70px;
     width: $view-port-tablet;
     margin: 0 auto;
-    max-width: 628px;
+    min-height: 80px;
   }
 
   .location__header {
@@ -59,6 +59,7 @@
     text-align: right;
     width: 157px;
     font-size: 16px;
+    min-height: 80px;
   }
 }
 

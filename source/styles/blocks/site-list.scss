@@ -83,6 +83,7 @@
     flex-direction: row;
     justify-content: start;
     align-items: center;
+    // gap: 33px;
   }
 
   .site-list__navigation-link::before {
@@ -115,7 +116,7 @@
   }
 
   .site-list__item:first-child {
-    margin-right: 31px;
+    margin-right: 33px;
   }
 
   .site-list__item:last-child {

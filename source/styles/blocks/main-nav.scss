@@ -101,10 +101,10 @@
 
   .main-nav--opened .main-nav__list {
     position: relative;
-    width: 475px;
+    width: 478px;//сместила на 3px так как gap уменьшила на  3px
     min-height: 40px;
     flex-wrap: wrap;
-    padding-top: 16px; //39-25=14
+    padding-top: 14px; //39-25=14
     background: none;
   }
 }

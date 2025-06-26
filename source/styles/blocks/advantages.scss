@@ -70,19 +70,21 @@
   .advantages__heading {
     font-size: 60px;
     line-height: 60px;
-    margin-bottom: 72px;
+    margin-bottom: 32px;
   }
 
   .advantages__list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-    gap: 37px 153px;
+    gap: 37px 136px;
+    padding-right: 77px;
   }
 
   .advantages__item {
-    width: 230px;
-    min-height: 280px;
+    // min-width: 280px;
+    height: 280px;
     padding: 0;
+    padding-top: 40px;
     counter-increment: chapter 1;
     position: relative;
   }
@@ -90,8 +92,7 @@
   .advantages__item::after {
     @include fonttitle;
     position: absolute;
-    width: 112px;
-    height: 280px;
+    width: 100%;
     font-size: 280px;
     line-height: 280px;
     color: $bg;
@@ -99,6 +100,7 @@
     top: -40px;
     right: 0;
     z-index: -1;
+    // transform: translateX(46%);
   }
 
   .advantages__paragraph {
@@ -113,19 +115,27 @@
     white-space: nowrap;
   }
 
-  .advantages__item--first {
+  .advantages__item--first::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    mask-image: url("../../icons/stack.svg#advantages__item-first");
+    mask-size: 80px 80px;
+    mask-repeat: no-repeat;
+    mask-position: 40px 40px;
+  }
+
+  .advantages__item--second::before {
     background-size: 80px 80px;
   }
 
-  .advantages__item--second {
+  .advantages__item--third::before {
     background-size: 80px 80px;
   }
 
-  .advantages__item--third {
-    background-size: 80px 80px;
-  }
-
-  .advantages__item--fourth {
+  .advantages__item--fourth::before {
     background-size: 80px 80px;
   }
 }
@@ -143,7 +153,7 @@
   .advantages__list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
-    gap: 94px;
+    gap: 74px;
   }
 
   .advantages__item {

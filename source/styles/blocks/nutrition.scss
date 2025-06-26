@@ -3,7 +3,7 @@
   background-repeat: no-repeat;
   background-position: center top;
   background-size: 100% 100%, 320px 302px, 100% 63%;
-  text-align: center;
+  // text-align: center;
 }
 
 .nutrition__wrapper {
@@ -39,18 +39,23 @@
 }
 
 @media (min-width: $view-port-tablet) and (max-width: ($view-port-desktop - 1)) {
-  .nutrition__wrapper {
-    @include wrapper-center-tablet;
-    display: block;
-    text-align: start;
-    padding-left: 90px;
+  .nutrition {
+    padding-top: 27px;
+    background-image: none;
+    margin: 0;
   }
 
-  .nutrition {
-    background-image: none;
+  .nutrition__wrapper {
+    position: relative;
+    // height: 810px;
+    text-align: start;
+    width: $view-port-tablet;
+    padding: $padding-tablet;
+    padding-left: 120px;
   }
 
   .nutrition__heading {
+    padding: 0;
     display: block;
     font-size: 60px;
     line-height: 60px;
@@ -73,15 +78,23 @@
   }
 
   .nutrition__button {
-    position: relative;
+    position: absolute;
     width: 242px;
     min-height: 54px;
-    top: -580px; /* 526+54(высота кнопки)= */
+    left: 0;
+    transform: translate(120px, -580px);
   }
 
   .nutrition__img {
+    display: block;
     width: 709;
-    min-height: 609px;
+    height: 609px;
+  }
+
+  .nutrition__img-wrapper {
+    transform: translate(-91px, 0);
+    width: 709;
+    height: 609px;
   }
 }
 
@@ -117,7 +130,6 @@
 
   .nutrition__paragraph {
     width: 414px;
-
     grid-column: 4 / 5;
     grid-row: 2 / 3;
     margin: 0 0 52px;
@@ -139,13 +151,14 @@
     grid-column: 5 / 6;
     grid-row: 1 / 5;
     margin-bottom: 0;
-    height: 499px;
     align-self: start;
+    height: 499px;
+    width: 552px;
   }
 
   .nutrition__img {
     display: block;
-    transform: translateX(-30px);
+    transform: translate(-48px, 0);
     height: 499px;
     width: 552px;
   }

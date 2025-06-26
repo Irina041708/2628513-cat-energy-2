@@ -6,7 +6,6 @@
   @include wrapper-center-mobile;
   padding: 40px 0;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -28,56 +27,63 @@
 
 @media (min-width: $view-port-tablet) and (max-width: ($view-port-desktop - 1)) {
   .main-footer__wrapper {
-    @include wrapper-center-tablet;
     padding: 55px 0;
+    width: $view-port-tablet;
+    margin: 0 auto;
+    margin-right: 0;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(3, 1fr));
-    grid-auto-flow: column;
+    grid-template-columns: 1fr 30px 140px 154px 132px 126px 168px 30px 1fr;
+    grid-template-rows: auto;
+    min-height: 37px;
+    text-align: left;
+    align-items: center;
+    gap: 0;
   }
 
   .main-footer__logo {
-    width: 190px;
-    grid-column: 1 / 2;
-    justify-content: left;
+    width: 140px;
+    grid-column: 3 / 4;
   }
 
   .main-footer__logo-company {
-    width: 190px;
-    grid-column: 3 / 4;
-    justify-content: right;
+    width: 168px;
+    grid-column: 7 / 8;
   }
 
   .main-footer__social {
-    width: 190px;
-    grid-column: 2 / 3;
-    justify-content: center;
+    width: 132px;
+    grid-column: 5 / 6;
   }
 }
 
 @media (min-width: $view-port-desktop) {
   .main-footer__wrapper {
-    @include wrapper-center-desktop;
     padding: 66px 0;
+    width: $view-port-desktop;
+    margin: 0 auto;
+    margin-right: 0;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(3, 1fr));
-    grid-auto-flow: column;
+    grid-template-columns: 1fr 110px 140px 404px 132px 376px 168px 110px 1fr;
+    grid-template-rows: auto;
+    min-height: 37px;
+    text-align: left;
+    align-items: center;
+    gap: 0;
   }
 
   .main-footer__logo {
-    width: 350px;
-    grid-column: 1 / 2;
-    justify-content: left;
+    width: 140px;
+    grid-column: 3 / 4;
   }
 
   .main-footer__logo-company {
-    width: 350px;
-    grid-column: 3 / 4;
-    justify-content: right;
+    width: 168px;
+    grid-column: 7 / 8;
+    transform: translateX(5px);
   }
 
   .main-footer__social {
-    width: 350px;
-    grid-column: 2 / 3;
-    justify-content: center;
+    width: 132px;
+    grid-column: 5 / 6;
   }
 }

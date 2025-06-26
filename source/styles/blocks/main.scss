@@ -4,7 +4,7 @@
 
 @media (min-width: $view-port-tablet) and (max-width: ($view-port-desktop - 1)) {
   .main__nutrition {
-    width: $view-port-tablet;
+    width: 100%;
     min-height: 837px; /* 609+21+20+40+120+27 */
   }
 
@@ -25,7 +25,8 @@
   }
 
   .main__stats {
-    background: linear-gradient(180deg, $bg-basis 30.73%, $bg-dark 30.73% 69.26%, $bg-dark 69.26%);
+    padding-top: 29px;
+    background: linear-gradient(180deg, $bg-basis 26.32%, $bg-dark 26.32% 76.68%, $bg-dark 76.68%);
     background-position: right top;
   }
 
