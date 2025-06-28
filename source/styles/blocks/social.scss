@@ -1,9 +1,9 @@
 .social {
   @include list;
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  justify-content: center;
   gap: 24px;
 }
 
@@ -63,10 +63,4 @@
 .social__social-link--youtube:active::before,
 .social__social-link--telegram:active::before {
   opacity: 0.3;
-}
-
-@media (min-width: $view-port-tablet) and (max-width: ($view-port-desktop - 1)) {
-  .social {
-    transform: translate(1px, 2px);
-  }
 }

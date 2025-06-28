@@ -13,14 +13,14 @@
 
 .stats__paragraph {
   @include font-paragraph;
-  margin-bottom: 20px;////!
+  margin-bottom: 14px;//было 20px
   max-width: 280px;
 }
 
 .stats__list {
-  transform: translateY(-5px);////!
+  margin-top: 0;
   max-width: 280px;
-  margin-bottom: 16px;
+  margin-bottom: 20px;
   display: flex;
   justify-content: left;
   flex-wrap: wrap;
@@ -30,7 +30,7 @@
 .stats__item {
   margin-top: 20px;
   width: 124px;
-  min-height: 54px;
+  min-height: 56px;
 }
 
 .stats__description {
@@ -38,7 +38,6 @@
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
-  // margin-bottom: 20px;
   text-align: center;
 }
 
@@ -70,10 +69,12 @@
 
   .stats__list-description {
     display: flex;
-    gap: 167px;
+    flex-direction: row;
+    align-content: space-between;
+    gap: 169px;//было 167 добавила 2px
     align-items: flex-start;
-    min-height: 77px;
     margin-bottom: 99px;
+    max-width: $view-port-tablet;
   }
 
   .stats__list {
@@ -88,14 +89,18 @@
     margin-top: 0;
     flex-shrink: 0;
     width: 162px;
-    gap: 0;
+    min-height: 72px;
   }
 
   .stats__description {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 9px;
     padding-top: 11px;
     text-align: right;
-    width: 174px;
     font-size: 20px;
+    max-width: 174px;
   }
 
   .stats__slider {
@@ -130,26 +135,32 @@
   .stats__paragraph {
     font-size: 16px;
     line-height: 24px;
-    margin-bottom: 54px;//69-15=4
+    margin-bottom: 69px;//69-15=4
     max-width: 432px;
   }
 
   .stats__list {
-    margin-top: -3px;// сама добавила
+    margin-top: 0;// сама добавила
     max-width: 366px;
     margin-bottom: 55px;
     gap: 42px;
   }
 
   .stats__item {
-    // margin-top: 0;
+    margin-top: 0;
+    flex-shrink: 0;
     width: 162px;
     min-height: 77px;
   }
 
   .stats__description {
+    width: 327px;
     font-size: 20px;
-    margin-bottom: 75px;
+    margin-bottom: 25px;
     text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 63px;
   }
 }

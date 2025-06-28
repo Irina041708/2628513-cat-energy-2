@@ -30,12 +30,14 @@
 
 .main-nav--opened .main-nav__toggle::before {
   content: "";
+  top: 23px;
+  right: 20px;
   display: block;
-  width: 24px;
-  height: 24px;
+  width: 20px;
+  height: 20px;
   mask-image: url("../../icons/stack.svg#main-nav__toggle-close");
   mask-repeat: no-repeat;
-  mask-size: 18px 18px;
+  mask-size: 23px 20px;//надо для x
   background-color: $bg-basis-dark;
 }
 

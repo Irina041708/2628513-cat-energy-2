@@ -13,6 +13,7 @@
 
 .nutrition__heading {
   @include fonttitle;
+  display: block;
   font-size: 36px;
   line-height: 36px;
   color: $color-accent;
@@ -23,6 +24,7 @@
 
 .nutrition__paragraph {
   @include fonttitle;
+  display: block;
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
@@ -68,7 +70,7 @@
 
   .nutrition__heading {
     padding: 0;
-    display: block;
+    text-align: start;
     font-size: 60px;
     line-height: 60px;
     color: $color-basis;
@@ -81,7 +83,8 @@
   }
 
   .nutrition__paragraph {
-    display: block;
+    text-align: start;
+    padding-left: 0;
     font-size: 20px;
     line-height: 20px;
     color: $color-basis;
@@ -139,6 +142,7 @@
     font-size: 60px;
     line-height: 60px;
     color: $color-basis;
+    text-align: left;
   }
 
   .nutrition__paragraph {
@@ -150,6 +154,8 @@
     font-size: 20px;
     line-height: 20px;
     color: $color-basis;
+    text-align: left;
+    padding-left: 0;
   }
 
   .nutrition__button {

@@ -6,6 +6,7 @@
 
 .slider-stats__button {
   left: 50%;
+  transform: translateX(-50%);
   grid-column: 2 / 4;
   grid-row: 2 / 2;
   z-index: 1;
