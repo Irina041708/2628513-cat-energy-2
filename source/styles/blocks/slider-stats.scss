@@ -6,6 +6,7 @@
 
 .slider-stats__button {
   left: 50%;
+  transform: translateX(-50%);
   grid-column: 2 / 4;
   grid-row: 2 / 2;
   z-index: 1;
@@ -42,7 +43,7 @@
   }
 
   .slider-stats__img--first {
-    transform: translate(20%);
+    transform: translate(18.5%, 0);
     min-width: 560px;
     height: 512px;
   }
@@ -55,21 +56,22 @@
 
 @media (min-width: $view-port-desktop) {
   .slider-stats {
-    grid-column: 4 / 6;
+    width: 560px;
+    grid-column: 5 / 6;
     display: grid;
     grid-template-columns: 0 280px 280px 0;
-    grid-template-rows: 0 512px 85px;
-    align-content: end;
+    grid-template-rows: 0 512px 75px;
   }
 
   .slider-stats__img--first {
+    transform: translate(0, 0);
     min-width: 560px;
     height: 512px;
   }
 
   .slider-stats__img--second {
-    transform: translate(-50%);
     min-width: 560px;
     height: 512px;
+    transform: translate(-50%);
   }
 }

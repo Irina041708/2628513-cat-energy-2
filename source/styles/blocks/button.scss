@@ -38,6 +38,12 @@
     font-size: 20px;
     line-height: 26px;
   }
+
+  .button--card-modifier {
+    display: block;
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 @media (min-width: $view-port-desktop) {

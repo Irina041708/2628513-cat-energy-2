@@ -13,7 +13,6 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  align-items: center;
   gap: 20px;
   min-height: 38px;
   margin-bottom: 14px;
@@ -25,6 +24,7 @@
   align-items: center;
   flex-wrap: wrap;
   width: 220px;
+  height: 38px;
 }
 
 .main-header__main-nav {
@@ -44,7 +44,7 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: flex-start;
-    gap: 94px;
+    gap: 78px;//было 94 - 9
     margin-bottom: 38px;//65px 65-38=27 у секции ниже
   }
 
@@ -55,8 +55,8 @@
 
   .main-header__logo {
     gap: 13px;
-    width: 174px;
-    min-height: 50px;
+    width: 190px;//сама изменила было 174
+    height: 50px;
   }
 
   .main-header__main-nav {
@@ -79,7 +79,7 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: flex-start;
-    column-gap: 270px;
+    column-gap: 267px;
   }
 
   .main-header__wrapper-logo {
