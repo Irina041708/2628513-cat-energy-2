@@ -78,13 +78,15 @@
     flex-wrap: wrap;
     justify-content: center;
     left: 0;
+    flex-grow: 1;//поделить поровну и занять все доступно пространство во флекс контейнере
   }
 
   .main-nav--opened .main-nav__list {
     position: relative;
+    justify-content: flex-start;
     width: 436px;
     flex-wrap: wrap;
-    padding-top: 14px; //39-25=14
+    margin-top: 14px; //39-25=14
   }
 }
 
@@ -99,6 +101,7 @@
     flex-wrap: wrap;
     justify-content: center;
     left: 0;
+    flex-grow: 1;
   }
 
   .main-nav--opened .main-nav__list {

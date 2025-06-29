@@ -21,6 +21,34 @@
 @media (min-width: $view-port-tablet) and (max-width: ($view-port-desktop - 1)) {
   .catalog__wrapper {
     @include wrapper-center-tablet;
+    padding-top: 27px; //65-38(у header)
+  }
+
+  .catalog__heading {
+    @include fonttitle;
+    font-size: 60px;
+    line-height: 60px;
+    padding-top: 0;
+    margin-bottom: 84px;
+  }
+
+  .catalog__list {
+    @include list;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(324px, 1fr));
+    grid-template-rows: auto;
+    grid-auto-flow: row;
+    gap: 60px 60px;
+  }
+
+  .catalog__item {
+    background: linear-gradient($bg-basis 15.85%, $bg 15.85% 84.14%, $bg 84.14%);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: left top;
+    min-height: 511px;
+    display: block;
+    margin-bottom: 0;
   }
 }
 
