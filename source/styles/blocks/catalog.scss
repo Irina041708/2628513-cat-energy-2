@@ -2,11 +2,21 @@
   @include wrapper-center-mobile;
 }
 
+.catalog__wrapper::before {
+  position: relative;
+  left: -20px;
+  top: 0;
+  content: "";
+  display: block;
+  width: $view-port-mobile;//посмотри
+  outline: 1px solid #d9d9d9;
+}
+
 .catalog__heading {
   @include fonttitle;
   font-size: 36px;
   line-height: 36px;
-  padding-top: 27px;
+  padding-top: 28px;//добавила 1px, тк в header 14px
   margin-bottom: 41px;
 }
 
@@ -14,8 +24,32 @@
   @include list;
 }
 
+.catalog__list::before {
+  position: relative;
+  left: -20px;
+  top: 0;
+  content: "";
+  display: block;
+  width: $view-port-mobile;//посмотри
+  outline: 1px solid #ebebeb;
+}
+
 .catalog__item {
   margin-bottom: 25px;
+}
+
+.catalog__item::before {
+  position: relative;
+  left: -20px;
+  top: 25px;
+  content: "";
+  display: block;
+  width: $view-port-mobile;//посмотри
+  outline: 1px solid #ebebeb;
+}
+
+.catalog__item:last-child::before {
+  display: none;
 }
 
 @media (min-width: $view-port-tablet) and (max-width: ($view-port-desktop - 1)) {
@@ -46,9 +80,13 @@
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: left top;
-    min-height: 511px;
-    display: block;
     margin-bottom: 0;
+  }
+
+  .catalog__wrapper::before,
+  .catalog__list::before,
+  .catalog__item::before {
+    display: none;
   }
 }
 

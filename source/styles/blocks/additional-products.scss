@@ -4,7 +4,7 @@
 
 .additional-products__list {
   @include list;
-  margin-bottom: 35px;
+  padding-bottom: 19px;
 }
 
 .additional-products__heading {
@@ -17,6 +17,10 @@
 
 .additional-products__item {
   margin-bottom: 19px;
+}
+
+.additional-products__banner {
+  margin-top: 15px;//посмотри сама изменила
 }
 
 @media (min-width: $view-port-tablet) and (max-width: ($view-port-desktop - 1)) {
