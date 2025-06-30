@@ -39,6 +39,7 @@
   display: block;
   margin: 0 auto;
   width: 100%;
+  min-height: 362px;
 }
 
 @media (min-width: $view-port-tablet) and (max-width: ($view-port-desktop - 1)) {
@@ -46,7 +47,8 @@
     padding: 60px 70px;
     width: $view-port-tablet;
     margin: 0 auto;
-    max-width: 628px;
+    min-height: 80px;
+    // transform: translate(-1px, 1px);
   }
 
   .location__header {
@@ -59,6 +61,10 @@
     text-align: right;
     width: 157px;
     font-size: 16px;
+    min-height: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
   }
 }
 
@@ -90,8 +96,12 @@
   }
 
   .location__description {
-    font-size: 16px;
     width: 157px;
+    font-size: 16px;
+    min-height: 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
   }
 
   .location__link {

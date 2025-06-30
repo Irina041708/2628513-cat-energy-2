@@ -1,0 +1,14 @@
+.form-subscribe {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-subscribe__field {
+  padding: 12px;
+  border: 1px solid#CDCDCD;
+}
+
+.form-subscribe__button {
+  min-height: 56px;
+}

@@ -30,12 +30,14 @@
 
 .main-nav--opened .main-nav__toggle::before {
   content: "";
+  top: 23px;
+  right: 20px;
   display: block;
-  width: 24px;
-  height: 24px;
+  width: 20px;
+  height: 20px;
   mask-image: url("../../icons/stack.svg#main-nav__toggle-close");
   mask-repeat: no-repeat;
-  mask-size: 18px 18px;
+  mask-size: 23px 20px;//надо для x
   background-color: $bg-basis-dark;
 }
 
@@ -76,13 +78,15 @@
     flex-wrap: wrap;
     justify-content: center;
     left: 0;
+    flex-grow: 1;//поделить поровну и занять все доступно пространство во флекс контейнере
   }
 
   .main-nav--opened .main-nav__list {
     position: relative;
+    justify-content: flex-start;
     width: 436px;
     flex-wrap: wrap;
-    padding-top: 14px; //39-25=14
+    margin-top: 14px; //39-25=14
   }
 }
 
@@ -97,14 +101,15 @@
     flex-wrap: wrap;
     justify-content: center;
     left: 0;
+    flex-grow: 1;
   }
 
   .main-nav--opened .main-nav__list {
     position: relative;
-    width: 475px;
+    width: 478px;//сместила на 3px так как gap уменьшила на  3px
     min-height: 40px;
     flex-wrap: wrap;
-    padding-top: 16px; //39-25=14
+    padding-top: 14px; //39-25=14
     background: none;
   }
 }

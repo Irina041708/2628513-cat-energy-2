@@ -38,6 +38,14 @@
     font-size: 20px;
     line-height: 26px;
   }
+
+  .button--card-modifier {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 16px;
+    line-height: 20px;
+    width: 200px;
+  }
 }
 
 @media (min-width: $view-port-desktop) {

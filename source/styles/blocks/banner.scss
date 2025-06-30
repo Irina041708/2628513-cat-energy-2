@@ -1,4 +1,6 @@
 .banner {
+  width: 280px;
+  min-height: 290px;
   background-image: linear-gradient(rgba(104, 183, 56, 0.85) 0% 100%), url("../../images/banner-cat-bg-catalog-mobile@2x.png"), linear-gradient(rgba(79, 78, 83, 1) 0% 100%, rgba(69, 68, 73, 1) 0% 100%);
   background-repeat: no-repeat;
   background-position: center top;
@@ -24,8 +26,12 @@
 
 .banner__title {
   @include font-paragraph;
+  display: block;
   font-size: 16px;
   line-height: 20px;
   color: $bg-basis;
   padding-top: 187px;
+  padding-left: 58px;
+  padding-right: 61px;
+  text-align: center;
 }
