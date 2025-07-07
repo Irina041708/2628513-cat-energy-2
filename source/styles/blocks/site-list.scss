@@ -12,14 +12,26 @@
   flex-shrink: 0;
 }
 
-.site-list__navigation-link::before {
+.site-list__item::before {
   position: absolute;
   left: 0;
   top: 0;
   content: "";
   display: block;
   width: 100%;//посмотри
-  outline: 1px solid #e6e6e6;
+  height: 1px;
+  background: $color-linear;
+}
+
+.site-list__item:last-child::after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  content: "";
+  display: block;
+  width: 100%;//посмотри
+  height: 1px;
+  background: $color-linear;
 }
 
 .site-list__navigation-link {
@@ -41,26 +53,13 @@
   opacity: 0.3;
 }
 
-.site-list__navigation-link--current[aria-current="page"] {
-  text-decoration: underline 2px solid $bg-button;
-  text-underline-offset: 10px;
-}
-
-
 @media (min-width: $view-port-tablet) and (max-width: ($view-port-desktop - 1)) {
-  .site-list {
-    flex-direction: row;
-    justify-content: start;
-    align-items: center;
-    gap: 33px;
-    // min-height: 34px;
-  }
-
   .site-list__item {
     min-height: 34px;
   }
 
-  .site-list__navigation-link::before {
+  .site-list__item::before,
+  .site-list__item:last-child::after {
     display: none;
   }
 
@@ -69,6 +68,12 @@
     width: 100%;
     font-size: 18px;
     line-height: 24px;
+    color: $color-basis;
+  }
+
+  .site-list__navigation-link[aria-current="page"] {
+    text-decoration: underline 2px solid $bg-button;
+    text-underline-offset: 10px;
   }
 }
 
@@ -80,27 +85,32 @@
     // gap: 33px;
   }
 
-  .site-list__navigation-link::before {
+  .site-list__item::before,
+  .site-list__item:last-child::after {
     display: none;
   }
+
 
   .site-list__navigation-link {
     padding: 0;
     width: 100%;
     font-size: 20px;
     line-height: 100%;
+    color: $color-basis;
+  }
+
+  .site-list__navigation-link--modoifier {
     color: $color-accent;
   }
 
-  .site-list__navigation-link[aria-current="page"]::after,
-  .site-list__navigation-link--current[aria-current="page"]::after {
-    color: $bg-basis;
-    bottom: -8px;
+  .site-list__navigation-link[aria-current="page"] {
+    text-decoration: underline 2px solid $bg-button;
+    text-underline-offset: 11px;
   }
 
-  .site-list__navigation-link[aria-current="page"]:active::after,
-  .site-list__navigation-link--current[aria-current="page"]:active::after {
-    outline: 2px solid $bg-basis;
+  .site-list__navigation-link--modoifier[aria-current="page"] {
+    text-decoration: underline 2px solid $bg-basis;
+    text-underline-offset: 11px;
   }
 
   .site-list__item {

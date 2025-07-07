@@ -1,5 +1,6 @@
 .page {
   height: 100%;
+  margin: 0 auto;
 }
 
 .page__body {
@@ -25,7 +26,8 @@
     background-image: url("../../images/nutrition-cat-bg-index-desktop@2x.jpg");
     background-repeat: no-repeat;
     top: 0;
-    left: 50%;//чтобы кот не стоял всегда справа по центру и не уходил вправо при увеличении ширины
+    //left: 50%;//чтобы кот не стоял всегда справа по центру и не уходил вправо при увеличении ширины
+    right: 0;
     transform: translateX(0%);//чотбы контент был в центре и не появлялась горизонтальная полоса
     background-size: 1040px 694px;
   }
@@ -41,5 +43,17 @@
     height: 50%;
     top: 0;
     right: 0;
+  }
+
+  .page__body--modifier {
+    background-image: none;
+  }
+
+  .page__body--modifier::after {
+    background-image: none;
+  }
+
+  .page__body--modifier::before {
+    background-image: none;
   }
 }

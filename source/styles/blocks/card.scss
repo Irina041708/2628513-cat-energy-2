@@ -2,11 +2,10 @@
 /* stylelint-disable @stylistic/named-grid-areas-alignment */
 
 .card {
-  padding-top: 21px;//добавила 1px
+  padding-top: 20px;
   align-items: start;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-  grid-auto-rows: minmax(auto, auto,);
   grid-template-areas:
       "card__link-img card__link-heading"
       "card__link-img card__properties"
@@ -29,25 +28,30 @@
 .card__link-heading {
   @include link;
   grid-area: card__link-heading;
-  margin-bottom: 6px;//изменила
   width: 76px;
-  min-height: 41px;
+  min-height: 43px;
+  justify-content: flex-start;
+  display: grid;//важно
 }
 
 .card__heading {
   @include fonttitle;
+  display: block;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   color: $color-text-heading;
-  align-items: start;
-  // min-height: 41px;
+  width: 76px;
+  min-height: 41px;
 }
 
 .card__properties {
+  padding-top: 5px;
   min-height: 48px;
   margin: 0;
   grid-area: card__properties;
+  align-items: end;//важно
+  display: grid;//важно
 }
 
 .card__property {
@@ -57,23 +61,25 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+  align-items: flex-end;
   width: 140px;
+  min-height: 16px;
   gap: 10px;
-  align-items: start;
 }
 
 .card__property-name {
   width: 60px;
+  align-content: flex-end;
 }
 
 .card__property-value {
   width: 42px;
   margin: 0;
   text-align: end;
+  align-content: flex-end;
 }
 
 .card__button {
-  margin-top: 12px;//изменила
   grid-area: card__button;
   display: flex;
   justify-content: center;
@@ -81,21 +87,27 @@
   min-height: 40px;
 }
 
-.card__header {
+.card__link-heading--header {
   @include fonttitle;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  color: rgba(17, 17, 17, 1);
-  padding-top: 57px;//изменила было 53px
-  margin-bottom: 8px;
+  color: #111111;
+  padding: 58px 30px 0; //изменила было 53px
+  width: 280px;
+  min-height: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
-.card__paragraph {
+.card__properties--paragraph {
   @include font-paragraph;
   font-size: 12px;
   line-height: 16px;
-  margin-bottom: 21px;
+  padding-top: 9px;
+  min-height: 16px;
+  margin-bottom: 23px;
 }
 
 .card--to--all {
@@ -105,64 +117,288 @@
   background-repeat: no-repeat;
   background-size: 30px 30px;
   background-position: center 25px;
+  position: relative;
 }
 
 @media (min-width: $view-port-tablet) and (max-width: ($view-port-desktop - 1)) {
   .card {
+    padding-top: 0;
     display: grid;
+    justify-items: center;
     grid-template-columns: 1fr;
-    grid-auto-rows: minmax(auto, auto,);
+    row-gap: 10px;
+    grid-auto-rows: 210px auto 1fr  auto;
     grid-template-areas:
-      "card__link-img "
+      "card__link-img"
       "card__link-heading"
       "card__properties"
       "card__button";
   }
 
-  .card__link {
-    @include link;
+  .card__link-img {
+    grid-area: card__link-img;
+    margin-top: 10px;
+    align-items: start;
+    width: 200px;
+    height: 210px;
   }
 
   .card__img {
+    display: block;
+    object-fit: contain;
     width: 200px;
     height: 210px;
-    // margin-bottom: 22px;
   }
 
-  .card__content {
-    margin: 0 auto;
+  .card__link-heading {
+    padding-top: 23px;//добавила 1px
+    grid-area: card__link-heading;
+    width: 136px;
+    min-height: 47px;
+    text-align: center;
+    transform: translateX(1px);//сама выставила
+  }
+
+  .card__heading {
+    width: 136px;
+    min-height: 47px;
+    font-size: 20px;
+    line-height: 24px;
+    color: $color-text-heading;
+    padding-bottom: 4px;//сама добавила
+  }
+
+  .card__heading-nowrap {
+    transform: translateX(-2px);//сама выставила
+    white-space: nowrap;
+    display: block;//чтобы следующее слово переносилось на новую строку
+  }
+
+  .card__propertys {
+    grid-area: card__properties;
+    min-height: 48px;
+    // margin-bottom: 32px;
+  }
+
+  .card__property {
+    position: relative;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 12px;
+    gap: 50px;
     width: 250px;
-    min-height: 157px;
-    // display: flex;
-    // flex-direction: column;
-    // align-items: center;
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto auto;
-    grid-auto-rows: minmax(auto, auto);
-    grid-auto-flow: row;
-    row-gap: 20px;
+  }
+
+  .card__property:last-child {
+    margin-bottom: 0;
+  }
+
+  .card__property::after {
+    position: absolute;
+    display: block;
+    content: "";
+    height: 1px;
+    background: $color-linear-block;
+    width: 100%;
+    top: 25px;
+  }
+
+  .card__property-name {
+    width: 60px;
+  }
+
+  .card__property-value {
+    min-width: 60px;
+    margin-left: 0;
+    text-align: end;
   }
 
   .card__button {
-    align-self: end;
+    grid-area: card__button;
     margin: 0 auto;
+    min-height: 40px;
     width: 250px;
+    margin-bottom: 40px;
+    align-content: center;
   }
 
-  .card__header {//в самом низу отдельный блок
-    @include fonttitle;
+  .card__link-heading--header {//в самом низу отдельный блок
     font-size: 20px;
     line-height: 24px;
-    text-transform: uppercase;
     color: #222222;
-    padding-top: 78px;
-    margin-bottom: 8px;
+    min-height: 48px;
+    margin-bottom: 32px;
+    transform: translate(1px, -82px);//выставила сама
+    width: 170px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 23px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+  }
+
+  .card__properties--paragraph {
+    font-size: 16px;
+    line-height: 20px;
+    min-height: 36px;
+    width: 170px;
+    margin-bottom: 73px;
+    transform: translateY(-82px);
+    padding-top: 1px;
   }
 
   .card--to--all {
+    position: relative;
+    top: 82px;
+    width: 100%;
+    min-height: 84.14%;
+    border: 1px solid $bg;
+    background-size: 60px 60px;
+    background-position: center 50px;
+  }
+}
+
+@media (min-width: $view-port-desktop) {
+  .card {
+    padding-top: 0;
+    display: grid;
+    justify-items: center;
+    justify-content: center;
+    grid-template-columns: 1fr;
+    row-gap: 10px;
+    grid-auto-rows: 210px auto 1fr  auto;
+    grid-template-areas:
+      "card__link-img"
+      "card__link-heading"
+      "card__properties"
+      "card__button";
+  }
+
+  .card__link-img {
+    grid-area: card__link-img;
+    margin-top: 10px;
+    align-items: start;
+    width: 169px;
+    height: 242px;
+  }
+
+  .card__img {
+    display: block;
+    object-fit: contain;
+    width: 169px;
+    height: 210px;
+  }
+
+  .card__link-heading {
+    padding-top: 12px;
+    grid-area: card__link-heading;
+    width: 140px;
+    min-height: 48px;
+    text-align: center;
+    transform: translateX(1px);//сама выставила
+  }
+
+  .card__heading {
+    width: 140px;
+    font-size: 20px;
+    line-height: 24px;
+    color: $color-text-heading;
+    padding-bottom: 9px;//сама добавила
+  }
+
+  .card__heading-nowrap {
+    transform: translateX(-2px);//сама выставила
+    white-space: nowrap;
+    display: block;//чтобы следующее слово переносилось на новую строку
+  }
+
+  .card__propertys {
+    grid-area: card__properties;
+    min-height: 48px;
+    // margin-bottom: 32px;
+  }
+
+  .card__property {
+    position: relative;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 11px;
+    gap: 10px;
+    width: 169px;
+    min-height: 21px;
+  }
+
+  .card__property:last-child {
+    margin-bottom: 0;
+  }
+
+  .card__property::after {
+    position: absolute;
+    display: block;
+    content: "";
+    height: 1px;
+    background: $color-linear-block;
+    width: 100%;
+    top: 131%;
+  }
+
+  .card__property-name {
+    width: 60px;
+  }
+
+  .card__property-value {
+    min-width: 60px;
+    margin-left: 0;
+    text-align: end;
+  }
+
+  .card__button {
+    grid-area: card__button;
+    margin: 0 auto;
+    min-height: 40px;
+    margin-bottom: 40px;
+    align-content: center;
+    max-width: 169px;
+  }
+
+  .card__link-heading--header {//в самом низу отдельный блок
+    font-size: 20px;
+    line-height: 24px;
+    color: #111111;
+    min-height: 48px;//margin-top: 10px;
+    margin-bottom: 25px;//margin-bottom: 5px;
+    transform: translate(1px, -82px);//выставила сама
+    width: 134px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0;
+  }
+
+  .card__properties--paragraph {
+    font-size: 16px;
+    line-height: 18px;
+    min-height: 36px;
     width: 170px;
-    min-height: 217px;
-    margin-top: 50px;
+    margin-bottom: 80px;
+    transform: translateY(-82px);
+    padding-top: 0;
+  }
+
+  .card--to--all {
+    position: relative;
+    top: 82px;
+    width: 100%;
+    min-height: 84.14%;
+    border: 1px solid $bg;
+    background-size: 60px 60px;
+    background-position: center 50px;
+  }
+
+  .card--to--all::after {
+    display: none;
   }
 }

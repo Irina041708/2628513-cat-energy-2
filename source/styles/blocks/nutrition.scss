@@ -54,7 +54,7 @@
 
 @media (min-width: $view-port-tablet) and (max-width: ($view-port-desktop - 1)) {
   .nutrition {
-    padding-top: 27px;
+    padding-top: 28px;
     background-image: none;
     margin: 0;
   }
@@ -89,7 +89,7 @@
     line-height: 20px;
     color: $color-basis;
     width: 414px;//сама сделала ширину,так ка не уменьшается на одну строку
-    margin-bottom: 21px;
+    margin-bottom: 20px;
   }
 
   .nutrition__button {
@@ -97,7 +97,7 @@
     width: 242px;
     min-height: 54px;
     left: 0;
-    transform: translate(120px, -580px);
+    transform: translate(121px, -579px);
   }
 
   .nutrition__img {

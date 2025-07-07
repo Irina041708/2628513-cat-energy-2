@@ -2,7 +2,6 @@
   display: block;
   width: 101px;
   height: 22px;
-  transform: translateY(-1px);
 }
 
 .logo__logo-img:not(:first-child):not(:last-child),
@@ -28,8 +27,9 @@
   }
 
   .logo__logo-text {
-    width: 101px;//изменила с 101px
-    height: 22px;//изменила с 18xp
+    width: 101px;
+    height: 22px;
+    transform: translateY(-1px);
   }
 
   .logo__logo-text--modifier {

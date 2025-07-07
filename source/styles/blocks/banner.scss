@@ -1,7 +1,7 @@
 .banner {
   width: 280px;
   min-height: 290px;
-  background-image: linear-gradient(rgba(104, 183, 56, 0.85) 0% 100%), url("../../images/banner-cat-bg-catalog-mobile@2x.png"), linear-gradient(rgba(79, 78, 83, 1) 0% 100%, rgba(69, 68, 73, 1) 0% 100%);
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85) 0% 100%), url("../../images/banner-cat-bg-catalog-mobile@2x.png"), linear-gradient(#323232 0% 100%, #434343 0% 100%);
   background-repeat: no-repeat;
   background-position: center top;
   background-size: 100% 100%, 279px 289px, 100% 100%;
@@ -34,4 +34,47 @@
   padding-left: 58px;
   padding-right: 61px;
   text-align: center;
+}
+
+@media (min-width: $view-port-tablet) and (max-width: ($view-port-desktop - 1)) {
+  .banner {
+    width: 707px;
+    min-height: 200px;
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85) 0% 100%), url("../../images/banner-cat-bg-catalog-tablet@2x.png"), linear-gradient(#323232 0% 100%, #434343 0% 100%);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 100% 100%, 96.5% auto, 100% 100%;
+    text-align: center;
+    position: relative;
+    display: flex;
+  }
+
+  .banner::before {
+    mask-size: 80px 82px;
+    left: 16.5%;
+    top: 28%;
+  }
+
+  .banner__title {
+    padding: 0;
+    padding-top: 71px;
+    padding-bottom: 20px;
+    padding-left: 422px;
+    text-align: left;
+  }
+}
+
+@media (min-width: $view-port-desktop) {
+  .banner {
+    width: 245px;
+    min-height: 288px;
+    background-position: right center;
+  }
+
+  .banner__title {
+    padding-top: 185px;
+    padding-left: 42px;
+    padding-right: 42px;
+    text-align: center;
+  }
 }
