@@ -48,7 +48,6 @@
   margin: 0 auto;
   display: block;
   border: none;
-  height: 362px;
 }
 
 // .location__link-static,
@@ -57,12 +56,12 @@
 //   display: none;
 // }
 
-// .location__img-map {
-//   display: block;
-//   margin: 0 auto;
-//   width: 100%;
-//   min-height: 362px;
-// }
+.location__img-map {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  min-height: 362px;
+}
 
 // .location__link--nojs .location__link-static {
 //   @include list;
