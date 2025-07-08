@@ -2,6 +2,10 @@
   background-color: $bg-basis;
 }
 
+.location--modifier {
+  background-color: $bg;
+}
+
 .location__wrapper {
   width: $view-port-mobile;
   margin: 0 auto;
@@ -45,16 +49,25 @@
 
 .location__link {
   @include link;
-  margin: 0 auto;
-  display: block;
   border: none;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
 }
 
-// .location__link-static,
-// .location__link-dynamic {
-//   @include link;
-//   display: none;
-// }
+.location__link-static,
+.location__link-dynamic {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+
+.location__img-google {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  min-height: 362px;
+}
 
 .location__img-map {
   display: block;
@@ -62,20 +75,6 @@
   width: 100%;
   min-height: 362px;
 }
-
-// .location__link--nojs .location__link-static {
-//   @include list;
-//   display: flex;
-//   position: relative;
-// }
-
-// .location__link--nojs .location__link-dynamic {
-//   display: none;
-// }
-
-// .location__link--js .location__link-static {
-//   display: none;
-// }
 
 @media (min-width: $view-port-tablet) and (max-width: ($view-port-desktop - 1)) {
   .location {
@@ -112,13 +111,11 @@
     gap: 19px;
   }
 
-  .location__link {
-    width: 100%;
+  .location__img-google {
     min-height: 400px;
   }
 
   .location__img-map {
-    width: 100%;
     min-height: 400px;
   }
 }
@@ -178,8 +175,11 @@
     min-height: 400px;
   }
 
+  .location__img-google {
+    min-height: 400px;
+  }
+
   .location__img-map {
-    width: 100%;
     min-height: 400px;
   }
 }

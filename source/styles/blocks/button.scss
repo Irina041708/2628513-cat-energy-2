@@ -1,3 +1,4 @@
+/* stylelint-disable declaration-block-no-redundant-longhand-properties */
 .button {
   @include fonttitle;
   @include link;
@@ -9,8 +10,9 @@
   background-color: $bg-button;
   display: flex;
   flex-flow: row wrap;
-  align-items: center;
-  justify-content: center;
+  align-content: center;//каталог 320
+  // align-items: center;
+  // justify-content: center;
 }
 
 .button:hover {
@@ -36,6 +38,8 @@
   @include button;
   font-size: 20px;
   line-height: 26px;
+  justify-content: center;
+  align-content: center;
 }
 
 .button--card-modifier {

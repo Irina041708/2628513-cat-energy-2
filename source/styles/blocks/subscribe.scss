@@ -1,27 +1,30 @@
 .subscribe__heading {
   @include fonttitle;
-  padding-left: 20px;
+  // display: block;
   padding-top: 40px;
-  width: 192px;
+  width: 152px;
+  min-height: 24px;
   font-size: 24px;
   line-height: 24px;
   margin-bottom: 32px;
   position: relative;
   box-shadow: 20px 0 0 0 $bg-basis, -20px 0 0 0 $bg-basis;
-  background-color: $bg-basis;
+  background: $bg-basis;
+  z-index: 10;
 }
 
 .subscribe__heading::before {
   content: "";
   position: absolute;
   display: block;
-  top: 49px;//там 36px
+  top: 50px;//там 36px
   right: 0;
   width: 100vw;
   height: 2px;
   background: $bg-button;
-  z-index: -1;
-  box-shadow: 100vw 0 0 0 $bg-button;
+  color: $bg-basis;
+  z-index: -5;
+  box-shadow: 100vw 0 0 0 $bg-button, -100vw 0 0 0 $bg-button;
 }
 
 .subscribe__wrapper {

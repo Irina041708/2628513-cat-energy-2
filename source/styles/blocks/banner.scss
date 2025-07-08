@@ -1,7 +1,7 @@
 .banner {
   width: 280px;
   min-height: 290px;
-  background-image: linear-gradient(rgba(104, 183, 56, 0.85) 0% 100%), url("../../images/banner-cat-bg-catalog-mobile@2x.png"), linear-gradient(#323232 0% 100%, #434343 0% 100%);
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85) 0% 100%), image-set(url("../../images/banner-cat-bg-catalog-mobile@1x.webp") type("image/webp") 1x, url("../../images/banner-cat-bg-catalog-mobile@2x.webp") type("image/webp") 2x, url("../../images/banner-cat-bg-catalog-mobile@1x.png") type("image/png") 1x, url("../../images/banner-cat-bg-catalog-mobile@2x.png") type("image/png") 2x), linear-gradient(#323232 0% 100%, #434343 0% 100%);
   background-repeat: no-repeat;
   background-position: center top;
   background-size: 100% 100%, 279px 289px, 100% 100%;
@@ -40,7 +40,7 @@
   .banner {
     width: 707px;
     min-height: 200px;
-    background-image: linear-gradient(rgba(104, 183, 56, 0.85) 0% 100%), url("../../images/banner-cat-bg-catalog-tablet@2x.png"), linear-gradient(#323232 0% 100%, #434343 0% 100%);
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85) 0% 100%), image-set(url("../../images/banner-cat-bg-catalog-tablet@1x.webp") type("image/webp") 1x, url("../../images/banner-cat-bg-catalog-tablet@2x.webp") type("image/webp") 2x, url("../../images/banner-cat-bg-catalog-tablet@1x.png") type("image/png") 1x, url("../../images/banner-cat-bg-catalog-tablet@2x.png") type("image/png") 2x), linear-gradient(#323232 0% 100%, #434343 0% 100%);
     background-repeat: no-repeat;
     background-position: right center;
     background-size: 100% 100%, 96.5% auto, 100% 100%;

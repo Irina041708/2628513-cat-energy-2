@@ -23,6 +23,7 @@
   margin-bottom: 36px;
   background-color: $bg-basis;
   box-shadow: 40px 0 0 0 $bg-basis, -20px 0 0 0 $bg-basis;
+  position: relative;
 }
 
 .additional-products__heading::before {

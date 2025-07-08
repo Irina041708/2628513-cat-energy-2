@@ -23,7 +23,7 @@
     content: "";
     width: 720px;
     height: 694px;
-    background-image: url("../../images/nutrition-cat-bg-index-desktop@2x.jpg");
+    background-image: image-set(url("../../images/nutrition-cat-bg-index-desktop@1x.webp") type("image/webp") 1x, url("../../images/nutrition-cat-bg-index-desktop@2x.webp") type("image/webp") 2x, url("../../images/nutrition-cat-bg-index-desktop@1x.jpg") type("image/png") 1x, url("../../images/nutrition-cat-bg-index-desktop@2x.jpg") type("image/png") 2x), linear-gradient(#4f4f54 0% 100%, #434348 0% 100%);
     background-repeat: no-repeat;
     top: 0;
     //left: 50%;//чтобы кот не стоял всегда справа по центру и не уходил вправо при увеличении ширины
