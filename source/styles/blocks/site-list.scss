@@ -56,6 +56,7 @@
 @media (min-width: $view-port-tablet) and (max-width: ($view-port-desktop - 1)) {
   .site-list__item {
     min-height: 34px;
+    max-width: 154px;
   }
 
   .site-list__item::before,
@@ -82,6 +83,10 @@
     flex-direction: row;
     justify-content: start;
     align-items: center;
+  }
+
+  .site-list__item {
+    max-width: 475px;
   }
 
   .site-list__item::before,
