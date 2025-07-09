@@ -1,7 +1,6 @@
-/* в этот файл добавляет скрипты*/
+
 const navMain = document.querySelector('.main-nav');
 const navToggle = document.querySelector('.main-nav__toggle');
-// const navSiteList = document.querySelector('.site-list');
 
 
 navMain.classList.remove('main-nav--nojs');
@@ -16,7 +15,18 @@ navToggle.addEventListener('click', () => {
   }
 });
 
+// const blockMap = document.querySelector('.location__link');
+// const staticMap = document.querySelector('.location__link-static');
+// const dynamicMap = document.querySelector('.location__link-dynamic');
 
-// const navLocation = document.querySelector('.location__link');
-// navLocation.classList.remove('location__link--nojs');
-// navLocation.classList.add('location__link--js ');
+// blockMap.classList.remove('location__link--nojs');
+// blockMap.classList.add('location__link--js');
+
+// if (blockMap.classList.contains('location__link--nojs')) {
+//   blockMap.classList.remove(dynamicMap);
+//   blockMap.classList.add(staticMap);
+// } else {
+//   blockMap.classList.add(dynamicMap);
+//   blockMap.classList.remove(staticMap);
+// }
+

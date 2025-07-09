@@ -60,13 +60,14 @@
 .location__link-dynamic {
   grid-column: 1 / 2;
   grid-row: 1 / 2;
+  height: 362px;
 }
 
 .location__img-google {
   display: block;
   margin: 0 auto;
   width: 100%;
-  min-height: 362px;
+  height: 362px;
 }
 
 .location__img-map {
