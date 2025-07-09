@@ -1,17 +1,34 @@
-.subscribe__wrapper {
-  @include wrapper-center-mobile;
-}
-
-.subscribe {
-  padding-top: 40px;
-  padding-bottom: 40px;
-}
-
 .subscribe__heading {
   @include fonttitle;
+  padding-top: 40px;
+  width: 152px;
+  min-height: 24px;
   font-size: 24px;
   line-height: 24px;
   margin-bottom: 32px;
+  position: relative;
+  box-shadow: 20px 0 0 0 $bg-basis, -20px 0 0 0 $bg-basis;
+  background: $bg-basis;
+  z-index: 10;
+}
+
+.subscribe__heading::before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: 50px;
+  right: 0;
+  width: 100vw;
+  height: 2px;
+  background: $bg-button;
+  color: $bg-basis;
+  z-index: -5;
+  box-shadow: 100vw 0 0 0 $bg-button, -100vw 0 0 0 $bg-button;
+}
+
+.subscribe__wrapper {
+  @include wrapper-center-mobile;
+  padding: 0 20px 40px;
 }
 
 .subscribe__title {
@@ -22,20 +39,89 @@
   text-align: center;
 }
 
-.form-subscribe {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
 @media (min-width: $view-port-tablet) and (max-width: ($view-port-desktop - 1)) {
   .subscribe__wrapper {
     @include wrapper-center-tablet;
+  }
+
+  .subscribe {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .subscribe__heading {
+    padding-top: 0;
+    display: block;
+    position: relative;
+    margin-left: 50px;
+    padding-left: 20px;
+    font-size: 32px;
+    line-height: 32px;
+    margin-bottom: 66px;
+    background: $bg-basis;
+    width: 242px;
+  }
+
+  .subscribe__heading::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 14px;
+    right: 0;
+    width: 100vw;
+    height: 2px;
+    background: $bg-button;
+    z-index: -1;
+    box-shadow: 100vw 0 0 0 $bg-button;
+  }
+
+  .subscribe__title {
+    font-size: 24px;
+    line-height: 32px;
+    padding-left: 38px;
+    padding-right: 38px;
   }
 }
 
 @media (min-width: $view-port-desktop) {
   .subscribe__wrapper {
     @include wrapper-center-desktop;
+  }
+
+  .subscribe {
+    padding-bottom: 104px;
+  }
+
+  .subscribe__heading {
+    padding-top: 0;
+    display: block;
+    position: relative;
+    margin-left: 90px;
+    padding-left: 20px;
+    padding-right: 0;
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 72px;
+    width: 295px;
+  }
+
+  .subscribe__heading::before {
+    content: "";
+    position: absolute;
+    display: block;
+    top: 17px;
+    right: 0;
+    width: 100vw;
+    height: 2px;
+    background: $bg-button;
+    z-index: -1;
+    box-shadow: 100vw 0 0 0 $bg-button;
+  }
+
+  .subscribe__title {
+    font-size: 24px;
+    line-height: 32px;
+    padding-left: 38px;
+    padding-right: 38px;
   }
 }

@@ -13,10 +13,12 @@
 
 .stats__paragraph {
   @include font-paragraph;
-  margin-bottom: 20px;
+  margin-bottom: 14px;
+  max-width: 280px;
 }
 
 .stats__list {
+  margin-top: 0;
   max-width: 280px;
   margin-bottom: 20px;
   display: flex;
@@ -36,7 +38,6 @@
   font-size: 14px;
   line-height: 20px;
   text-transform: uppercase;
-  margin-bottom: 20px;
   text-align: center;
 }
 
@@ -51,6 +52,18 @@
     padding: 45px 30px 0;
     margin: 0 auto;
     text-align: left;
+    position: relative;
+  }
+
+  .stats__wrapper::before {
+    content: "";
+    position: absolute;
+    display: block;
+    left: 0;
+    top: -0;
+    width: 100%;
+    height: 1px;
+    background-color: #e6e6e6;
   }
 
   .stats__heading {
@@ -63,14 +76,17 @@
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 55px;
+    max-width: 708px;
   }
 
   .stats__list-description {
     display: flex;
-    gap: 167px;
+    flex-direction: row;
+    align-content: space-between;
+    gap: 169px;
     align-items: flex-start;
-    min-height: 77px;
     margin-bottom: 99px;
+    max-width: $view-port-tablet;
   }
 
   .stats__list {
@@ -85,14 +101,18 @@
     margin-top: 0;
     flex-shrink: 0;
     width: 162px;
-    gap: 0;
+    min-height: 72px;
   }
 
   .stats__description {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 9px;
     padding-top: 11px;
     text-align: right;
-    width: 174px;
     font-size: 20px;
+    max-width: 174px;
   }
 
   .stats__slider {
@@ -103,18 +123,17 @@
 @media (min-width: $view-port-desktop) {
   .stats {
     display: grid;
-    grid-template-columns: 1fr 110px 660px 280px 280px 110px 1fr;
+    grid-template-columns: 1fr 110px 436px 224px 560px 110px 1fr;
     grid-template-rows: 1fr;
     justify-content: start;
-    min-height: 669px;
-    // min-width: $view-port-desktop;
-    // margin: 0 auto;
+    min-height: 627px;
+    min-width: $view-port-desktop;
+    margin: 0 auto;
   }
 
   .stats__wrapper {
-    padding: 69px 0 0;
+    padding: 0;
     grid-column: 3 / 4;
-    grid-row: 1fr;
     width: 660px;
   }
 
@@ -133,21 +152,27 @@
   }
 
   .stats__list {
-    margin-top: -3px;// сама добавила
+    margin-top: 0;
     max-width: 366px;
     margin-bottom: 55px;
     gap: 42px;
   }
 
   .stats__item {
-    // margin-top: 0;
+    margin-top: 0;
+    flex-shrink: 0;
     width: 162px;
     min-height: 77px;
   }
 
   .stats__description {
+    width: 327px;
     font-size: 20px;
-    margin-bottom: 75px;
+    margin-bottom: 25px;
     text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 63px;
   }
 }

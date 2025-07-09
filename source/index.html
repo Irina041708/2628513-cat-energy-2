@@ -2,20 +2,29 @@
 <html class="page" lang="ru">
 
 <head>
+
   <meta charset="UTF-8">
+  <meta name="description" content="Главная страница `Cat energy`.">
+  <title>Основная инфоррммация о "Cat energy" и особенности предоставяляемых услуг именно в этом интернет-магазине.</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Магазин "Cat energy"</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+
   <link rel="stylesheet" href="styles/styles.css">
+  <!-- <link rel="preload" as="style" onload="this.rel='stylesheet'" href="styles/styles.css"> -->
+  <!-- <link rel="preload" as="script" href="scripts/modal.js"> -->
+  <script src="scripts/modal.js" defer></script>
+  <!-- <script src="scripts/index.js" defer></script> -->
+  <link rel="preload" as="image" href="images/nutrition-img-mobile@2x.webp">
+  <link rel="preload" as="font" href="font/lato/Lato-Regular.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="preload" as="font" href="font/lato/oswaldregular.woff2" type="font/woff2" crossorigin="anonymous">
+
   <link rel="icon" href="favicon.ico"><!-- 32*32 -->
   <link rel="icon" href="favicons/icon.svg" type="image/svg+xml"><!-- 32*32* -->
   <link rel="apple" href="favicons/180.png"><!-- 180*180 -->
   <link rel="manifest" href="manifest.webmanifest">
-  <script src="scripts/index.js" defer></script>
 </head>
 
-<body class="page__body">
-  <header class="main-header">
+<body class="page__body page__body--modifier-index" data-test="hero">
+  <header class="main-header" data-test="header">
     <div class="main-header__wrapper">
       <div class="main-header__wrapper-logo">
         <a class="main-header__logo logo" href="index.html">
@@ -34,13 +43,13 @@
         </button>
         <ul class="main-nav__list site-list">
           <li class="site-list__item">
-            <a class="site-list__navigation-link site-list__navigation-link--current" aria-current="page" href="index.html">Главная</a>
+            <a class="site-list__navigation-link site-list__navigation-link--modoifier" aria-current="page" href="index.html">Главная</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__navigation-link" aria-current="page" href="catalog.html">Каталог продукции</a>
+            <a class="site-list__navigation-link site-list__navigation-link--modoifier" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__navigation-link" aria-current="page" href="#">Подбор программы</a>
+            <a class="site-list__navigation-link  site-list__navigation-link--modoifier" href="#">Подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -56,17 +65,20 @@
         </p>
         <div class="nutrition__img-wrapper">
           <picture>
+            <source media="(min-width: 1440px)" width="552" height="499" type="image/webp" srcset="images/nutrition-img-desktop@1x.webp 1x, images/nutrition-img-desktop@2x.webp 2x">
+            <source media="(min-width: 768px)" width="709" height="609" type="image/webp" srcset="images/nutrition-img-tablet@1x.webp 1x, images/nutrition-img-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="images/nutrition-img-mobile@1x.webp 1x, images/nutrition-img-mobile@2x.webp 2x" width="280" height="270">
             <source media="(min-width: 1440px)" width="552" height="499" type="image/png" srcset="images/nutrition-img-desktop@1x.png 1x, images/nutrition-img-desktop@2x.png 2x">
             <source media="(min-width: 768px)" width="709" height="609" type="image/png" srcset="images/nutrition-img-tablet@1x.png 1x, images/nutrition-img-tablet@2x.png 2x">
-            <img class="nutrition__img" src="images/nutrition-img-mobile@1x.png" srcset="images/nutrition-img-mobile@2x.png 2x" width="280" height="270" alt="Товар Cat energy со вкусом курицы 500г.">
+            <img class="nutrition__img" loading="lazy" src="images/nutrition-img-mobile@1x.png" srcset="images/nutrition-img-mobile@2x.png 2x" width="280" height="270" alt="Товар Cat energy со вкусом курицы 500г.">
           </picture>
         </div>
-        <a class="nutrition__button-wrapper nutrition__button button" href="#">
+        <a class="nutrition__button button" href="#">
           Подобрать программу
         </a>
       </div>
     </section>
-    <section class="main__programs programs">
+    <section class="main__programs programs" data-test="programs">
       <div class="programs__wrapper">
         <h2 class="visually-hidden">Предлагаемые программы и их описание.</h2>
         <ul class="programs__list">
@@ -88,7 +100,7 @@
         </ul>
       </div>
     </section>
-    <section class="main__advantages advantages">
+    <section class="main__advantages advantages" data-test="features">
       <div class="advantages__wrapper">
         <h2 class="advantages__heading">Как это работает</h2>
         <ul class="advantages__list">
@@ -115,7 +127,7 @@
         </ul>
       </div>
     </section>
-    <section class="main__stats stats">
+    <section class="main__stats stats" data-test="proof">
       <div class="stats__wrapper">
         <h2 class="stats__heading">Живой пример</h2>
         <p class="stats__paragraph">
@@ -135,7 +147,9 @@
             </div>
           </dl>
           <p class="stats__description">
-            Затраты на питание: <span>15 000 руб.</span>
+            Затраты на питание:
+            <span class="stats__description-number">15 000 руб.
+            </span>
           </p>
         </div>
       </div>
@@ -145,42 +159,63 @@
         </button>
         <div class="slider-stats__wrapper-first">
           <picture>
+            <source media="(min-width: 768px)" width="560" height="512" type="image/webp" srcset="images/img-first-tablet-desktop@1x.webp 1x, images/img-first-tablet-desktop@2x.webp 2x">
+            <source type="image/webp" srcset="images/img-first-mobile@1x.webp 1x, images/img-first-mobile@2x.webp 2x" width="280" height="256">
             <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="images/img-first-tablet-desktop@1x.png 1x, images/img-first-tablet-desktop@2x.png 2x">
-            <img class="slider-stats__img slider-stats__img--first" src="images/img-first-mobile@1x.png" srcset="images/img-first-mobile@2x.png 2x" width="280" height="256" alt="Фоото:Толстый кот.">
+            <img class="slider-stats__img slider-stats__img--first" loading="lazy" src="images/img-first-mobile@1x.png" srcset="images/img-first-mobile@2x.png 2x" width="280" height="256" alt="Фоото:Толстый кот.">
           </picture>
         </div>
         <div class="slider-stats__wrapper-second">
           <picture>
+            <source media="(min-width: 768px)" width="560" height="512" type="image/webp" srcset="images/img-second-tablet-desktop@1x.webp 1x, images/img-second-tablet-desktop@2x.webp 2x">
+            <source type="image/webp" srcset="images/img-second-mobile@1x.webp 1x, images/img-second-mobile@2x.webp 2x" width="280" height="256">
             <source media="(min-width: 768px)" width="560" height="512" type="image/png" srcset="images/img-second-tablet-desktop@1x.png 1x, images/img-second-tablet-desktop@2x.png 2x">
-            <img class="slider-stats__img slider-stats__img--second" src="images/img-second-mobile@1x.png" srcset="images/img-second-mobile@2x.png 2x" width="280" height="256" alt="Фото:Тощий кот.">
+            <img class="slider-stats__img slider-stats__img--second" loading="lazy" src="images/img-second-mobile@1x.png" srcset="images/img-second-mobile@2x.png 2x" width="280" height="256" alt="Фото:Стройный кот.">
           </picture>
         </div>
       </div>
     </section>
-    <section class="main__location location">
+    <section class="main__location location" data-test="contacts">
       <h2 class="visually-hidden">Карта местоположения.</h2>
       <div class="location__wrapper">
-        <h3 class="location__header">Приглашаем<br>к сотрудничеству<br>дилеров!</h3>
+        <h3 class="location__header">Приглашаем <span class="location__header-nowrap">
+            к сотрудничеству
+          </span>
+          дилеров!
+        </h3>
         <p class="location__description">ул. Большая
           Конюшенная, д. 19/8
-
-          Санкт-Петербург</p>
+          <span class="location__description-address">
+            Санкт-Петербург
+          </span>
+        </p>
       </div>
-      <a class="location__link" href="#">
-        <picture>
-          <source media="(min-width: 1440px)" width="1440" height="400" type="image/jpeg" srcset="images/location-desktop@1x.jpg 1x,images/location-desktop@2x.jpg 2x">
-          <source media="(min-width: 768px)" width="768" height="400" type="image/jpeg" srcset="images/location-tablet@1x.jpg 1x,images/location-tablet@2x.jpg 2x">
-          <img class="location__img-map" src="images/location-mobile@1x.jpg" srcset="images/location-mobile@2x.jpg 2x" width="320" height="362" alt="Карта с местоположением компании.">
-        </picture>
-      </a>
+      <div class="location__link location__link--js location__link--nojs">
+        <div class="location__link-static">
+          <picture>
+            <source media="(min-width: 1440px)" width="1440" height="400" type="image/webp" srcset="images/location-desktop@1x.webp 1x,images/location-desktop@2x.webp 2x">
+            <source media="(min-width: 768px)" width="768" height="400" type="image/webp" srcset="images/location-tablet@1x.webp 1x,images/location-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="images/location-mobile@1x.webp 1x, images/location-mobile@2x.webp 2x" width="320" height="362">
+            <source media="(min-width: 1440px)" width="1440" height="400" type="image/jpeg" srcset="images/location-desktop@1x.jpg 1x,images/location-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" width="768" height="400" type="image/jpeg" srcset="images/location-tablet@1x.jpg 1x,images/location-tablet@2x.jpg 2x">
+            <img class="location__img-map" loading="lazy" src="images/location-mobile@1x.jpg" srcset="images/location-mobile@2x.jpg 2x" width="320" height="362" alt="Офис комапнии по адресу улица Большая  Конюшенная, дом 19/8,  Санкт-Петербург.">
+          </picture>
+        </div>
+        <div class="location__link-dynamic">
+          <iframe class="location__img-google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036257135368!2d30.320477841904687!3d59.93871916219779!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca3de3a1%3A0xc7af30764648c6b1!2sBolshaya%20Konyushennaya%20St%2C%20%D0%B4.%2019%2F8%2C%20Sankt-Peterburg%2C%20191186!5e0!3m2!1sen!2sru!4v1751902299140!5m2!1sen!2sru" width="768" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Офис комапнии по адресу улица Большая  Конюшенная, дом 19/8,  Санкт-Петербург.">
+          </iframe>
+        </div>
+      </div>
     </section>
   </main>
-  <footer class="main-footer">
+  <footer class="main-footer" data-test="footer">
     <div class="main-footer__wrapper">
       <h2 class="visually-hidden">Мы в социальных сетях.</h2>
-      <a class="main-footer__logo logo logo--modifier" href="index.html">
-        <img class="logo__logo-text logo__logo-text--modifier" src="images/logo/logo-text.svg" width="128" height="24" alt="Логотип компании `Cat Energy`.">
-      </a>
+      <div class="main-footer__logo-wrapper">
+        <a class="main-footer__logo logo logo--modifier" href="index.html">
+          <img class="logo__logo-text logo__logo-text--modifier" src="images/logo/logo-text.svg" width="128" height="24" alt="Логотип компании `Cat Energy`.">
+        </a>
+      </div>
       <ul class="main-footer__social social">
         <li class="social__item">
           <a class="social__social-link social__social-link--vk" href="https://vk.com/htmlacademy">
@@ -198,12 +233,13 @@
           </a>
         </li>
       </ul>
-      <a class="main-footer__logo-company logo-company" href="https://htmlacademy.ru">
-        <p class="logo-company__text">HTML Academy</p>
-      </a>
+      <div class="main-footer__logo-company-wrapper">
+        <a class="main-footer__logo-company logo-company" href="https://htmlacademy.ru">
+          <p class="logo-company__text">HTML Academy</p>
+        </a>
+      </div>
     </div>
   </footer>
-  <script src="scripts/modal.js"></script>
 </body>
 
 </html>

@@ -3,7 +3,7 @@
   flex-direction: column;
   gap: 0;
   align-items: center;
-  height: 100%;//обязательное условие
+  height: 100%;
   position: relative;
 }
 
@@ -11,10 +11,11 @@
   position: absolute;
   content: "";
   display: block;
-  outline: 1px solid #cdcdcd;
+  outline: 1px solid $color-linear-block;
   height: 100%;
   width: 100%;
-  bottom: 14px; //обязательное условие
+  bottom: 14px;
+  border-radius: 3px;
 }
 
 .item-stats__number {
@@ -23,17 +24,23 @@
   line-height: 24px;
   margin-bottom: 7px;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .item-stats__description {
   @include font-paragraph;
-  width: 77px;
+  padding-left: 15px;
+  padding-right: 15px;
+  width: 87px;
   font-size: 12px;
   line-height: 12px;
-  // padding-top: 2px; /* при pixel perfect проверь себя-выставила сама */
   text-align: center;
   background-color: $bg-dark;
-  z-index: 2;
+  transform: translate(-1px, 2px);
+}
+
+.item-stats__description--modif {
+  width: 87px;
 }
 
 @media (min-width: $view-port-tablet) and (max-width: ($view-port-desktop - 1)) {
@@ -42,6 +49,7 @@
     font-size: 30px;
     line-height: 37px;
     margin-bottom: 11px;
+    text-transform: uppercase;
   }
 
   .item-stats::before {
@@ -50,37 +58,45 @@
   }
 
   .item-stats__description {
-    width: 125px;
+    padding-left: 10px;
+    padding-right: 9px;
+    width: 116px;
     font-size: 14px;
     line-height: 14px;
     background-color: $bg-basis;
+    transform: translate(0, 0);
   }
 
   .item-stats__description--modif {
-    width: 154px; /* 129+(125) */
+    width: 144px;
   }
 }
 
 @media (min-width: $view-port-desktop) {
   .item-stats__number {
-    // margin-top: 0;
-    padding-top: 7px;//выставила сама
+    margin-top: 15px;
     font-size: 30px;
     line-height: 37px;
     margin-bottom: 11px;
+    text-transform: uppercase;
   }
 
   .item-stats::before {
-    height: 100%;
+    height: 92%;
+    top: 0;
   }
 
   .item-stats__description {
-    width: 125px;
+    padding-left: 8px;
+    padding-right: 9px;
+    width: 116px;
     font-size: 14px;
     line-height: 14px;
+    background-color: $bg-dark;
+    transform: translate(0, 0);
   }
 
   .item-stats__description--modif {
-    width: 154px;
+    width: 144px;
   }
 }

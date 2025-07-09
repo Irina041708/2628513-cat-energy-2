@@ -1,9 +1,8 @@
 .nutrition {
-  background-image: linear-gradient(rgba(104, 183, 56, 0.85) 63%, $bg-basis 37%), url("../../images/nutrition-cat-bg-index-mobile@2x.jpg"), linear-gradient(#4f4f54 0% 100%, #434348 0% 100%);
+  background-image: linear-gradient(rgba(104, 183, 56, 0.85) 63%, $bg-basis 37%), image-set(url("../../images/nutrition-cat-bg-index-mobile@1x.webp") type("image/webp") 1x, url("../../images/nutrition-cat-bg-index-mobile@2x.webp") type("image/webp") 2x, url("../../images/nutrition-cat-bg-index-mobile@1x.jpg") type("image/png") 1x, url("../../images/nutrition-cat-bg-index-mobile@2x.jpg") type("image/png") 2x), linear-gradient(#4f4f54 0% 100%, #434348 0% 100%);
   background-repeat: no-repeat;
   background-position: center top;
   background-size: 100% 100%, 320px 302px, 100% 63%;
-  text-align: center;
 }
 
 .nutrition__wrapper {
@@ -14,20 +13,24 @@
 
 .nutrition__heading {
   @include fonttitle;
+  display: block;
   font-size: 36px;
-  line-height: 40px;
+  line-height: 36px;
   color: $color-accent;
   padding-top: 27px;
   margin-bottom: 25px;
+  text-align: center;
 }
 
 .nutrition__paragraph {
   @include fonttitle;
+  display: block;
   font-size: 14px;
   line-height: 14px;
   text-transform: uppercase;
   color: $color-accent;
   margin-bottom: 29px;
+  padding-left: 40px;
 }
 
 .nutrition__button {
@@ -38,20 +41,35 @@
   width: 100%;
 }
 
+.nutrition__img {
+  width: 280px;
+  height: 270px;
+}
+
+.nutrition__img-wrapper {
+  width: 280px;
+  height: 270px;
+  margin-bottom: 3px;
+}
+
 @media (min-width: $view-port-tablet) and (max-width: ($view-port-desktop - 1)) {
-  .nutrition__wrapper {
-    @include wrapper-center-tablet;
-    display: block;
-    text-align: start;
-    padding-left: 90px;
+  .nutrition {
+    padding-top: 28px;
+    background-image: none;
+    margin: 0;
   }
 
-  .nutrition {
-    background-image: none;
+  .nutrition__wrapper {
+    position: relative;
+    text-align: start;
+    width: $view-port-tablet;
+    padding: $padding-tablet;
+    padding-left: 120px;
   }
 
   .nutrition__heading {
-    display: block;
+    padding: 0;
+    text-align: start;
     font-size: 60px;
     line-height: 60px;
     color: $color-basis;
@@ -64,24 +82,34 @@
   }
 
   .nutrition__paragraph {
-    display: block;
+    text-align: start;
+    padding-left: 0;
     font-size: 20px;
     line-height: 20px;
     color: $color-basis;
-    width: 414px;//сама сделала ширину,так ка не уменьшается на одну строку
-    margin-bottom: 21px;
+    width: 414px;
+    margin-bottom: 20px;
   }
 
   .nutrition__button {
-    position: relative;
+    position: absolute;
     width: 242px;
     min-height: 54px;
-    top: -580px; /* 526+54(высота кнопки)= */
+    left: 0;
+    transform: translate(121px, -579px);
   }
 
   .nutrition__img {
-    width: 709;
-    min-height: 609px;
+    display: block;
+    width: 709px;
+    height: 609px;
+  }
+
+  .nutrition__img-wrapper {
+    transform: translate(-91px, 0);
+    width: 709px;
+    height: 609px;
+    margin-bottom: 0;
   }
 }
 
@@ -93,20 +121,18 @@
   }
 
   .nutrition__wrapper {
-    width: $view-port-desktop; //важно контент будет центрироваться и  не расширятся !
+    width: $view-port-desktop;
     padding: 0;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 110px 80px 414px 505px 221px 110px 1fr;
-    // grid-template-rows: minmax(120px, auto) minmax(20px, auto) minmax(54px, auto);
-    // grid-auto-rows: minmax(auto, auto);
     grid-template-rows: auto;
     text-align: left;
     align-items: end;
   }
 
   .nutrition__heading {
-    width: 420px;//сама увеличила не соответствие размеров с макетом,так не переносится слово на другю строку
+    width: 420px;
     margin-top: 81px;
     margin-bottom: 40px;
     grid-column: 4 / 5;
@@ -115,11 +141,11 @@
     font-size: 60px;
     line-height: 60px;
     color: $color-basis;
+    text-align: left;
   }
 
   .nutrition__paragraph {
     width: 414px;
-
     grid-column: 4 / 5;
     grid-row: 2 / 3;
     margin: 0 0 52px;
@@ -127,6 +153,8 @@
     font-size: 20px;
     line-height: 20px;
     color: $color-basis;
+    text-align: left;
+    padding-left: 0;
   }
 
   .nutrition__button {
@@ -141,13 +169,14 @@
     grid-column: 5 / 6;
     grid-row: 1 / 5;
     margin-bottom: 0;
-    height: 499px;
     align-self: start;
+    height: 499px;
+    width: 552px;
   }
 
   .nutrition__img {
     display: block;
-    transform: translateX(-30px);
+    transform: translate(-48px, 0);
     height: 499px;
     width: 552px;
   }

@@ -15,3 +15,8 @@ navToggle.addEventListener('click', () => {
     navMain.classList.remove('main-nav--opened');
   }
 });
+
+
+// const navLocation = document.querySelector('.location__link');
+// navLocation.classList.remove('location__link--nojs');
+// navLocation.classList.add('location__link--js ');

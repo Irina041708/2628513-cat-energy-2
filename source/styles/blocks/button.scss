@@ -1,12 +1,16 @@
+/* stylelint-disable declaration-block-no-redundant-longhand-properties */
 .button {
   @include fonttitle;
   @include link;
-  padding: 10px 20px;
+  padding: 4px 20px;
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
   color: $color-accent;
   background-color: $bg-button;
+  display: flex;
+  flex-flow: row wrap;
+  align-content: center;
 }
 
 .button:hover {
@@ -18,19 +22,26 @@
 }
 
 .button--action {
+  margin-top: -3px;
   color: $color-paragraph;
   background-color: $bg;
 }
 
 .button--action:hover,
 .button--action:active {
-  background-color: #ebebeb;
+  background-color: $color-linear;
 }
 
 .button--current {
   @include button;
   font-size: 20px;
   line-height: 26px;
+  justify-content: center;
+  align-content: center;
+}
+
+.button--card-modifier {
+  margin-top: 13px;
 }
 
 @media (min-width: $view-port-tablet) and (max-width: ($view-port-desktop - 1)) {
@@ -38,11 +49,37 @@
     font-size: 20px;
     line-height: 26px;
   }
+
+  .button--card-modifier {
+    font-size: 16px;
+    line-height: 20px;
+    width: 200px;
+  }
+
+  .button--action {
+    transform: translateY(-79px);
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 @media (min-width: $view-port-desktop) {
   .button {
     font-size: 20px;
     line-height: 26px;
+    padding: 5px 20px;
+  }
+
+  .button--card-modifier {
+    font-size: 16px;
+    line-height: 20px;
+    width: 200px;
+  }
+
+  .button--action {
+    transform: translateY(-82px);
+    font-size: 16px;
+    line-height: 20px;
+    width: 169px;
   }
 }
