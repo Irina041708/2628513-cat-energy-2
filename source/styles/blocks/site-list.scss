@@ -8,7 +8,7 @@
 .site-list__item {
   @include list;
   display: flex;
-  position: relative;// отсюда спозиционированы гориз линии
+  position: relative;
   flex-shrink: 0;
 }
 
@@ -18,7 +18,7 @@
   top: 0;
   content: "";
   display: block;
-  width: 100%;//посмотри
+  width: 100%;
   height: 1px;
   background: $color-linear;
 }
@@ -29,19 +29,19 @@
   bottom: 0;
   content: "";
   display: block;
-  width: 100%;//посмотри
+  width: 100%;
   height: 1px;
   background: $color-linear;
 }
 
 .site-list__navigation-link {
   @include link;
-  @include fonttitle;//для подстраховки цвет и font-weight
+  @include fonttitle;
   font-size: 20px;
   line-height: 20px;
   text-transform: uppercase;
   padding: 22px 0 24px;
-  width: $view-port-mobile;//посмотри
+  width: $view-port-mobile;
   text-align: center;
 }
 
@@ -82,7 +82,6 @@
     flex-direction: row;
     justify-content: start;
     align-items: center;
-    // gap: 33px;
   }
 
   .site-list__item::before,

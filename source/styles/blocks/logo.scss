@@ -43,7 +43,6 @@
     text-align: center;
     width: 128px;
     height: 25px;
-    //padding-left: 8px;//выставила сама
   }
 }
 
@@ -58,14 +57,11 @@
   .logo__logo-img:not(:first-child):not(:last-child),
   .logo__logo-text:not(:first-child):not(:last-child) {
     margin-right: 0;
-    // width: 70px;
-    // height: 59px;
   }
 
   .logo__logo-text {
-    // transform: translateX(10px);
-    width: 118px;//изменила с 101px
-    height: 24px;//изменила с 18xp
+    width: 118px;
+    height: 24px;
   }
 
   .logo__logo-text--modifier {
@@ -79,6 +75,5 @@
     text-align: center;
     width: 128px;
     height: 24px;
-    //padding-left: 8px;//выставила сама
   }
 }

@@ -31,7 +31,7 @@
   width: 76px;
   min-height: 43px;
   justify-content: flex-start;
-  display: grid;//важно
+  display: grid;
 }
 
 .card__heading {
@@ -50,8 +50,8 @@
   min-height: 48px;
   margin: 0;
   grid-area: card__properties;
-  align-items: end;//важно
-  display: grid;//важно
+  align-items: end;
+  display: grid;
 }
 
 .card__property {
@@ -93,7 +93,7 @@
   line-height: 20px;
   text-transform: uppercase;
   color: #111111;
-  padding: 58px 30px 0; //изменила было 53px
+  padding: 58px 30px 0;
   width: 280px;
   min-height: 20px;
   display: flex;
@@ -151,12 +151,12 @@
   }
 
   .card__link-heading {
-    padding-top: 23px;//добавила 1px
+    padding-top: 23px;
     grid-area: card__link-heading;
     width: 136px;
     min-height: 47px;
     text-align: center;
-    transform: translateX(1px);//сама выставила
+    transform: translateX(1px);
   }
 
   .card__heading {
@@ -165,19 +165,18 @@
     font-size: 20px;
     line-height: 24px;
     color: $color-text-heading;
-    padding-bottom: 4px;//сама добавила
+    padding-bottom: 4px;
   }
 
   .card__heading-nowrap {
-    transform: translateX(-2px);//сама выставила
+    transform: translateX(-2px);
     white-space: nowrap;
-    display: block;//чтобы следующее слово переносилось на новую строку
+    display: block;
   }
 
   .card__propertys {
     grid-area: card__properties;
     min-height: 48px;
-    // margin-bottom: 32px;
   }
 
   .card__property {
@@ -222,13 +221,13 @@
     align-content: center;
   }
 
-  .card__link-heading--header {//в самом низу отдельный блок
+  .card__link-heading--header {
     font-size: 20px;
     line-height: 24px;
     color: #222222;
     min-height: 48px;
     margin-bottom: 32px;
-    transform: translate(1px, -82px);//выставила сама
+    transform: translate(1px, -82px);
     width: 170px;
     padding-left: 0;
     padding-right: 0;
@@ -296,7 +295,7 @@
     width: 140px;
     min-height: 48px;
     text-align: center;
-    transform: translateX(1px);//сама выставила
+    transform: translateX(1px);
   }
 
   .card__heading {
@@ -304,19 +303,18 @@
     font-size: 20px;
     line-height: 24px;
     color: $color-text-heading;
-    padding-bottom: 9px;//сама добавила
+    padding-bottom: 9px;
   }
 
   .card__heading-nowrap {
-    transform: translateX(-2px);//сама выставила
+    transform: translateX(-2px);
     white-space: nowrap;
-    display: block;//чтобы следующее слово переносилось на новую строку
+    display: block;
   }
 
   .card__propertys {
     grid-area: card__properties;
     min-height: 48px;
-    // margin-bottom: 32px;
   }
 
   .card__property {
@@ -362,13 +360,13 @@
     max-width: 169px;
   }
 
-  .card__link-heading--header {//в самом низу отдельный блок
+  .card__link-heading--header {
     font-size: 20px;
     line-height: 24px;
     color: #111111;
-    min-height: 48px;//margin-top: 10px;
-    margin-bottom: 25px;//margin-bottom: 5px;
-    transform: translate(1px, -82px);//выставила сама
+    min-height: 48px;
+    margin-bottom: 25px;
+    transform: translate(1px, -82px);
     width: 134px;
     padding-left: 0;
     padding-right: 0;

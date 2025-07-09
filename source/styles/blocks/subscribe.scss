@@ -1,6 +1,5 @@
 .subscribe__heading {
   @include fonttitle;
-  // display: block;
   padding-top: 40px;
   width: 152px;
   min-height: 24px;
@@ -17,7 +16,7 @@
   content: "";
   position: absolute;
   display: block;
-  top: 50px;//там 36px
+  top: 50px;
   right: 0;
   width: 100vw;
   height: 2px;

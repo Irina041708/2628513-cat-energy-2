@@ -3,7 +3,7 @@
   flex-direction: column;
   gap: 0;
   align-items: center;
-  height: 100%;//обязательное условие
+  height: 100%;
   position: relative;
 }
 
@@ -14,7 +14,7 @@
   outline: 1px solid $color-linear-block;
   height: 100%;
   width: 100%;
-  bottom: 14px; //обязательное условие
+  bottom: 14px;
   border-radius: 3px;
 }
 
@@ -36,7 +36,7 @@
   line-height: 12px;
   text-align: center;
   background-color: $bg-dark;
-  transform: translate(-1px, 2px);//сама выставилла
+  transform: translate(-1px, 2px);
 }
 
 .item-stats__description--modif {
@@ -64,11 +64,11 @@
     font-size: 14px;
     line-height: 14px;
     background-color: $bg-basis;
-    transform: translate(0, 0);//сама выставилла(убрала из mobile)
+    transform: translate(0, 0);
   }
 
   .item-stats__description--modif {
-    width: 144px; /* 129+(125) */
+    width: 144px;
   }
 }
 
@@ -87,17 +87,16 @@
   }
 
   .item-stats__description {
-    // width: 125px;
     padding-left: 8px;
     padding-right: 9px;
     width: 116px;
     font-size: 14px;
     line-height: 14px;
     background-color: $bg-dark;
-    transform: translate(0, 0);//сама выставилла(убрала из mobile)
+    transform: translate(0, 0);
   }
 
   .item-stats__description--modif {
-    width: 144px;//125+(125-96)=154
+    width: 144px;
   }
 }

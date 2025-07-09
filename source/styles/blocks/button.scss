@@ -10,9 +10,7 @@
   background-color: $bg-button;
   display: flex;
   flex-flow: row wrap;
-  align-content: center;//каталог 320
-  // align-items: center;
-  // justify-content: center;
+  align-content: center;
 }
 
 .button:hover {
@@ -43,7 +41,7 @@
 }
 
 .button--card-modifier {
-  margin-top: 13px;//изменила
+  margin-top: 13px;
 }
 
 @media (min-width: $view-port-tablet) and (max-width: ($view-port-desktop - 1)) {

@@ -96,7 +96,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    padding-top: 3px;//добавила 1px
+    padding-top: 3px;
     font-size: 20px;
     line-height: 26px;
     width: 163px;
@@ -152,8 +152,8 @@
     font-size: 20px;
     line-height: 26px;
     width: 163px;
-    overflow-wrap: break-word;//перенос слов
-    word-break: break-word;//перенос слов
+    overflow-wrap: break-word;
+    word-break: break-word;
     hyphens: auto;
   }
 

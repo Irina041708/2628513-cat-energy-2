@@ -5,7 +5,7 @@
 
 .additional-products__wrapper {
   padding: $padding-mobile;
-  transform: translateY(-1px);//сама выставила
+  transform: translateY(-1px);
 }
 
 .additional-products__list {
@@ -30,7 +30,7 @@
   content: "";
   display: block;
   position: absolute;
-  top: 36px;//там 36px
+  top: 36px;
   right: 0;
   width: 100vw;
   height: 2px;
@@ -44,7 +44,7 @@
 }
 
 .additional-products__banner {
-  margin-top: 15px;//посмотри сама изменила
+  margin-top: 15px;
 }
 
 @media (min-width: $view-port-tablet) and (max-width: ($view-port-desktop - 1)) {
@@ -54,7 +54,7 @@
 
   .additional-products__wrapper {
     padding: $padding-tablet;
-    transform: translateY(1px);//сама выставила
+    transform: translateY(1px);
   }
 
   .additional-products__list {

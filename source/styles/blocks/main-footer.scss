@@ -36,7 +36,6 @@
   display: block;
   width: 280px;
   min-height: 22px;
-  // text-decoration: solid underline #e6e6e6 1px;
 }
 
 .main-footer__social::before {
@@ -74,7 +73,7 @@
     grid-template-rows: 1fr;
     min-height: 37px;
     text-align: left;
-    justify-content: start;//обязательно
+    justify-content: start;
     gap: 0;
   }
 

@@ -18,7 +18,7 @@
 }
 
 .additional--modifier-second::before {
-  margin-top: -2px;//отступы снизу разные в макете
+  margin-top: -2px;
 }
 
 .additional__title {
@@ -58,7 +58,7 @@
     display: grid;
     justify-items: start;
     grid-template-columns: 1fr 1fr;
-    grid-auto-rows: 26px 1fr 20px auto;//с25 на 23 -увеличила высоту текста в блоке
+    grid-auto-rows: 26px 1fr 20px auto;
     column-gap: 182px;
   }
 
@@ -67,11 +67,11 @@
   }
 
   .additional--modifier-first {
-    margin-top: 2px;//отступы снизу разные в макете
+    margin-top: 2px;
   }
 
   .additional--modifier-second {
-    margin-top: -2px;//отступы снизу разные в макете
+    margin-top: -2px;
   }
 
   .additional__title {
@@ -84,7 +84,7 @@
     font-size: 20px;
     line-height: 20px;
     max-width: 163px;
-    min-height: 25px;//увеличила высоту теткста в блоке на 2px
+    min-height: 25px;
   }
 
   .additional__list {
@@ -113,21 +113,21 @@
   .additional__name {
     width: 132px;
     display: flex;
-    align-items: center;//важно
-    justify-content: flex-end; //важно
+    align-items: center;
+    justify-content: flex-end;
   }
 
   .additional__description {
     width: 42px;
     display: flex;
     align-items: flex-start;
-    justify-content: center;//важно
+    justify-content: center;
     margin: 0;
   }
 
   .additional__description--modifier-first {
     display: flex;
-    justify-content: flex-end;//важно
+    justify-content: flex-end;
     align-items: center;
   }
 
@@ -143,16 +143,16 @@
     padding-top: 0;
     display: grid;
     grid-template-columns: 161px 164px 285px 40px 244px;
-    grid-auto-rows: auto;//с25 на 23 -увеличила высоту текста в блоке
+    grid-auto-rows: auto;
     align-items: center;
   }
 
   .additional--modifier-first {
-    margin-top: 2px;//отступы снизу разные в макете
+    margin-top: 2px;
   }
 
   .additional--modifier-second {
-    margin-top: -2px;//отступы снизу разные в макете
+    margin-top: -2px;
   }
 
   .additional__title {
@@ -164,7 +164,7 @@
     font-size: 20px;
     line-height: 20px;
     max-width: 163px;
-    min-height: 25px;//увеличила высоту теткста в блоке на 2px
+    min-height: 25px;
   }
 
   .additional__list {
@@ -192,21 +192,21 @@
   .additional__name {
     width: 132px;
     display: flex;
-    align-items: center;//важно
-    justify-content: flex-start; //важно
+    align-items: center;
+    justify-content: flex-start;
   }
 
   .additional__description {
     width: 42px;
     display: flex;
     align-items: flex-start;
-    justify-content: center;//важно
+    justify-content: center;
     margin: 0;
   }
 
   .additional__description--modifier-first {
     display: flex;
-    justify-content: flex-end;//важно
+    justify-content: flex-end;
     align-items: center;
   }
 

@@ -1,7 +1,7 @@
 .main-header {
   top: 0;
   min-height: 100%;
-  position: sticky;//спозиционировали кнопку относительно этого элемента
+  position: sticky;
   background-color: $bg-basis;
   z-index: 5;
 }
@@ -11,6 +11,19 @@
   padding: 13px 20px 0;
   width: $view-port-mobile;
   margin: 0 auto;
+}
+
+.main-header__wrapper--modifier-catalog::after {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: $color-linear;
+  top: 100%;
+  z-index: 2;
+  transform: translateY(-1px);
 }
 
 .main-header__wrapper-logo {
@@ -32,7 +45,7 @@
 }
 
 .main-header__main-nav {
-  padding-top: 1px; // .main-header__wrapper-logo margin-bottom: 15px
+  padding-top: 1px;
 }
 
 @media (min-width: $view-port-tablet) and (max-width: ($view-port-desktop - 1)) {
@@ -43,10 +56,14 @@
   .main-header__wrapper {
     padding: 25px 30px 0;
     width: $view-port-tablet;
-    margin: 0 auto 38px;//65px 65-38=27 у секции ниже
+    margin: 0 auto 38px;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
+  }
+
+  .main-header__wrapper--modifier-catalog::after {
+    display: none;
   }
 
   .main-header__wrapper-logo {
@@ -81,13 +98,15 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    // column-gap: 267px;
+  }
+
+  .main-header__wrapper--modifier-catalog::after {
+    display: none;
   }
 
   .main-header__wrapper-logo {
     gap: 20px;
     padding-bottom: 0;
-    // width: 475px;
     min-height: 59px;
   }
 
