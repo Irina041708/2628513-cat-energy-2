@@ -100,7 +100,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    padding-top: 3px;
+    padding-top: 1px;
     font-size: 20px;
     line-height: 26px;
     width: 163px;
@@ -115,8 +115,12 @@
     gap: 19px;
   }
 
+  .location__link-dynamic {
+    height: 400px;
+  }
+
   .location__img-google {
-    min-height: 400px;
+    height: 400px;
   }
 
   .location__img-map {

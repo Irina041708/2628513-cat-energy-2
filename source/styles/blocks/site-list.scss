@@ -87,13 +87,15 @@
 
   .site-list__item {
     max-width: 475px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-right: 33px;
   }
 
   .site-list__item::before,
   .site-list__item:last-child::after {
     display: none;
   }
-
 
   .site-list__navigation-link {
     padding: 0;
@@ -115,12 +117,6 @@
   .site-list__navigation-link--modoifier[aria-current="page"] {
     text-decoration: underline 2px solid $bg-basis;
     text-underline-offset: 11px;
-  }
-
-  .site-list__item {
-    padding-top: 8px;
-    padding-bottom: 8px;
-    margin-right: 33px;
   }
 
   .site-list__item:first-child {

@@ -66,14 +66,6 @@
     background-color: $color-linear-block;
   }
 
-  .additional--modifier-first {
-    margin-top: 2px;
-  }
-
-  .additional--modifier-second {
-    margin-top: -2px;
-  }
-
   .additional__title {
     grid-column: 1 / 2;
     grid-row: 2 / 3;
@@ -145,14 +137,6 @@
     grid-template-columns: 161px 164px 285px 40px 244px;
     grid-auto-rows: auto;
     align-items: center;
-  }
-
-  .additional--modifier-first {
-    margin-top: 2px;
-  }
-
-  .additional--modifier-second {
-    margin-top: -2px;
   }
 
   .additional__title {
