@@ -1,6 +1,5 @@
 /* stylelint-disable @stylistic/indentation */
 /* stylelint-disable @stylistic/named-grid-areas-alignment */
-
 .card {
   padding-top: 20px;
   align-items: start;
@@ -227,7 +226,7 @@
     color: #222222;
     min-height: 48px;
     margin-bottom: 32px;
-    transform: translate(1px, -82px);
+    transform: translate(1px, -84px);
     width: 170px;
     padding-left: 0;
     padding-right: 0;
@@ -243,7 +242,7 @@
     min-height: 36px;
     width: 170px;
     margin-bottom: 73px;
-    transform: translateY(-82px);
+    transform: translateY(-83px);
     padding-top: 1px;
   }
 
@@ -313,6 +312,7 @@
   }
 
   .card__propertys {
+    padding-top: 0;
     grid-area: card__properties;
     min-height: 48px;
   }
@@ -322,13 +322,17 @@
     font-size: 16px;
     line-height: 20px;
     margin-bottom: 11px;
-    gap: 10px;
     width: 169px;
-    min-height: 21px;
+    min-height: 20px;
+    padding-top: 0;
   }
 
-  .card__property:last-child {
-    margin-bottom: 0;
+  .card__property:last-child::after {
+    margin-bottom: -2px;
+  }
+
+  .card__property:first-child::after {
+    margin-bottom: 3px;
   }
 
   .card__property::after {
@@ -338,7 +342,7 @@
     height: 1px;
     background: $color-linear-block;
     width: 100%;
-    top: 131%;
+    bottom: -9px;
   }
 
   .card__property-name {
