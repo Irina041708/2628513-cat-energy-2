@@ -1,3 +1,7 @@
+.main-nav__list {
+  @include list;
+}
+
 .main-nav__toggle {
   @include button;
   padding: 0;
@@ -17,10 +21,11 @@
 
 .main-nav--opened .main-nav__list {
   @include list;
-  display: block;
-  position: absolute;
-  background-color: $bg-basis;
-  z-index: 5;
+  display: flex;
+  position: fixed;
+  background: $bg-basis;
+  z-index: 2;
+  transform: translateX(-20px);
 }
 
 .main-nav--opened .main-nav__toggle::before {
@@ -46,10 +51,11 @@
   background-color: $bg-basis-dark;
 }
 
-.main-nav--closed .main-nav__list {
+.main-nav--closed .site-list__item {
   display: none;
 }
 
+.main-nav--nojs .site-list__item,
 .main-nav--nojs .main-nav__list {
   @include list;
   display: flex;
@@ -58,7 +64,11 @@
 }
 
 .main-nav--nojs .main-nav__toggle::before {
-  visibility: hidden;
+  display: none;
+}
+
+.main-nav--nojs .site-list__item::before {
+  display: none;
 }
 
 @media (min-width: $view-port-tablet) and (max-width: ($view-port-desktop - 1)) {
@@ -67,21 +77,19 @@
   }
 
   .main-nav--opened .main-nav__list {
-    position: absolute;
-    display: flex;
+    position: relative;
     justify-content: flex-start;
     flex-flow: row wrap;
-    width: 437px;
+    width: 436px;
     margin-top: 13px;
-    gap: 34px;
+    gap: 33px;
   }
 
-  // .main-nav--opened .site-list__item {
-  //   display: absolute;
-  //   position: fixed;
-  //   flex-flow: row wrap;
-  //   left: 0;
-  // }
+  .main-nav--opened .site-list__item {
+    display: flex;
+    flex-flow: row wrap;
+    left: 0;
+  }
 }
 
 
@@ -97,7 +105,6 @@
     width: 478px;
     margin-top: 12px;
     background: none;
-    gap: 0;
   }
 
   .main-nav--opened .site-list__item {
