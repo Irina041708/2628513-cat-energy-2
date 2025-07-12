@@ -2,25 +2,19 @@
 <html class="page" lang="ru">
 
 <head>
-
   <meta charset="UTF-8">
-  <meta name="description" content="Главная страница `Cat energy`.">
   <title>Основная инфоррммация о "Cat energy" и особенности предоставяляемых услуг именно в этом интернет-магазине.</title>
+  <meta name="description" content="Главная страница `Cat energy`.">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-
-  <link rel="stylesheet" href="styles/styles.css">
-  <!-- <link rel="preload" as="style" onload="this.rel='stylesheet'" href="styles/styles.css"> -->
-  <!-- <link rel="preload" as="script" href="scripts/modal.js"> -->
-  <script src="scripts/modal.js" defer></script>
-  <!-- <script src="scripts/index.js" defer></script> -->
-  <link rel="preload" as="image" href="images/nutrition-img-mobile@2x.webp">
   <link rel="preload" as="font" href="font/lato/Lato-Regular.woff2" type="font/woff2" crossorigin="anonymous">
-  <link rel="preload" as="font" href="font/lato/oswaldregular.woff2" type="font/woff2" crossorigin="anonymous">
-
-  <link rel="icon" href="favicon.ico"><!-- 32*32 -->
-  <link rel="icon" href="favicons/icon.svg" type="image/svg+xml"><!-- 32*32* -->
-  <link rel="apple" href="favicons/180.png"><!-- 180*180 -->
+  <link rel="preload" as="font" href="font/oswald/oswaldregular.woff2" type="font/woff2" crossorigin="anonymous">
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple" href="favicons/180.png">
   <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="styles/styles.css">
+  <script src="scripts/index.js" defer></script>
+  <link rel="preload" as="image" href="images/nutrition-img-mobile@1x.webp">
 </head>
 
 <body class="page__body page__body--modifier-index" data-test="hero">
@@ -49,7 +43,7 @@
             <a class="site-list__navigation-link site-list__navigation-link--modoifier" href="catalog.html">Каталог продукции</a>
           </li>
           <li class="site-list__item">
-            <a class="site-list__navigation-link  site-list__navigation-link--modoifier" href="#">Подбор программы</a>
+            <a class="site-list__navigation-link  site-list__navigation-link--modoifier" href="404.html">Подбор программы</a>
           </li>
         </ul>
       </nav>
@@ -70,7 +64,7 @@
             <source type="image/webp" srcset="images/nutrition-img-mobile@1x.webp 1x, images/nutrition-img-mobile@2x.webp 2x" width="280" height="270">
             <source media="(min-width: 1440px)" width="552" height="499" type="image/png" srcset="images/nutrition-img-desktop@1x.png 1x, images/nutrition-img-desktop@2x.png 2x">
             <source media="(min-width: 768px)" width="709" height="609" type="image/png" srcset="images/nutrition-img-tablet@1x.png 1x, images/nutrition-img-tablet@2x.png 2x">
-            <img class="nutrition__img" loading="lazy" src="images/nutrition-img-mobile@1x.png" srcset="images/nutrition-img-mobile@2x.png 2x" width="280" height="270" alt="Товар Cat energy со вкусом курицы 500г.">
+            <img class="nutrition__img" src="images/nutrition-img-mobile@1x.png" srcset="images/nutrition-img-mobile@2x.png 2x" width="280" height="270" alt="Товар Cat energy со вкусом курицы 500г.">
           </picture>
         </div>
         <a class="nutrition__button button" href="#">
@@ -178,10 +172,8 @@
     <section class="main__location location" data-test="contacts">
       <h2 class="visually-hidden">Карта местоположения.</h2>
       <div class="location__wrapper">
-        <h3 class="location__header">Приглашаем <span class="location__header-nowrap">
-            к сотрудничеству
-          </span>
-          дилеров!
+        <h3 class="location__header">Приглашаем
+          к&nbsp;сотрудничеству дилеров!
         </h3>
         <p class="location__description">ул. Большая
           Конюшенная, д. 19/8
@@ -190,7 +182,7 @@
           </span>
         </p>
       </div>
-      <div class="location__link location__link--js location__link--nojs">
+      <div class="location__link ">
         <div class="location__link-static">
           <picture>
             <source media="(min-width: 1440px)" width="1440" height="400" type="image/webp" srcset="images/location-desktop@1x.webp 1x,images/location-desktop@2x.webp 2x">
@@ -198,11 +190,11 @@
             <source type="image/webp" srcset="images/location-mobile@1x.webp 1x, images/location-mobile@2x.webp 2x" width="320" height="362">
             <source media="(min-width: 1440px)" width="1440" height="400" type="image/jpeg" srcset="images/location-desktop@1x.jpg 1x,images/location-desktop@2x.jpg 2x">
             <source media="(min-width: 768px)" width="768" height="400" type="image/jpeg" srcset="images/location-tablet@1x.jpg 1x,images/location-tablet@2x.jpg 2x">
-            <img class="location__img-map" loading="lazy" src="images/location-mobile@1x.jpg" srcset="images/location-mobile@2x.jpg 2x" width="320" height="362" alt="Офис комапнии по адресу улица Большая  Конюшенная, дом 19/8,  Санкт-Петербург.">
+            <img class="location__img-map map map--js map--nojs" loading="lazy" src="images/location-mobile@1x.jpg" srcset="images/location-mobile@2x.jpg 2x" width="320" height="362" alt="Офис комапнии по адресу улица Большая  Конюшенная, дом 19/8,  Санкт-Петербург.">
           </picture>
         </div>
         <div class="location__link-dynamic">
-          <iframe class="location__img-google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036257135368!2d30.320477841904687!3d59.93871916219779!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca3de3a1%3A0xc7af30764648c6b1!2sBolshaya%20Konyushennaya%20St%2C%20%D0%B4.%2019%2F8%2C%20Sankt-Peterburg%2C%20191186!5e0!3m2!1sen!2sru!4v1751902299140!5m2!1sen!2sru" width="768" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Офис комапнии по адресу улица Большая  Конюшенная, дом 19/8,  Санкт-Петербург.">
+          <iframe class="location__img-google" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036257135368!2d30.320477841904687!3d59.93871916219779!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca3de3a1%3A0xc7af30764648c6b1!2sBolshaya%20Konyushennaya%20St%2C%20%D0%B4.%2019%2F8%2C%20Sankt-Peterburg%2C%20191186!5e0!3m2!1sen!2sru!4v1751902299140!5m2!1sen!2sru" width="320" height="362" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Офис комапнии по адресу улица Большая  Конюшенная, дом 19/8,  Санкт-Петербург.">
           </iframe>
         </div>
       </div>

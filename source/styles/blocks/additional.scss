@@ -1,4 +1,3 @@
-/* stylelint-disable @stylistic/named-grid-areas-alignment */
 .additional {
   position: relative;
 }
@@ -11,6 +10,16 @@
   height: 1px;
   background-color: $color-linear-block;
   top: 0;
+}
+
+.additional:last-child::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: $color-linear-block;
+  bottom: -19px;
 }
 
 .additional--modifier-first::before {
@@ -64,14 +73,6 @@
 
   .additional::before {
     background-color: $color-linear-block;
-  }
-
-  .additional--modifier-first {
-    margin-top: 2px;
-  }
-
-  .additional--modifier-second {
-    margin-top: -2px;
   }
 
   .additional__title {
@@ -147,14 +148,6 @@
     align-items: center;
   }
 
-  .additional--modifier-first {
-    margin-top: 2px;
-  }
-
-  .additional--modifier-second {
-    margin-top: -2px;
-  }
-
   .additional__title {
     grid-column: 1 / 2;
     margin: 0;
@@ -165,6 +158,7 @@
     line-height: 20px;
     max-width: 163px;
     min-height: 25px;
+    padding-left: 2px;
   }
 
   .additional__list {
@@ -176,6 +170,7 @@
     justify-content: space-between;
     gap: 9px;
     width: 285px;
+    padding-left: 1px;
   }
 
   .additional__button {
@@ -213,5 +208,9 @@
   .additional-products__banner {
     width: 245px;
     min-height: 202px;
+  }
+
+  .additional:last-child::after {
+    bottom: 0;
   }
 }

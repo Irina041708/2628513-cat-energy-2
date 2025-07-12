@@ -30,7 +30,6 @@
 .stats__item {
   margin-top: 20px;
   width: 124px;
-  min-height: 56px;
 }
 
 .stats__description {
@@ -82,8 +81,8 @@
   .stats__list-description {
     display: flex;
     flex-direction: row;
-    align-content: space-between;
-    gap: 169px;
+    justify-content: space-between;
+    gap: 50px;
     align-items: flex-start;
     margin-bottom: 99px;
     max-width: $view-port-tablet;

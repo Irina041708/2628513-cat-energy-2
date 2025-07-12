@@ -1,3 +1,8 @@
+.subscribe {
+  margin: 0 auto;
+  width: $view-port-mobile;
+}
+
 .subscribe__heading {
   @include fonttitle;
   padding-top: 40px;
@@ -7,9 +12,8 @@
   line-height: 24px;
   margin-bottom: 32px;
   position: relative;
-  box-shadow: 20px 0 0 0 $bg-basis, -20px 0 0 0 $bg-basis;
-  background: $bg-basis;
-  z-index: 10;
+  box-shadow: 40px 0 0 0 $bg-basis, -20px 0 0 0 $bg-basis;
+  background-color: $bg-basis;
 }
 
 .subscribe__heading::before {
@@ -21,13 +25,11 @@
   width: 100vw;
   height: 2px;
   background: $bg-button;
-  color: $bg-basis;
   z-index: -5;
-  box-shadow: 100vw 0 0 0 $bg-button, -100vw 0 0 0 $bg-button;
+  box-shadow: 100vw 0 0 0 $bg-button;
 }
 
 .subscribe__wrapper {
-  @include wrapper-center-mobile;
   padding: 0 20px 40px;
 }
 
@@ -40,26 +42,28 @@
 }
 
 @media (min-width: $view-port-tablet) and (max-width: ($view-port-desktop - 1)) {
-  .subscribe__wrapper {
-    @include wrapper-center-tablet;
-  }
-
   .subscribe {
+    width: $view-port-tablet;
     padding-top: 80px;
     padding-bottom: 80px;
   }
 
+  .subscribe__wrapper {
+    padding: $padding-tablet;
+  }
+
   .subscribe__heading {
     padding-top: 0;
+    padding-left: 20px;
+    padding-right: 0;
     display: block;
     position: relative;
-    margin-left: 50px;
-    padding-left: 20px;
+    margin-left: 20px;
     font-size: 32px;
     line-height: 32px;
     margin-bottom: 66px;
     background: $bg-basis;
-    width: 242px;
+    width: 223px;
   }
 
   .subscribe__heading::before {
@@ -84,25 +88,26 @@
 }
 
 @media (min-width: $view-port-desktop) {
-  .subscribe__wrapper {
-    @include wrapper-center-desktop;
-  }
-
   .subscribe {
     padding-bottom: 104px;
+    width: $view-port-desktop;
+  }
+
+  .subscribe__wrapper {
+    padding: $padding-tablet;
   }
 
   .subscribe__heading {
     padding-top: 0;
     display: block;
     position: relative;
-    margin-left: 90px;
+    margin-left: 60px;
     padding-left: 20px;
     padding-right: 0;
     font-size: 40px;
     line-height: 40px;
     margin-bottom: 72px;
-    width: 295px;
+    width: 273px;
   }
 
   .subscribe__heading::before {

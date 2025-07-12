@@ -5,7 +5,7 @@
 .main-footer__wrapper {
   width: $view-port-mobile;
   margin: 0 auto;
-  padding: 40px 20px;
+  padding: 39px 20px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -47,7 +47,7 @@
   margin: 0 auto;
   height: 1px;
   background: #d9d9d9;
-  top: -23px;
+  top: -21px;
 }
 
 .main-footer__logo-company::before {
@@ -59,7 +59,7 @@
   margin: 0 auto;
   height: 1px;
   background: #d9d9d9;
-  top: -23px;
+  top: -21px;
 }
 
 @media (min-width: $view-port-tablet) and (max-width: ($view-port-desktop - 1)) {
@@ -115,7 +115,7 @@
 
 @media (min-width: $view-port-desktop) {
   .main-footer__wrapper {
-    padding: 66px 110;
+    padding: 66px 110px;
     width: $view-port-desktop;
     margin: 0 auto;
     display: grid;
