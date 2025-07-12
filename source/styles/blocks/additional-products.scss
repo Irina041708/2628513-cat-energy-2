@@ -44,7 +44,8 @@
 }
 
 .additional-products__banner {
-  margin-top: 15px;
+  margin-top: 16px;
+  margin-bottom: -2px;
 }
 
 @media (min-width: $view-port-tablet) and (max-width: ($view-port-desktop - 1)) {
@@ -87,6 +88,7 @@
 
   .additional-products__banner {
     margin-top: 70px;
+    margin-bottom: 0;
   }
 }
 

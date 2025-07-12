@@ -22,7 +22,7 @@
 .main-nav--opened .main-nav__list {
   @include list;
   display: flex;
-  position: fixed;
+  position: absolute;
   background: $bg-basis;
   z-index: 2;
   transform: translateX(-20px);
@@ -37,7 +37,6 @@
   mask-repeat: no-repeat;
   mask-size: 23px 20px;
   background-color: $bg-basis-dark;
-  transform: translate(1px, -2px);
 }
 
 .main-nav--closed .main-nav__toggle::before {
@@ -49,6 +48,7 @@
   mask-repeat: no-repeat;
   mask-size: 24px 24px;
   background-color: $bg-basis-dark;
+  transform: translate(1px, -2px);
 }
 
 .main-nav--closed .site-list__item {
@@ -80,9 +80,9 @@
     position: relative;
     justify-content: flex-start;
     flex-flow: row wrap;
-    width: 436px;
+    width: 437px;
     margin-top: 13px;
-    gap: 33px;
+    gap: 34px;
   }
 
   .main-nav--opened .site-list__item {

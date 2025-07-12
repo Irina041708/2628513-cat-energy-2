@@ -34,6 +34,7 @@
 .advantages__paragraph {
   @include font-paragraph;
   width: 200px;
+  transform: translateY(-1px);
 }
 
 .advantages__item--first::before {
@@ -139,9 +140,9 @@
     z-index: 2;
   }
 
-  .advantages__paragraph-nowrap {
-    white-space: nowrap;
-  }
+  // .advantages__paragraph-nowrap {
+  //   white-space: nowrap;
+  // }
 
   .advantages__item--first::before {
     margin-top: 40px;
