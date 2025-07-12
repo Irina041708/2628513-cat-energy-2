@@ -56,14 +56,14 @@
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
+  grid-template-rows: auto;
 }
 
 .location__link-static,
 .location__link-dynamic {
   grid-column: 1 / 2;
   grid-row: 1 / 2;
-  height: 362px;
+  min-height: 362px;
 }
 
 .location__img-google {

@@ -12,3 +12,7 @@ navToggle.addEventListener('click', () => {
     navMain.classList.remove('main-nav--opened');
   }
 });
+
+const locationStatic = document.querySelector('.location__img-map');
+
+locationStatic.classList.remove('location__link--js');

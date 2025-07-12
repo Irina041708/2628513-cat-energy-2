@@ -12,6 +12,16 @@
   top: 0;
 }
 
+.additional:last-child::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: $color-linear-block;
+  bottom: -19px;
+}
+
 .additional--modifier-first::before {
   transform: translateY(-2px);
 }
@@ -198,5 +208,9 @@
   .additional-products__banner {
     width: 245px;
     min-height: 202px;
+  }
+
+  .additional:last-child::after {
+    bottom: 0;
   }
 }
