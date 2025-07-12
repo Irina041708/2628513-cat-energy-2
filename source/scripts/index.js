@@ -15,4 +15,6 @@ navToggle.addEventListener('click', () => {
 
 const locationStatic = document.querySelector('.location__img-map');
 
-locationStatic.classList.remove('location__link--js');
+locationStatic.classList.remove('location__img-map--js');
+
+locationStatic.classList.add('location__img-map--nojs');
